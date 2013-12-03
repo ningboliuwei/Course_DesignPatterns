@@ -11,25 +11,38 @@ namespace 原型模式_简历_Clone版
 	{
 		public void Test()
 		{
-			ArrayList arrayList = new ArrayList();
+			ArrayList arrayList1 = new ArrayList();
 
-			arrayList.Add("A");
-			arrayList.Add("B");
+			arrayList1.Add("A");
+			arrayList1.Add("B");
 
-			foreach (string s in arrayList)
+			Console.WriteLine("Clone之前的ArrayList1");
+			foreach (string s in arrayList1)
+			{
+				Console.WriteLine(s);
+			}
+			//ICloneable ic;
+			//ic = arrayList1;
+
+
+			ArrayList arrayList2 = arrayList1.Clone() as ArrayList;
+			//ArrayList arrayList2 = arrayList1;
+			
+			Console.WriteLine("Clone出来的ArrayList2");
+			foreach (string s in arrayList2)
 			{
 				Console.WriteLine(s);
 			}
 
-			ArrayList arrayList2 = arrayList.Clone() as ArrayList;
+			Console.WriteLine("修改之后的ArrayList1");
+			arrayList1[0] = "C";
 
-			arrayList[0] = "C";
-
-			foreach (string s in arrayList)
+			foreach (string s in arrayList1)
 			{
 				Console.WriteLine(s);
 			}
 
+			Console.WriteLine("修改之后的ArrayList2");
 			foreach (string s in arrayList2)
 			{
 				Console.WriteLine(s);

@@ -20,7 +20,7 @@ namespace 职责链模式_请假_传统
 
 		private static void Main(string[] args)
 		{
-			Request request = new Request("Tom", "请假", "我表弟结婚", 6);
+			Request request = new Request("Tom", "加薪", "我表弟结婚", 3);
 			GetResult(ManagerLevel.CommonManager, request); //请假直接提交给项目经理
 			GetResult(ManagerLevel.MajorManager, request); //请假直接提交给部门经理
 			GetResult(ManagerLevel.GeneralManager, request); //请假直接提交给总经理

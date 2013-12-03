@@ -37,6 +37,7 @@ namespace 原型模式_简历_非原型模式版
 		{
 			Console.WriteLine("{0} {1} {2}", _name, _sex, _age);
 			Console.WriteLine("工作经历：{0} {1}", _timeArea, _company);
+			Console.WriteLine();
 		}
 	}
 }

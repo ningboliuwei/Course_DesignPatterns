@@ -13,8 +13,8 @@ namespace 职责链模式_请假_职责链模式
 			GeneralManager gm = new GeneralManager("GM");
 			CEOManager em = new CEOManager("EM");
 
-			cm.SetSuperior(em);
-			cm.SetSuperior(em);
+			gm.SetSuperior(mm);
+			mm.SetSuperior(cm);
 
 			//cm.SetSuperior(mm);
 			// mm.SetSuperior(gm);

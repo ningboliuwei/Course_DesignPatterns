@@ -36,6 +36,7 @@ namespace 原型模式_简历_内含对象版
 		{
 			Console.WriteLine("{0} {1} {2}", _name, _sex, _age);
 			Console.WriteLine("工作经历：{0} {1}", _work.TimeArea, _work.Company);
+			Console.WriteLine();
 		}
 
 		public object Clone()

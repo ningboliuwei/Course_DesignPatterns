@@ -20,10 +20,10 @@ namespace 原型模式_简历_内含对象深复制版
 			_work = new WorkExperience();
 		}
 
-		private Resume(WorkExperience work)
-		{
-			this._work = work.Clone() as WorkExperience;
-		}
+		//private Resume(WorkExperience work)
+		//{
+		//	this._work = work.Clone() as WorkExperience;
+		//}
 
 		public void SetPersonalInfo(string sex, string age)
 		{
@@ -45,10 +45,16 @@ namespace 原型模式_简历_内含对象深复制版
 
 		public object Clone()
 		{
-			Resume obj = new Resume(this._work);
-			obj._name = this._name;
+			//Resume obj = new Resume(this.);
+			//obj._name = this._name;
+			//obj._sex = this._sex;
+			//obj._age = this._age;
+
+			Resume obj = new Resume(this._name);
 			obj._sex = this._sex;
 			obj._age = this._age;
+			obj._work.TimeArea = this._work.TimeArea;
+			obj._work.Company = this._work.Company;
 			return obj;
 		}
 	}

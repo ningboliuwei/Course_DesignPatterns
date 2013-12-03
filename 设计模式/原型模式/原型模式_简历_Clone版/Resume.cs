@@ -42,6 +42,7 @@ namespace 原型模式_简历_Clone版
 		public object Clone()
 		{
 			return this.MemberwiseClone();
+						
 		}
 	}
 }

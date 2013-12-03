@@ -27,8 +27,13 @@ namespace 状态模式_加班_使用类版
 
 			emergencyProjects.Hour = 17;
 
-			//emergencyProjects.WorkFinished = true;
+			//第一步开始
+			//emergencyProjects.TaskFinished = true;
+			//第一步结束
+
+			//第二步开始
 			emergencyProjects.TaskFinished = false;
+			//第二步结束
 
 			emergencyProjects.WriteProgram();
 			emergencyProjects.Hour = 19;
