@@ -6,6 +6,6 @@ namespace 状态模式_加班_状态模式版
 {
 	public abstract class State
 	{
-		public abstract void WriteProgram(Work w);
+		public abstract void WriteProgram(Work work);
 	}
 }

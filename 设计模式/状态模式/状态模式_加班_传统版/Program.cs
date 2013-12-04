@@ -25,11 +25,11 @@ namespace 状态模式_加班_传统版
 			Hour = 17;
 
 			//第一步开始
-			WorkFinished = true;
+			//WorkFinished = true;
 			//第一步结束
 
 			//第二步开始
-			//WorkFinished = false;
+			WorkFinished = false;
 			//第二步结束
 
 			WriteProgram();

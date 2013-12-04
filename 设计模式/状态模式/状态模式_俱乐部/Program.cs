@@ -14,14 +14,19 @@ namespace 状态模式_俱乐部
 
 			account.Deposit(100);
 			account.ClubService();
+
 			account.Deposit(300);
 			account.ClubService();
+
 			account.Deposit(1000);
 			account.ClubService();
+
 			account.Cost(100);
 			account.ClubService();
+
 			account.Cost(1000);
 			account.ClubService();
+
 			account.Cost(300);
 			account.ClubService();
 

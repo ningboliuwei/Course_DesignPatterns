@@ -8,51 +8,56 @@ namespace 状态模式_加班_状态模式版
 	{
 		private static void Main(string[] args)
 		{
-			Work w = new Work();
-			w.Hour = 9;
-			w.WriteProgram();
+			Work work = new Work();
+			work.Hour = 9;
+			work.WriteProgram();
 
-			w.Hour = 10;
-			w.WriteProgram();
+			work.Hour = 10;
+			work.WriteProgram();
 
-			w.Hour = 11;
-			w.WriteProgram();
+			work.Hour = 11;
+			work.WriteProgram();
 
-			w.Hour = 12;
-			w.WriteProgram();
+			work.Hour = 12;
+			work.WriteProgram();
 
-			w.Hour = 13;
-			w.WriteProgram();
+			work.Hour = 13;
+			work.WriteProgram();
 
-			w.Hour = 14;
-			w.WriteProgram();
+			work.Hour = 14;
+			work.WriteProgram();
 
-			w.Hour = 15;
-			w.WriteProgram();
+			work.Hour = 15;
+			work.WriteProgram();
 
-			w.Hour = 16;
-			w.WriteProgram();
+			work.Hour = 16;
+			work.WriteProgram();
 
-			w.Hour = 17;
-			w.WriteProgram();
+			work.Hour = 17;
+			work.WriteProgram();
 
-			//w.TaskFinished = true;
-			w.TaskFinished = false;
+			//第一步开始
+			work.TaskFinished = true;
+			//第一步结束
+			
+			//第二步开始
+			//w.TaskFinished = false;
+			//第二步结束
 
-			w.Hour = 18;
-			w.WriteProgram();
+			work.Hour = 18;
+			work.WriteProgram();
 
-			w.Hour = 19;
-			w.WriteProgram();
+			work.Hour = 19;
+			work.WriteProgram();
 
-			w.Hour = 20;
-			w.WriteProgram();
+			work.Hour = 20;
+			work.WriteProgram();
 
-			w.Hour = 21;
-			w.WriteProgram();
+			work.Hour = 21;
+			work.WriteProgram();
 
-			w.Hour = 22;
-			w.WriteProgram();
+			work.Hour = 22;
+			work.WriteProgram();
 
 			Console.ReadLine();
 		}

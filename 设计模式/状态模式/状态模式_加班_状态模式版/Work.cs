@@ -6,11 +6,11 @@ namespace 状态模式_加班_状态模式版
 {
 	public class Work
 	{
-		private State _current;
+		private State m_currentState;
 
 		public Work()
 		{
-			_current = new MorningState(); //初始化为上午工作状态
+			this.SetState(new MorningState());
 		}
 
 		//当前钟点      
@@ -19,14 +19,14 @@ namespace 状态模式_加班_状态模式版
 		//是否完成了工作
 		public bool TaskFinished { get; set; }
 
-		public void SetState(State s)
+		public void SetState(State state)
 		{
-			_current = s;
+			this.m_currentState = state;
 		}
 
 		public void WriteProgram()
 		{
-			_current.WriteProgram(this);
+			m_currentState.WriteProgram(this);
 		}
 	}
 }

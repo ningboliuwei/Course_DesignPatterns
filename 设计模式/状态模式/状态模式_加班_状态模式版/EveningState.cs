@@ -6,23 +6,23 @@ namespace 状态模式_加班_状态模式版
 {
 	internal class EveningState : State
 	{
-		public override void WriteProgram(Work w)
+		public override void WriteProgram(Work work)
 		{
-			if (w.TaskFinished)
+			if (work.TaskFinished)
 			{
-				w.SetState(new RestState());
-				w.WriteProgram();
+				work.SetState(new RestState());
+				work.WriteProgram();
 			}
 			else
 			{
-				if (w.Hour < 21)
+				if (work.Hour < 21)
 				{
-					Console.WriteLine("当前时间{0}点 加班哦，疲劳之极", w.Hour);
+					Console.WriteLine("当前时间{0}点 加班哦，疲劳之极", work.Hour);
 				}
 				else
 				{
-					w.SetState(new SleepingState());
-					w.WriteProgram();
+					work.SetState(new SleepingState());
+					work.WriteProgram();
 				}
 			}
 		}

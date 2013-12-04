@@ -4,6 +4,9 @@ using System.Text;
 
 namespace 状态模式_加班_使用类版
 {
+	using System.Data;
+	using System.Data.SqlClient;
+
 	//工作
 	public class Work
 	{
@@ -39,6 +42,7 @@ namespace 状态模式_加班_使用类版
 
 		public void WriteProgram()
 		{
+
 			if (hour < 12)
 			{
 				Console.WriteLine("当前时间：{0}点 上午工作，精神百倍", hour);

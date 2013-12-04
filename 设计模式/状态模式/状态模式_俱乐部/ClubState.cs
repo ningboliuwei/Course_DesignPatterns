@@ -6,9 +6,9 @@ namespace 状态模式_俱乐部
 {
 	internal abstract class ClubState
 	{
-		protected double _lowerLimit;
+		protected double m_lowerLimit;
 
-		protected double _upperLimit;
+		protected double m_upperLimit;
 
 		//账户
 		public ClubAccount Account { get; set; }

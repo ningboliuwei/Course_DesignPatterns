@@ -11,6 +11,7 @@ namespace 状态模式_俱乐部
 
 		public ClubState State { get; set; }
 
+		//金额属性（只能通过Deposit()和Cost()方法改变）
 		public double Balance
 		{
 			get

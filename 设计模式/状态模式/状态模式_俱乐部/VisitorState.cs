@@ -20,13 +20,13 @@ namespace 状态模式_俱乐部
 
 		private void Initialize()
 		{
-			_lowerLimit = 0.0;
-			_upperLimit = 100;
+			this.m_lowerLimit = 0.0;
+			this.m_upperLimit = 100;
 		}
 
 		protected override void StateChangeCheck()
 		{
-			if (Balance >= _upperLimit)
+			if (Balance >= this.m_upperLimit)
 			{
 				Account.State = new MemberState(this);
 				Console.WriteLine("你当前帐户金额为{0}，你升级为‘普通级会员’服务", Balance);
