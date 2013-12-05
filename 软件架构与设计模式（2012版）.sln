@@ -229,6 +229,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "策略模式_输出数组_�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_状态模式_环境类转换版", "设计模式\状态模式\状态模式_加班_状态模式_环境类转换版\状态模式_加班_状态模式_环境类转换版.csproj", "{071E363F-1290-4FF6-A784-E9FC92318362}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_银行账户", "设计模式\状态模式\状态模式_银行账户\状态模式_银行账户.csproj", "{84CA0536-FD15-4710-BA1F-6403D585D72B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -611,6 +613,10 @@ Global
 		{071E363F-1290-4FF6-A784-E9FC92318362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{071E363F-1290-4FF6-A784-E9FC92318362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{071E363F-1290-4FF6-A784-E9FC92318362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CA0536-FD15-4710-BA1F-6403D585D72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CA0536-FD15-4710-BA1F-6403D585D72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CA0536-FD15-4710-BA1F-6403D585D72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CA0536-FD15-4710-BA1F-6403D585D72B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -716,6 +722,7 @@ Global
 		{29A0B95A-3E69-4D96-9541-06C7E627F798} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{8C0B09D0-F2B3-4795-8D89-3CFE48C8D5A7} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{071E363F-1290-4FF6-A784-E9FC92318362} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
+		{84CA0536-FD15-4710-BA1F-6403D585D72B} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{995AAD28-98C6-4B66-9833-65DB1BD391DA} = {950E90BF-5FC0-4AE5-82A5-8950B3A73A54}
 		{7589B498-315A-4B17-99CD-FF57091963D8} = {950E90BF-5FC0-4AE5-82A5-8950B3A73A54}
 		{8BB2E6B9-6737-461C-95E6-63560147A42D} = {950E90BF-5FC0-4AE5-82A5-8950B3A73A54}
