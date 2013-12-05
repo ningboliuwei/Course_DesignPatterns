@@ -5,17 +5,18 @@ using System.Text;
 
 namespace 状态模式_银行账户
 {
-    class OverdraftState : AccountState
+    internal class OverdraftState : AccountState
     {
         public OverdraftState(Account account)
         {
             m_account = account;
         }
+
         public override void Deposit(double amount)
         {
             m_account.SetBalance(m_account.GetBalance() + amount);
+            Console.WriteLine("向名为{0}的账户中存款{1}元，存款后账户余额为{2}元。", m_account.GetOwner(), amount, m_account.GetBalance());
             StateCheck();
-
         }
 
         //取款
@@ -25,7 +26,8 @@ namespace 状态模式_银行账户
 
             if (newBalance >= -2000)
             {
-                m_account.SetBalance(m_account.GetBalance() - amount);
+                m_account.SetBalance(newBalance);
+                Console.WriteLine("从名为{0}的账户中取款{1}元，取款后账户余额为{2}元。", m_account.GetOwner(), amount, m_account.GetBalance());
             }
             else
             {
@@ -39,7 +41,7 @@ namespace 状态模式_银行账户
         //计算利息
         public override void ComputeInterest()
         {
-            Console.WriteLine("正常状态，无需支付利息");
+            Console.WriteLine("开始计算利息");
         }
 
         //检查账户状态
