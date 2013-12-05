@@ -10,22 +10,22 @@ namespace 状态模式_加班_使用类版
 		{
 			//紧急项目
 			Work emergencyProjects = new Work();
-			emergencyProjects.MHour = 9;
+			emergencyProjects.Hour = 9;
 			emergencyProjects.WriteProgram();
 
-			emergencyProjects.MHour = 10;
+			emergencyProjects.Hour = 10;
 			emergencyProjects.WriteProgram();
 
-			emergencyProjects.MHour = 12;
+			emergencyProjects.Hour = 12;
 			emergencyProjects.WriteProgram();
 
-			emergencyProjects.MHour = 13;
+			emergencyProjects.Hour = 13;
 			emergencyProjects.WriteProgram();
 
-			emergencyProjects.MHour = 14;
+			emergencyProjects.Hour = 14;
 			emergencyProjects.WriteProgram();
 
-			emergencyProjects.MHour = 17;
+			emergencyProjects.Hour = 17;
 
 			//第一步开始
 			//emergencyProjects.TaskFinished = true;
@@ -36,9 +36,9 @@ namespace 状态模式_加班_使用类版
 			//第二步结束
 
 			emergencyProjects.WriteProgram();
-			emergencyProjects.MHour = 19;
+			emergencyProjects.Hour = 19;
 			emergencyProjects.WriteProgram();
-			emergencyProjects.MHour = 22;
+			emergencyProjects.Hour = 22;
 			emergencyProjects.WriteProgram();
 
 			Console.Read();

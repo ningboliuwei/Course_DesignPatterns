@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 控制。更改这些属性值可修改
 // 与程序集关联的信息。
 
-[assembly: AssemblyTitle("状态模式_加班_状态模式版")]
+[assembly: AssemblyTitle("状态模式_加班_状态模式_状态类转换版")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("状态模式_加班_状态模式版")]
+[assembly: AssemblyProduct("状态模式_加班_状态模式_状态类转换版")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -181,7 +181,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "命令模式_计算器_命�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "状态模式", "状态模式", "{1E14A106-A8D1-4821-91C4-A6230EB471B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_状态模式版", "设计模式\状态模式\状态模式_加班_状态模式版\状态模式_加班_状态模式版.csproj", "{500CB046-7AF6-472D-AD3C-6CFF83BBC770}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_状态模式_状态类转换版", "设计模式\状态模式\状态模式_加班_状态模式版\状态模式_加班_状态模式_状态类转换版.csproj", "{500CB046-7AF6-472D-AD3C-6CFF83BBC770}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_俱乐部", "设计模式\状态模式\状态模式_俱乐部\状态模式_俱乐部.csproj", "{031E9A2E-1ABB-4999-9408-0024FB33E46C}"
 EndProject
@@ -226,6 +226,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "适配器模式_算法库", "设计模式\适配器模式\适配器模式_算法库\适配器模式_算法库.csproj", "{B718CC73-A780-4732-BC30-A7E914AE9E6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "策略模式_输出数组_反射", "设计模式\策略模式\策略模式_输出数组_反射\策略模式_输出数组_反射.csproj", "{5B6F15BD-1908-4BBF-922C-4619C8F5DA4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_状态模式_环境类转换版", "设计模式\状态模式\状态模式_加班_状态模式_环境类转换版\状态模式_加班_状态模式_环境类转换版.csproj", "{071E363F-1290-4FF6-A784-E9FC92318362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -605,6 +607,10 @@ Global
 		{5B6F15BD-1908-4BBF-922C-4619C8F5DA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6F15BD-1908-4BBF-922C-4619C8F5DA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6F15BD-1908-4BBF-922C-4619C8F5DA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071E363F-1290-4FF6-A784-E9FC92318362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071E363F-1290-4FF6-A784-E9FC92318362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071E363F-1290-4FF6-A784-E9FC92318362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071E363F-1290-4FF6-A784-E9FC92318362}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -709,6 +715,7 @@ Global
 		{031E9A2E-1ABB-4999-9408-0024FB33E46C} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{29A0B95A-3E69-4D96-9541-06C7E627F798} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{8C0B09D0-F2B3-4795-8D89-3CFE48C8D5A7} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
+		{071E363F-1290-4FF6-A784-E9FC92318362} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{995AAD28-98C6-4B66-9833-65DB1BD391DA} = {950E90BF-5FC0-4AE5-82A5-8950B3A73A54}
 		{7589B498-315A-4B17-99CD-FF57091963D8} = {950E90BF-5FC0-4AE5-82A5-8950B3A73A54}
 		{8BB2E6B9-6737-461C-95E6-63560147A42D} = {950E90BF-5FC0-4AE5-82A5-8950B3A73A54}
