@@ -11,65 +11,63 @@ namespace 状态模式_加班_使用类版
 	public class Work
 	{
 		//钟点
-		private int hour;
+		private int m_hour;
 
 		public int Hour
 		{
 			get
 			{
-				return hour;
+				return m_hour;
 			}
 			set
 			{
-				hour = value;
+				m_hour = value;
 			}
 		}
 
 		//任务完成
-		private bool finish = false;
+		private bool m_taskFinished;
 
 		public bool TaskFinished
 		{
 			get
 			{
-				return finish;
+				return m_taskFinished;
 			}
 			set
 			{
-				finish = value;
+				m_taskFinished = value;
 			}
 		}
 
 		public void WriteProgram()
 		{
-
-			if (hour < 12)
 			{
-				Console.WriteLine("当前时间：{0}点 上午工作，精神百倍", hour);
+				Console.WriteLine("当前时间：{0}点 上午工作，精神百倍", m_hour);
 			}
-			else if (hour < 13)
+			else if (m_hour < 13)
 			{
-				Console.WriteLine("当前时间：{0}点 饿了，午饭；犯困，午休。", hour);
+				Console.WriteLine("当前时间：{0}点 饿了，午饭；犯困，午休。", m_hour);
 			}
-			else if (hour < 17)
+			else if (m_hour < 17)
 			{
-				Console.WriteLine("当前时间：{0}点 下午状态还不错，继续努力", hour);
+				Console.WriteLine("当前时间：{0}点 下午状态还不错，继续努力", m_hour);
 			}
 			else
 			{
-				if (finish)
+				if (m_taskFinished)
 				{
-					Console.WriteLine("当前时间：{0}点 下班回家了", hour);
+					Console.WriteLine("当前时间：{0}点 下班回家了", m_hour);
 				}
 				else
 				{
-					if (hour < 21)
+					if (m_hour < 21)
 					{
-						Console.WriteLine("当前时间：{0}点 加班哦，疲累之极", hour);
+						Console.WriteLine("当前时间：{0}点 加班哦，疲累之极", m_hour);
 					}
 					else
 					{
-						Console.WriteLine("当前时间：{0}点 不行了，睡着了。", hour);
+						Console.WriteLine("当前时间：{0}点 不行了，睡着了。", m_hour);
 					}
 				}
 			}
