@@ -42,6 +42,7 @@ namespace 状态模式_加班_使用类版
 
 		public void WriteProgram()
 		{
+			if (m_hour < 12)
 			{
 				Console.WriteLine("当前时间：{0}点 上午工作，精神百倍", m_hour);
 			}
