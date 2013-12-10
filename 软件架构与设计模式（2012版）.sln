@@ -239,6 +239,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_手枪", "FE\�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "命令模式_自定义功能键_传统版", "设计模式\命令模式\命令模式_自定义功能键_传统版\命令模式_自定义功能键_传统版.csproj", "{8F4D84CC-A43F-4796-B9AB-DDFAE12391A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "命令模式_自定义功能键_命令模式版", "设计模式\命令模式\命令模式_自定义功能键_命令模式版\命令模式_自定义功能键_命令模式版.csproj", "{168920EB-76FA-4988-8059-0737728CB7EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -641,6 +643,10 @@ Global
 		{8F4D84CC-A43F-4796-B9AB-DDFAE12391A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F4D84CC-A43F-4796-B9AB-DDFAE12391A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F4D84CC-A43F-4796-B9AB-DDFAE12391A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{168920EB-76FA-4988-8059-0737728CB7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168920EB-76FA-4988-8059-0737728CB7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168920EB-76FA-4988-8059-0737728CB7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168920EB-76FA-4988-8059-0737728CB7EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -742,6 +748,7 @@ Global
 		{A7038BC5-39E4-47DE-9C06-A63384EC44F5} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{E6467681-8948-498E-86E3-1DE801E112B6} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{8F4D84CC-A43F-4796-B9AB-DDFAE12391A6} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
+		{168920EB-76FA-4988-8059-0737728CB7EE} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{500CB046-7AF6-472D-AD3C-6CFF83BBC770} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{031E9A2E-1ABB-4999-9408-0024FB33E46C} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{29A0B95A-3E69-4D96-9541-06C7E627F798} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
