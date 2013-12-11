@@ -56,6 +56,8 @@ namespace 命令模式_自定义功能键_命令队列版
 			fb3.Click();
 			Console.WriteLine("----------");
 
+			
+
 			Console.ReadLine();
 
 		}
