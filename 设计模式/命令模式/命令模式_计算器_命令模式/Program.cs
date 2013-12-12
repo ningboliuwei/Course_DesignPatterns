@@ -15,8 +15,8 @@ namespace 命令模式_计算器_命令模式
 			user.Compute('*', 10);
 			user.Compute('/', 2);
 
-			user.Undo(2);
-			user.Redo(1);
+			user.Undo(4);
+			user.Redo(2);
 
 			Console.ReadLine();
 		}

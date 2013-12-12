@@ -14,21 +14,21 @@ namespace 命令模式_自定义功能键_命令模式版
 			FunctionButton fb3 = new FunctionButton("功能键3");
 
 			//第一步开始
-			fb1.SetCommand(new HelperCommand());
-			fb2.SetCommand(new MinimizeCommand());
-			fb3.SetCommand(new ScreenShotCommand());
+			//fb1.SetCommand(new HelperCommand());
+			//fb2.SetCommand(new MinimizeCommand());
+			//fb3.SetCommand(new ScreenShotCommand());
 			//第一步结束
 
 			//第二步开始
-			fb1.SetCommand(new MinimizeCommand());
-			fb2.SetCommand(new HelperCommand());
-			fb3.SetCommand(new ScreenShotCommand());
+			//fb1.SetCommand(new MinimizeCommand());
+			//fb2.SetCommand(new HelperCommand());
+			//fb3.SetCommand(new ScreenShotCommand());
 			//第二步结束
 
 			//第三步开始
-			fb1.SetCommand(new ScreenShotCommand());
-			fb2.SetCommand(new HelperCommand());
-			fb3.SetCommand(new MinimizeCommand());
+			//fb1.SetCommand(new ScreenShotCommand());
+			//fb2.SetCommand(new HelperCommand());
+			//fb3.SetCommand(new MinimizeCommand());
 			//第三步结束
 
 			//第四步开始

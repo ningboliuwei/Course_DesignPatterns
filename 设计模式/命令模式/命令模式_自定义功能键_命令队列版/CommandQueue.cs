@@ -30,18 +30,18 @@ namespace 命令模式_自定义功能键_命令队列版
 		}
 
 		//增加日志功能开始
-		//public void WriteToLog(string filePath)
-		//{
-		//	StreamWriter writer = new StreamWriter(filePath);
-		//	string content = "";
+		public void WriteToLog(string filePath)
+		{
+			StreamWriter writer = new StreamWriter(filePath);
+			string content = "";
 
-		//	foreach (Command command in m_commands)
-		//	{
-		//		content += command.GetType()+Environment.NewLine;
-		//	}
-		//	writer.WriteLine(content);
-		//	writer.Close();
-		//}
+			foreach (Command command in m_commands)
+			{
+				content += command.GetType() + Environment.NewLine;
+			}
+			writer.WriteLine(content);
+			writer.Close();
+		}
 		//增加日志功能结束
 	}
 }

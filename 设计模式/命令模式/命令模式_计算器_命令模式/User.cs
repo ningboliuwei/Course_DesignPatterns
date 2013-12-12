@@ -7,9 +7,9 @@ namespace 命令模式_计算器_命令模式
 {
 	internal class User
 	{
-		private Caculator _caculator = new Caculator();
+		private Caculator m_caculator = new Caculator();
 
-		private List<Command> commands = new List<Command>();
+		private List<Command> m_commands = new List<Command>();
 
 		private int current = 0;
 
@@ -19,9 +19,9 @@ namespace 命令模式_计算器_命令模式
 
 			for (int i = 0; i < levels; i++)
 			{
-				if (current < commands.Count - 1)
+				if (current < this.m_commands.Count - 1)
 				{
-					(commands[current++]).Execute();
+					(this.m_commands[current++]).Execute();
 				}
 			}
 		}
@@ -34,17 +34,17 @@ namespace 命令模式_计算器_命令模式
 			{
 				if (current > 0)
 				{
-					(commands[--current]).UnExecute();
+					(this.m_commands[--current]).UnExecute();
 				}
 			}
 		}
 
 		public void Compute(char optr, int operand)
 		{
-			Command command = new CaculatorCommand(_caculator, optr, operand);
+			Command command = new CaculatorCommand(this.m_caculator, optr, operand);
 			command.Execute();
 
-			commands.Add(command);
+			this.m_commands.Add(command);
 			current++;
 		}
 	}

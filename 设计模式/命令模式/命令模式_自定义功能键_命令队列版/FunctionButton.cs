@@ -32,7 +32,7 @@ namespace 命令模式_自定义功能键_命令队列版
 		{
 			m_commandQueue.Execute();
 			//增加在点击时写入日志的功能
-			//m_commandQueue.WriteToLog(String.Format("r:\\{0}log.txt", Name));
+			m_commandQueue.WriteToLog(String.Format("r:\\{0}log.txt", Name));
 			
 		}
 

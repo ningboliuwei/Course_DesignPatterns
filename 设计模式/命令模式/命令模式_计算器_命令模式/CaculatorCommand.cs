@@ -6,24 +6,24 @@ namespace 命令模式_计算器_命令模式
 {
 	public class CaculatorCommand : Command
 	{
-		private char _optr;
+		private char m_optr;
 
-		private int _operand;
+		private int m_operand;
 
-		private Caculator _caculator;
+		private Caculator m_caculator;
 
-		public CaculatorCommand(Caculator caculator, char optr, int operand)
+		public CaculatorCommand(Caculator mCaculator, char mOptr, int mOperand)
 		{
-			_optr = optr;
-			_operand = operand;
-			_caculator = caculator;
+			this.m_optr = mOptr;
+			this.m_operand = mOperand;
+			this.m_caculator = mCaculator;
 		}
 
 		public char Optr
 		{
 			set
 			{
-				_optr = value;
+				this.m_optr = value;
 			}
 		}
 
@@ -31,7 +31,7 @@ namespace 命令模式_计算器_命令模式
 		{
 			set
 			{
-				_operand = value;
+				this.m_operand = value;
 			}
 		}
 
@@ -60,12 +60,12 @@ namespace 命令模式_计算器_命令模式
 
 		public override void Execute()
 		{
-			_caculator.Operaion(_optr, _operand);
+			this.m_caculator.Operaion(this.m_optr, this.m_operand);
 		}
 
 		public override void UnExecute()
 		{
-			_caculator.Operaion(Undo(_optr), _operand);
+			this.m_caculator.Operaion(Undo(this.m_optr), this.m_operand);
 		}
 	}
 }
