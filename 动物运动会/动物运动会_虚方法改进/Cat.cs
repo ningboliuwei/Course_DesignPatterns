@@ -17,7 +17,7 @@ namespace 动物运动会_虚方法改进
 		{
 		}
 
-		protected override string getShoutSound()
+		protected override string GetShoutSound()
 		{
 			return "喵~";
 		}

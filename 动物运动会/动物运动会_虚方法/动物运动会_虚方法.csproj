@@ -73,7 +73,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Animal.cs.bak" />
     <Compile Include="Animal.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Dog.cs" />

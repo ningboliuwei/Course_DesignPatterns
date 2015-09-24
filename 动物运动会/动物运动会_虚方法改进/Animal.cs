@@ -41,12 +41,12 @@ namespace 动物运动会_虚方法改进
 
 			for (int i = 0; i < shoutNum; i++)
 			{
-				resultStr += getShoutSound();
+				resultStr += this.GetShoutSound();
 			}
 			return resultStr;
 		}
 
-		protected virtual string getShoutSound()
+		protected virtual string GetShoutSound()
 		{
 			return "";
 		}

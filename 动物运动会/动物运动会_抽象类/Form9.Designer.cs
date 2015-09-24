@@ -1,6 +1,6 @@
-﻿namespace 动物运动会
+﻿namespace 动物运动会_抽象类
 {
-	partial class Form8
+	partial class Form9
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -52,15 +52,15 @@
 			this.btnShout.UseVisualStyleBackColor = true;
 			this.btnShout.Click += new System.EventHandler(this.btnShout_Click);
 			// 
-			// Form8
+			// Form9
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.Controls.Add(this.btnShout);
 			this.Controls.Add(this.btnRegister);
-			this.Name = "Form8";
-			this.Text = "Form7";
+			this.Name = "Form9";
+			this.Text = "Form8";
 			this.ResumeLayout(false);
 
 		}

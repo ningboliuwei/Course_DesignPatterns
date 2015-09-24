@@ -15,7 +15,7 @@ namespace 动物运动会_抽象类
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form8());
+			Application.Run(new Form9());
 		}
 	}
 }

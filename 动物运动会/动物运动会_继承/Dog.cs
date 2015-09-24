@@ -20,7 +20,7 @@ namespace 动物运动会_继承
 		public string Shout()
 		{
 			string resultStr = "";
-			resultStr += "我是" + name + "，";
+			resultStr += "我是" + name + ", ";
 
 			for (int i = 0; i < shoutNum; i++)
 			{
