@@ -17,12 +17,12 @@ namespace 动物运动会
 
 		private void btnShout_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show(Shout());
+			Shout();
 		}
 
-		private string Shout()
+		private void Shout()
 		{
-			return "喵~";
+			MessageBox.Show("喵~");
 		}
 	}
 }
