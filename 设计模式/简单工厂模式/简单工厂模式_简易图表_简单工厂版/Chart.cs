@@ -19,22 +19,9 @@ namespace 简单工厂模式_简易图表_简单工厂版
 		{
 			_g = g;
 			_p = p;
-			//X230 添加
-			//OFFICE 添加
-			//X230 再次添加 
 		}
 
-		public int[] Data
-		{
-			get
-			{
-				return _data;
-			}
-			set
-			{
-				_data = value;
-			}
-		}
+		public int[] Data { get; set; }
 
 		public virtual void Display()
 		{

@@ -4,12 +4,12 @@ using System.Text;
 
 namespace 简单工厂模式_两数计算_简单工厂版
 {
-	internal class OperationFactory
+	class OperationFactory
 	{
-		public static Operation CreateOperate(string operate)
+		public static Operation CreateOperation(string oper)
 		{
 			Operation operation = null;
-			switch (operate)
+			switch (oper)
 			{
 				case "+":
 					operation = new OperationAdd();

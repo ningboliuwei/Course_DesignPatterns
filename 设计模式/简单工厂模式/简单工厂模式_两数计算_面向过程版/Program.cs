@@ -10,31 +10,34 @@ namespace 简单工厂模式_两数计算_面向过程版
 		private static void Main(string[] args)
 		{
 			Console.Write("请输入数字A: ");
-			string A = Console.ReadLine();
+			double numberA = Convert.ToDouble(Console.ReadLine());
 			Console.Write("请选择运算符号(+ - * /): ");
-			string B = Console.ReadLine();
+			string oper = Console.ReadLine();
 			Console.Write("请输入数字B: ");
-			string C = Console.ReadLine();
-			string D = "";
+			double numberB = Convert.ToDouble(Console.ReadLine());
+			double result = 0;
 
-			if (B == "+")
+			if (oper == "+")
 			{
-				D = Convert.ToString(Convert.ToDouble(A) + Convert.ToDouble((C)));
-			}
-			if (B == "-")
-			{
-				D = Convert.ToString(Convert.ToDouble(A) - Convert.ToDouble((C)));
-			}
-			if (B == "*")
-			{
-				D = Convert.ToString(Convert.ToDouble(A) * Convert.ToDouble((C)));
-			}
-			if (B == "/")
-			{
-				D = Convert.ToString(Convert.ToDouble(A) / Convert.ToDouble((C)));
+				result = numberA + numberB;
 			}
 
-			Console.WriteLine("结果是: " + D);
+			if (oper == "-")
+			{
+				result = numberA - numberB;
+			}
+
+			if (oper == "*")
+			{
+				result = numberA * numberB;
+			}
+
+			if (oper == "/")
+			{
+				result = numberA / numberB;
+			}
+
+			Console.WriteLine("结果是: " + result);
 			Console.ReadLine();
 		}
 	}
