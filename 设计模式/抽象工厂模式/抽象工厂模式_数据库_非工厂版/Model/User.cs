@@ -4,34 +4,9 @@ using System.Text;
 
 namespace 抽象工厂模式_数据库_非工厂版
 {
-	internal class User //用户类，只有ID和Name两个字段
+	class User 
 	{
-		private int _id;
-
-		private string _name;
-
-		public int ID
-		{
-			get
-			{
-				return _id;
-			}
-			set
-			{
-				_id = value;
-			}
-		}
-
-		public string Name
-		{
-			get
-			{
-				return _name;
-			}
-			set
-			{
-				_name = value;
-			}
-		}
+		public int ID { get; set; }
+		public string Name { get; set; }
 	}
 }

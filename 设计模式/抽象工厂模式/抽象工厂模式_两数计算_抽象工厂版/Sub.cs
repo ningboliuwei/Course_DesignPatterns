@@ -4,21 +4,12 @@ using System.Text;
 
 namespace 工厂方法模式_两数计算
 {
-	class Operation
+	internal class OperationSub : Operation
 	{
-		public double NumberA
-		{
-			get; set;
-		}
-
-		public double NumberB
-		{
-			get; set;
-		}
-
-		public virtual double GetResult()
+		public override double GetResult()
 		{
 			double result = 0;
+			result = NumberA - NumberB;
 			return result;
 		}
 	}

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace 抽象工厂模式_数据库_抽象工厂_非反射版
 {
-	internal class SqlserverUser : IUser
+	class SqlserverUser : IUser
 	{
 		public void Insert(User user)
 		{
@@ -13,8 +13,9 @@ namespace 抽象工厂模式_数据库_抽象工厂_非反射版
 
 		public User GetUser(int id)
 		{
+			User user = new User();
 			Console.WriteLine("在SQL SERVER中根据ID得到User表一条记录");
-			return null;
+			return user;
 		}
 	}
 }

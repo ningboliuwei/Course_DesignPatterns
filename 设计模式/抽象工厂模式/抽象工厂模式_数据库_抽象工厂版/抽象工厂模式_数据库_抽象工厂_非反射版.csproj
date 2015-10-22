@@ -57,9 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\AccessDepartment.cs" />
-    <Compile Include="Factory\AccessFactory.cs" />
-    <Compile Include="DAL\AccessUser.cs" />
+    <Compile Include="DAL\MysqlDepartment.cs" />
+    <Compile Include="Factory\MysqlFactory.cs" />
+    <Compile Include="DAL\MysqlUser.cs" />
     <Compile Include="Model\Department.cs" />
     <Compile Include="IDAL\IDepartment.cs" />
     <Compile Include="IFactory\IFactory.cs" />

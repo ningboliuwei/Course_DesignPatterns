@@ -241,6 +241,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "命令模式_自定义功�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "简单工厂模式_两数计算_创建大量对象版", "设计模式\简单工厂模式\简单工厂模式_两数计算_创建大量对象版\简单工厂模式_两数计算_创建大量对象版.csproj", "{00F78D23-6BC7-490F-881A-8958C29128BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "抽象工厂模式_两数计算_抽象工厂版", "设计模式\抽象工厂模式\抽象工厂模式_两数计算_抽象工厂版\抽象工厂模式_两数计算_抽象工厂版.csproj", "{4DFAE653-A36F-49CE-AD8B-F642AF32A14A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -647,6 +649,10 @@ Global
 		{00F78D23-6BC7-490F-881A-8958C29128BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00F78D23-6BC7-490F-881A-8958C29128BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00F78D23-6BC7-490F-881A-8958C29128BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFAE653-A36F-49CE-AD8B-F642AF32A14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFAE653-A36F-49CE-AD8B-F642AF32A14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFAE653-A36F-49CE-AD8B-F642AF32A14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFAE653-A36F-49CE-AD8B-F642AF32A14A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -768,6 +774,7 @@ Global
 		{168920EB-76FA-4988-8059-0737728CB7EE} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{2DF2B634-F0CF-420D-86AC-F0493BCBE1B5} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{00F78D23-6BC7-490F-881A-8958C29128BC} = {9D6A5335-CC7B-4933-ABE9-E1CC6095DA37}
+		{4DFAE653-A36F-49CE-AD8B-F642AF32A14A} = {88FE2A47-44D4-4034-AB69-18D638829DB4}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True

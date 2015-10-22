@@ -4,11 +4,11 @@ using System.Text;
 
 namespace 工厂方法模式_两数计算
 {
-	class AddFactory : IOperationFactory
+	internal class MulFactory : IOperationFactory
 	{
 		public Operation CreateOperation()
 		{
-			return new OperationAdd();
+			return new OperationMul();
 		}
 	}
 }
