@@ -1,4 +1,4 @@
-﻿namespace 单例模式_CSharp优雅解决方案
+﻿namespace 单例模式_CSharp优雅解决方案2
 {
     partial class Form1
     {

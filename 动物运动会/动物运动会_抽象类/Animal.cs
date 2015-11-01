@@ -5,7 +5,7 @@ using System.Text;
 
 namespace 动物运动会_抽象类
 {
-	internal abstract class Animal
+	abstract class Animal
 	{
 		protected string name = "";
 

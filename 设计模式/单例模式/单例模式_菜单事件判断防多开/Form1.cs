@@ -20,7 +20,7 @@ namespace 单例模式_菜单事件判断防多开
 			InitializeComponent();
 		}
 
-		private void 工具栏ToolStripMenuItem_Click(object sender, EventArgs e)
+		private void ToolStripMenuItem1_Click(object sender, EventArgs e)
 		{
 			if (ftb == null || ftb.IsDisposed) //关掉工具栏后可以重开
 				//if (ftb == null)//关掉工具栏后无法重开
@@ -41,6 +41,11 @@ namespace 单例模式_菜单事件判断防多开
 				ftb.Parent = this;
 				ftb.Show();
 			} //与菜单项事件完全一样的代码
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			toolStrip1.Visible = true;
 		}
 	}
 }

@@ -34,9 +34,9 @@ namespace 动物运动会_虚方法
 			}
 		}
 
-		public virtual string Shout()
-		{
-			return "";
-		}
-	}
+        public virtual string Shout()
+        {
+            return "";
+        }
+    }
 }

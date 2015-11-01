@@ -17,16 +17,20 @@ namespace 动物运动会_虚方法
 		{
 		}
 
-		public override string Shout()
-		{
-			string resultStr = "";
-			resultStr += "我是" + name + "，";
 
-			for (int i = 0; i < shoutNum; i++)
-			{
-				resultStr += "喵~";
-			}
-			return resultStr;
-		}
-	}
+        public override  string Shout()
+        {
+            string resultStr = "";
+            resultStr += "我是" + name + "，";
+
+            for (int i = 0; i < shoutNum; i++)
+            {
+                resultStr += "喵~";
+            }
+            return resultStr;
+        }
+
+
+       
+    }
 }

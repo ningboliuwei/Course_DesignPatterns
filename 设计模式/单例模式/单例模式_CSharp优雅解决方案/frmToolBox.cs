@@ -9,21 +9,18 @@ using System.Windows.Forms;
 
 namespace 单例模式_CSharp优雅解决方案
 {
-    public partial class frmToolBox : Form
-    {
-        public static readonly frmToolBox _instance = new frmToolBox();
+	public partial class frmToolBox : Form
+	{
+		private static readonly frmToolBox _instance = new frmToolBox();
 
-        private frmToolBox()
-        {
-            InitializeComponent();
-        }
+		private frmToolBox()
+		{
+			InitializeComponent();
+		}
 
-        public static frmToolBox Instance
-        {
-            get { return _instance; }
-        }
-
-
-
-    }
+		public static frmToolBox GetInstance()
+		{
+			return _instance;
+		}
+	}
 }

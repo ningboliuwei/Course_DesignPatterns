@@ -72,7 +72,7 @@
     <Compile Include="GasolineDynamo.cs" />
     <Compile Include="GasolineEngine.cs" />
     <Compile Include="GasolineFactory.cs" />
-    <Compile Include="IFactory.cs" />
+    <Compile Include="Factory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SolarDynamo.cs" />

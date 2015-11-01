@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace 单例模式_CSharp优雅解决方案
+namespace 单例模式_CSharp优雅解决方案2
 {
     public partial class Form1 : Form
     {
@@ -18,12 +18,12 @@ namespace 单例模式_CSharp优雅解决方案
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmToolBox.GetInstance().Show();
+            frmToolBox.Instance.Show();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            frmToolBox.GetInstance().Show();
+            frmToolBox.Instance.Show();
         }
     }
 }

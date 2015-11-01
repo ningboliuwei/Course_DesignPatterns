@@ -4,7 +4,7 @@ using System.Text;
 
 namespace 简单工厂模式_两数计算_引入Operation类版
 {
-	internal class Operation
+	class Operation
 	{
 		public static double GetResult(double numberA, double NumberB, string operate)
 		{

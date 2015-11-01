@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace 简单工厂模式_两数计算_引入继承版
 {
-	internal class Operation
+	class Operation
 	{
 		private double _numberA = 0;
 

@@ -112,29 +112,9 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>126, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGsSURBVFhH7ZbBSgJRFIZPIpILIUHKheEicyYw2vQK0gv0
-        AmG07A2iRwiqpTSTqQsXUVqUkERUptMTtK1VyxYtYrj3dm0OTnKPEngNF37w7Tzz/VRMwoQJYwU/gnlm
-        wYG0xmy4ULTgjBcghR/XC89DxLXhVdggBula8DaSEdyGdSpIiSMywoKZP1mBEGb6IwdsUjEdunn4kr/C
-        fbELAcypjHLAL7cwp/IfA+RPoYg5lYEDCgEhisGhZaXgubhNTmOyl74DrmaFcAypqUW3mf7kbWMbsz7k
-        gNMI+ZBhdZsm563FFUx7kAPqcfIBOuStpRymPcgBd0nyWIf82cxi2oMc0EqTxzrkT5k5THsoA8oh8lCH
-        rmO+Y9ZHGTCiP8COzDFuMOujDLiMkcc6ZG1jD7M+yoBGgjzWIXeMDcz6KAMeF8hjHcoX0SpmfXoGdF69
-        xKEO5UuI8WYijFkfbkGuO6ASJo916DqpF0z2Ir+OZbsDqlHyWIesZZ5gshchYEr+u6z+DBjRK9h9MD54
-        20xjUqUzgh/DGqvFDtl1vKzNerzEG4kdcb8cxdSECeMCwDfSzwtd4CdKRgAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>
