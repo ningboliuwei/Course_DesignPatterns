@@ -20,12 +20,42 @@ namespace 建造者模式_画小人_工厂版
 
 		public void Build()
 		{
-			_g.DrawEllipse(_p, 50, 20, 30, 30); //head
-			_g.DrawEllipse(_p, 45, 50, 40, 50); //body
-			_g.DrawLine(_p, 50, 50, 30, 100); //left arm
-			_g.DrawLine(_p, 80, 50, 100, 100); //right arm
-			_g.DrawLine(_p, 60, 100, 45, 150); //left leg
-			_g.DrawLine(_p, 70, 100, 85, 150); //right leg
+			//----------------以下为画胖小人代码
+			//head
+			_g.DrawEllipse(new Pen(Color.OrangeRed), 50, 20, 30, 30);
+
+			//body
+			_g.FillEllipse(new SolidBrush(Color.SandyBrown), 50, 50, 30, 50);
+
+			//left arm
+			_g.TranslateTransform(50, 50);
+			_g.RotateTransform(45);
+			_g.FillEllipse(new SolidBrush(Color.DarkRed), 0, 0, 10, 40);
+			_g.ResetTransform();
+			//left arm end
+
+			//right arm
+			_g.TranslateTransform(70, 60);
+			_g.RotateTransform(290);
+			_g.FillEllipse(new SolidBrush(Color.DarkRed), 0, 0, 10, 40);
+			_g.ResetTransform();
+			//right arm end
+
+
+			//left leg
+			_g.TranslateTransform(60, 100);
+			_g.RotateTransform(20);
+			_g.FillEllipse(new SolidBrush(Color.Navy), 0, 0, 10, 60);
+			_g.ResetTransform();
+			//left leg end
+
+			//right leg
+			_g.TranslateTransform(65, 100);
+			_g.RotateTransform(320);
+			_g.FillEllipse(new SolidBrush(Color.Navy), 0, 0, 10, 60);
+			_g.ResetTransform();
+			//right leg end
+			//----------------以上为画胖小人代码
 		}
 	}
 }
