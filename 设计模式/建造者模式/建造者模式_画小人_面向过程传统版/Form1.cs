@@ -33,9 +33,6 @@ namespace 建造者模式_画小人_面向过程传统版
 			gThin.ResetTransform();
 			//left arm end
 
-			//body
-			gThin.FillRectangle(new SolidBrush(Color.SandyBrown), 60, 50, 10, 50);
-
 			//right arm
 			gThin.TranslateTransform(70, 55);
 			gThin.RotateTransform(290);
@@ -57,7 +54,6 @@ namespace 建造者模式_画小人_面向过程传统版
 			gThin.ResetTransform();
 			//right leg end
 			//----------------以上为画瘦小人代码
-
 
 			//----------------以下为画胖小人代码
 			//			Graphics gFat = pictureBox1.CreateGraphics();
