@@ -17,7 +17,7 @@ namespace 动物运动会_抽象类
 		{
 		}
 
-		protected override string getShoutSound()
+		protected override string GetShoutSound()
 		{
 			return "汪~";
 		}

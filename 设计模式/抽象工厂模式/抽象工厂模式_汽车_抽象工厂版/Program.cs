@@ -9,9 +9,9 @@ namespace 抽象工厂模式_汽车_抽象工厂版
     {
         private static void Main(string[] args)
         {
-        	//创建太阳能工厂对象，用于生产太阳能汽车所需的引擎与发电机
+            //创建太阳能工厂对象，用于生产太阳能汽车所需的发动机与发电机
             IFactory factory = new SolarFactory();
-            //如需生产汽油汽车所需的引擎与发电机，则将对象改为GasolineFactory
+            //如需生产汽油汽车所需的发动机与发电机，则将对象改为GasolineFactory
             //IFactory factory = new GasolineFactory();
 
             Car car1 = new Car();

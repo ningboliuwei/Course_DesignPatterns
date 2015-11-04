@@ -26,26 +26,27 @@ namespace 简单工厂模式_简易图表_简单工厂版
 
 		private void Form1_Click(object sender, EventArgs e)
 		{
-			Graphics g = this.CreateGraphics();
-			Pen p = new Pen(Color.Maroon);
-
-			g.Clear(Color.LightBlue);
-
-			Chart chart;
-
-			chart = ChartFactory.CreateChart(comboBox1.Text, g, p);
-			//chart.Data = new int[]{100,400,300,500,200};
-			//chart.Data = new int[] { 300, 200, 400, 500, 100 };
-			string[] content = textBox1.Text.Split(',');
-
-			chart.Data = new int[content.Length];
-
-			for (int i = 0; i < content.Length; i++)
+			using (Graphics g = this.CreateGraphics())
 			{
-				chart.Data[i] = Convert.ToInt32(content[i]);
-			}
+				Pen p = new Pen(Color.Maroon);
 
-			chart.Display();
+				g.Clear(Color.LightBlue);
+
+				Chart chart;
+
+				chart = ChartFactory.CreateChart(cmbChartType.Text, g, p);
+				//chart.Data = new int[]{100,400,300,500,200};
+				//chart.Data = new int[] { 300, 200, 400, 500, 100 };
+				//以下代码为用户输入
+
+				string[] content = txtData.Text.Split(',');
+				chart.Data = new int[content.Length];
+				for (int i = 0; i < content.Length; i++)
+				{
+					chart.Data[i] = Convert.ToInt32(content[i]);
+				}
+				chart.Display();
+			}
 		}
 	}
 }

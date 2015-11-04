@@ -19,19 +19,21 @@ namespace 动物运动会
 			InitializeComponent();
 		}
 
-		private void btnShout_Click(object sender, EventArgs e)
+		private void btnRegister_Click(object sender, EventArgs e)
 		{
 			arrayAnimal = new Animal[5];
 
-			// arrayAnimal[0] = new Cat("叮当");
-			arrayAnimal[0] = new Animal();
+			arrayAnimal[0] = new Cat("叮当");
 			arrayAnimal[1] = new Dog("小白");
 			arrayAnimal[2] = new Dog("旺财");
 			arrayAnimal[3] = new Cat("加菲");
 			arrayAnimal[4] = new Dog("古菲");
+
+			//第一行若这么写会如何
+			//arrayAnimal[0] = new Animal();
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void btnShout_Click(object sender, EventArgs e)
 		{
 			foreach (Animal animal in arrayAnimal)
 			{

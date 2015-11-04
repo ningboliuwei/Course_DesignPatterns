@@ -28,6 +28,7 @@ namespace 动物运动会
 		{
 			//狗叫
 			Dog dog = new Dog("旺财");
+			//dog.ShoutNum = 5;
 			MessageBox.Show(dog.Shout());
 		}
 	}

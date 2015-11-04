@@ -34,6 +34,7 @@ namespace 动物运动会_虚方法
 			}
 		}
 
+		//此处若不加 virtual 关键字会如何？
         public virtual string Shout()
         {
             return "";

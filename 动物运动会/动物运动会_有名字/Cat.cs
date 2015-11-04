@@ -21,7 +21,7 @@ namespace 动物运动会_有名字
 
 		public string Shout()
 		{
-			return "我是" + name + "，喵~";
+			return "我是" + name + ", 喵~";
 		}
 	}
 }

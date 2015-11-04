@@ -41,21 +41,17 @@ namespace 动物运动会_抽象类
 
 			for (int i = 0; i < shoutNum; i++)
 			{
-				resultStr += getShoutSound();
+				resultStr += this.GetShoutSound();
 			}
 			return resultStr;
 		}
 
-		protected abstract string getShoutSound();
-
-		protected string getShoutSound2()
+		protected virtual string GetShoutSound()
 		{
-			object o = 123;
-			int i = (int)o;
-
 			return "";
 		}
 
+	
 		//抽象类Animal中的成员被部分实现（抽象类中不是所有的成员都是抽象方法）
 	}
 }
