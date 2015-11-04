@@ -8,7 +8,12 @@ namespace 建造者模式_画小人_建造者模式版
 {
     class ThinRightArm:Part
     {
-        protected override void Show()
+		public ThinRightArm(Graphics g) : base(g)
+	    {
+
+		}
+
+		public override void Show()
         {
             _g.TranslateTransform(70, 55);
             _g.RotateTransform(290);

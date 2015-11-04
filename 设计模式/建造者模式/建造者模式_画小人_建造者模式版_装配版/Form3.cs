@@ -17,9 +17,9 @@ namespace 建造者模式_画小人_建造者模式_装配版
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            PersonThinBuilder thinBuilder = new PersonThinBuilder(pictureBox1.CreateGraphics(), new Pen(Color.Magenta));
+            PersonThinBuilder thinBuilder = new PersonThinBuilder(pictureBox1.CreateGraphics());
             PersonDirector thinDirector = new PersonDirector(thinBuilder);
-            thinDirector.CreatePerson(); //创建瘦小人
+            thinDirector.CreatePerson().Show(); //创建瘦小人
 
             //			  PersonFatBuilder fatBuilder = new PersonFatBuilder(pictureBox1.CreateGraphics(), new Pen(Color.Magenta));
             //            PersonDirector  fatDirector = new PersonDirector(fatBuilder);

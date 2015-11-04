@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using 建造者模式_画小人_建造者模式版;
 
 namespace 建造者模式_画小人_建造者模式_装配版
 {
 	internal class PersonDirector
 	{
-		private PersonBuilder _pb;
+		private PersonBuilder _builder;
 
-		public PersonDirector(PersonBuilder pb)
+		public PersonDirector(PersonBuilder builder)
 		{
-			_pb = pb;
+			_builder = builder;
 		}
 
-		public void CreatePerson()
+		public Person CreatePerson()
 		{
-			_pb.BuildHead();
-			_pb.BuildBody();
-            _pb.BuildLeftArm();
-			_pb.BuildRightArm();
-			_pb.BuildLeftLeg();
-			_pb.BuildRightLeg();
+			_builder.BuildHead();
+			_builder.BuildBody();
+            _builder.BuildLeftArm();
+			_builder.BuildRightArm();
+			_builder.BuildLeftLeg();
+			_builder.BuildRightLeg();
+
+			return _builder.GetPerson();
 		}
 	}
 }

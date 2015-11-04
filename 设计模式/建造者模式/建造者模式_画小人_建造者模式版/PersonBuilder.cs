@@ -9,12 +9,10 @@ namespace 建造者模式_画小人_建造者模式版
 	{
 		protected Graphics _g;
 
-		protected Pen _p;
 
-		public PersonBuilder(Graphics g, Pen p)
+		public PersonBuilder(Graphics g)
 		{
 			_g = g;
-			_p = p;
 		}
 
 		public abstract void BuildHead();

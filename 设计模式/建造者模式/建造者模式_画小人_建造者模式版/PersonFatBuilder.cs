@@ -7,14 +7,14 @@ namespace 建造者模式_画小人_建造者模式版
 {
 	internal class PersonFatBuilder : PersonBuilder
 	{
-		public PersonFatBuilder(Graphics g, Pen p)
-			: base(g, p)
+		public PersonFatBuilder(Graphics g)
+			: base(g)
 		{
 		}
 
 		public override void BuildHead()
 		{
-            _g.DrawEllipse(_p, 50, 20, 30, 30);
+            _g.DrawEllipse(new Pen(Color.OrangeRed), 50, 20, 30, 30);
         }
 
 		public override void BuildBody()

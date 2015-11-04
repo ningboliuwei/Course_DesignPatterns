@@ -2,56 +2,46 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
+using 建造者模式_画小人_建造者模式版;
 
 namespace 建造者模式_画小人_建造者模式_装配版
 {
 	internal class PersonFatBuilder : PersonBuilder
 	{
-		public PersonFatBuilder(Graphics g, Pen p)
-			: base(g, p)
+        public PersonFatBuilder(Graphics g) : base(g)
 		{
+			_g = g;
 		}
 
 		public override void BuildHead()
 		{
-            _g.DrawEllipse(_p, 50, 20, 30, 30);
-        }
+			_person.AddPart(new ThinHead(_g));
+		}
 
 		public override void BuildBody()
 		{
-            _g.FillEllipse(new SolidBrush(Color.SandyBrown), 50, 50, 30, 50);
-        }
+			_person.AddPart(new ThinBody(_g));
 
-        public override void BuildLeftArm()
-       {
-            _g.TranslateTransform(50, 50);
-            _g.RotateTransform(45);
-            _g.FillEllipse(new SolidBrush(Color.DarkRed), 0, 0, 10, 40);
-            _g.ResetTransform();
-        }
+		}
 
-        public override void BuildRightArm()
+		public override void BuildLeftArm()
 		{
-            _g.TranslateTransform(70, 60);
-            _g.RotateTransform(290);
-            _g.FillEllipse(new SolidBrush(Color.DarkRed), 0, 0, 10, 40);
-            _g.ResetTransform();
-        }
+			_person.AddPart(new ThinLeftArm(_g));
+		}
 
-        public override void BuildLeftLeg()
+		public override void BuildRightArm()
 		{
-            _g.TranslateTransform(60, 100);
-            _g.RotateTransform(20);
-            _g.FillEllipse(new SolidBrush(Color.Navy), 0, 0, 10, 60);
-            _g.ResetTransform();
-        }
+			_person.AddPart(new ThinRightArm(_g));
+		}
 
-        public override void BuildRightLeg()
+		public override void BuildLeftLeg()
 		{
-            _g.TranslateTransform(65, 100);
-            _g.RotateTransform(320);
-            _g.FillEllipse(new SolidBrush(Color.Navy), 0, 0, 10, 60);
-            _g.ResetTransform();
-        }
-    }
+			_person.AddPart(new ThinLeftLeg(_g));
+		}
+
+		public override void BuildRightLeg()
+		{
+			_person.AddPart(new ThingRightLeg(_g));
+		}
+	}
 }
