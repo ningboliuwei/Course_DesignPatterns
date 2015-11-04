@@ -4,23 +4,23 @@ using System.Text;
 
 namespace 建造者模式_画小人_建造者模式_单小人版
 {
-	internal class PersonDirector
+	class PersonDirector
 	{
-		private PersonBuilder _pb;
+		private PersonBuilder _builder;
 
-		public PersonDirector(PersonBuilder pb)
+		public PersonDirector(PersonBuilder builder)
 		{
-			_pb = pb;
+			_builder = builder;
 		}
 
 		public void CreatePerson()
 		{
-			_pb.BuildHead();
-			_pb.BuildBody();
-			_pb.BuildLeftArm();
-			_pb.BuildRightArm();
-			_pb.BuildLeftLeg();
-			_pb.BuildRightLeg();
+			_builder.BuildHead();
+			_builder.BuildBody();
+			_builder.BuildLeftArm();
+			_builder.BuildRightArm();
+			_builder.BuildLeftLeg();
+			_builder.BuildRightLeg();
 		}
 	}
 }

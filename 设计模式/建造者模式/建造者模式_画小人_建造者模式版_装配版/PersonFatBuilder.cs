@@ -6,7 +6,7 @@ using 建造者模式_画小人_建造者模式版;
 
 namespace 建造者模式_画小人_建造者模式_装配版
 {
-    internal class PersonFatBuilder : PersonBuilder
+    class PersonFatBuilder : PersonBuilder
     {
         public PersonFatBuilder(Graphics g) : base(g)
         {

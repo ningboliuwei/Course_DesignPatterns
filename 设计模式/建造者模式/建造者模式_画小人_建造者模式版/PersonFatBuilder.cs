@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace 建造者模式_画小人_建造者模式版
 {
-	internal class PersonFatBuilder : PersonBuilder
+	class PersonFatBuilder : PersonBuilder
 	{
 		public PersonFatBuilder(Graphics g)
 			: base(g)
