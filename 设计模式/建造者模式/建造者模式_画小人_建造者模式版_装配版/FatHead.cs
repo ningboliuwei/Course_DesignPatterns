@@ -6,15 +6,15 @@ using System.Text;
 
 namespace 建造者模式_画小人_建造者模式版
 {
-    class ThinBody : Part
+    class FatHead : Part
     {
-        public ThinBody(Graphics g) : base(g)
+        public FatHead(Graphics g) : base(g)
         {
         }
 
         public override void Show()
         {
-            _g.FillRectangle(new SolidBrush(Color.SandyBrown), 60, 50, 10, 50);
+            _g.DrawEllipse(new Pen(Color.OrangeRed), 50, 15, 30, 30);
         }
     }
 }

@@ -12,10 +12,10 @@ namespace 建造者模式_画小人_建造者模式版
 
         protected Pen _p;
 
-	    public Part(Graphics g)
-	    {
-		    _g = g;
-	    }
+        public Part(Graphics g)
+        {
+            _g = g;
+        }
 
         public abstract void Show();
     }

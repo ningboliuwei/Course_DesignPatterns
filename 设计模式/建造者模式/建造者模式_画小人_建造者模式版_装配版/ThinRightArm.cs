@@ -6,14 +6,13 @@ using System.Text;
 
 namespace 建造者模式_画小人_建造者模式版
 {
-    class ThinRightArm:Part
+    class ThinRightArm : Part
     {
-		public ThinRightArm(Graphics g) : base(g)
-	    {
+        public ThinRightArm(Graphics g) : base(g)
+        {
+        }
 
-		}
-
-		public override void Show()
+        public override void Show()
         {
             _g.TranslateTransform(70, 55);
             _g.RotateTransform(290);

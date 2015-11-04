@@ -6,17 +6,17 @@ using System.Text;
 
 namespace 建造者模式_画小人_建造者模式版
 {
-    class ThinLeftArm : Part
+    class ThinRightLeg : Part
     {
-        public ThinLeftArm(Graphics g) : base(g)
+        public ThinRightLeg(Graphics g) : base(g)
         {
         }
 
         public override void Show()
         {
-            _g.TranslateTransform(60, 50);
-            _g.RotateTransform(45);
-            _g.FillRectangle(new SolidBrush(Color.DarkRed), 0, 0, 5, 40);
+            _g.TranslateTransform(65, 100);
+            _g.RotateTransform(320);
+            _g.FillRectangle(new SolidBrush(Color.Navy), 0, 0, 5, 60);
             _g.ResetTransform();
         }
     }
