@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace 建造者模式_画小人_建造者模式版
+namespace 建造者模式_画小人_建造者模式_装配版
 {
     public partial class Form3 : Form
     {
