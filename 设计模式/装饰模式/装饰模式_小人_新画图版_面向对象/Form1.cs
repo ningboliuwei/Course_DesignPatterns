@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 using 装饰模式;
 
-namespace 装饰模式_小人_画图版
+namespace 装饰模式_小人_新画图版_面向对象
 {
 	public partial class Form1 : Form
 	{

@@ -20,17 +20,17 @@ namespace 建造者模式_画小人_建造者模式_装配版
 
         public override void BuildBody()
         {
-            _person.AddPart(new ThinBody(_g));
+            _person.AddPart(new FatBody(_g));
         }
 
         public override void BuildLeftArm()
         {
-            _person.AddPart(new FatLeftArm(_g));
+            _person.AddPart(new ThinLeftArm(_g));
         }
 
         public override void BuildRightArm()
         {
-            _person.AddPart(new FatRightArm(_g));
+            _person.AddPart(new ThinRightArm(_g));
         }
 
         public override void BuildLeftLeg()
