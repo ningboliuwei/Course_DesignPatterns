@@ -16,7 +16,7 @@ namespace 装饰模式_小人_新画图版_装饰模式_双人版
 
 		public override void Show()
 		{
-			#region 画瘦小人代码
+			#region 画胖小人代码
 
 			//head
 			_g.DrawEllipse(new Pen(Color.OrangeRed, 2), 50, 20, 45, 45);
