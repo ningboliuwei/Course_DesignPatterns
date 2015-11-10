@@ -29,8 +29,6 @@
 		private void InitializeComponent()
 		{
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -44,48 +42,24 @@
 			this.pictureBox1.TabStop = false;
 			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-			this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(317, 18);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(62, 18);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "label1";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(317, 54);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(17, 18);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "1";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(426, 393);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureBox1);
 			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
 	}
 }
 

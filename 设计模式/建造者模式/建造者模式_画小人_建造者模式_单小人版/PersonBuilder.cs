@@ -5,7 +5,7 @@ using System.Text;
 
 namespace 建造者模式_画小人_建造者模式_单小人版
 {
-	internal abstract class PersonBuilder
+	abstract class PersonBuilder
 	{
 		protected Graphics _g;
 

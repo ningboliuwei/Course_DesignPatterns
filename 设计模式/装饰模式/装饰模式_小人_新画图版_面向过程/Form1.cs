@@ -62,8 +62,8 @@ namespace 装饰模式_小人_新画图版_面向过程
 			#region 各类服饰
 
 			//hat
-//			gThin.FillPie(new SolidBrush(Color.DarkBlue), 50, 20, 45, 35, 180, 180);
-//			gThin.DrawLine(new Pen(Color.DarkBlue, 3), 50, 37, 120, 35);
+			//			gThin.FillPie(new SolidBrush(Color.DarkBlue), 50, 20, 45, 35, 180, 180);
+			//			gThin.DrawLine(new Pen(Color.DarkBlue, 3), 50, 37, 120, 35);
 			//hat end
 
 			//shorts
@@ -126,21 +126,38 @@ namespace 装饰模式_小人_新画图版_面向过程
 
 			//pants end
 
+			//jacket
+			gThin.FillPolygon(
+				new SolidBrush(Color.Black),
+				new Point[]
+				{
+					new Point(63, 70), new Point(27, 104), new Point(37, 111), new Point(63, 84), new Point(63, 135),
+					new Point(83, 135), new Point(83, 81), new Point(126, 98), new Point(131, 86), new Point(83, 68)
+				});
+			//jacket end
+
+			//tie
+			gThin.FillPolygon(
+				new SolidBrush(Color.IndianRed),
+				new Point[]
+				{
+					new Point(71, 73), new Point(67, 118), new Point(71, 130), new Point(75, 116), new Point(73, 72)
+				});
+
+			//tie end
+
 			#endregion
 		}
 
-		private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
-		{
-			//label1.Text = e.X + "," + e.Y;
-		}
+		static string s = "";
 
 		private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
 		{
-//			if (e.Button == MouseButtons.Right)
-//			{
-//				label2.Text += string.Format("new Point({0},{1}),", e.X, e.Y);
-//			}
-//			Clipboard.SetText(label2.Text);
+			if (e.Button == MouseButtons.Right)
+			{
+				s += string.Format("new Point({0},{1}),", e.X, e.Y);
+				Clipboard.SetText(s);
+			}
 		}
 	}
 }
