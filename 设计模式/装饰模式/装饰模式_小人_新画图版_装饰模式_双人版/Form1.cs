@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 
 
-namespace 装饰模式_小人_新画图版_装饰模式
+namespace 装饰模式_小人_新画图版_装饰模式_双人版
 {
 	public partial class Form1 : Form
 	{
@@ -22,7 +22,7 @@ namespace 装饰模式_小人_新画图版_装饰模式
 
 			#region 基本形象
 
-			Person person = new PersonThin(g);
+			Person person = new PersonFat(g);
 			person.Show();
 
 			#endregion
