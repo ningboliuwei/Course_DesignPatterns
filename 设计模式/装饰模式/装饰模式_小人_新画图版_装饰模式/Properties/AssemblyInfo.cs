@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 控制。更改这些属性值可修改
 // 与程序集关联的信息。
 
-[assembly: AssemblyTitle("装饰模式_小人_新画图版_面向对象")]
+[assembly: AssemblyTitle("装饰模式_小人_新画图版_装饰模式")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("装饰模式_小人_新画图版_面向对象")]
+[assembly: AssemblyProduct("装饰模式_小人_新画图版_装饰模式")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

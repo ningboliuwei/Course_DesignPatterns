@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace 装饰模式_小人_新画图版_面向对象
+namespace 装饰模式_小人_新画图版_装饰模式
 {
 	internal static class Program
 	{
