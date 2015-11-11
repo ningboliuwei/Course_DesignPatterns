@@ -15,11 +15,11 @@ namespace 装饰模式_增加属性_坦克大战
 
 			if (HealthPower > 0)
 			{
-				Console.WriteLine("坦克受到攻击，HP减{0}，还有{1}", damagePerAttack, HealthPower);
+				Console.WriteLine("坦克受到攻击，HP减{0}，仍有{1}", damagePerAttack, HealthPower);
 			}
 			else
 			{
-				Console.WriteLine("坦克被击毁");
+				Console.WriteLine("坦克受到攻击，被击毁");
 			}
 		}
 

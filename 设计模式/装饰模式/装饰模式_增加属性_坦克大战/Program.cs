@@ -18,9 +18,7 @@ namespace 装饰模式_增加属性_坦克大战
 
 
 			Console.WriteLine("[吃了护盾]");
-			Shield shield = new Shield();
-			shield.Decorate(tank); //加护盾
-
+			Shield shield = new Shield(tank);
 
 			shield.BeAttacked();
 			shield.BeAttacked();
@@ -35,21 +33,23 @@ namespace 装饰模式_增加属性_坦克大战
 			tank.Move(); //没吃船之前的移动
 
 			Console.WriteLine("[吃了船]");
-			Boat boat = new Boat();
-			boat.Decorate(shield);
+			Boat boat = new Boat(shield);
 			boat.Move(); //吃了船之后的移动
 
 			Console.WriteLine("[船的时间到了]");
-			boat.LeftTime = 0;
-			boat.Move(); //船消失之后的移动
-
 			boat.LeftTime = -1;
 			boat.Move(); //船消失之后的移动
 
-			//for (int i = 0; i < 5; i++)
-			//{
-			//	boat.BeAttacked();
-			//}
+			Console.WriteLine("[吃了钟]");
+			Clock clock = new Clock(boat);
+			clock.Move();
+
+			Console.WriteLine("[冻结的时间到了]");
+			clock.LeftTime = -1;
+			clock.Move();
+
+			clock.BeAttacked();
+			clock.BeAttacked();
 
 			Console.ReadLine();
 		}

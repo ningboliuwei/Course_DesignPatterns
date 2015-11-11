@@ -8,17 +8,22 @@ namespace 装饰模式_增加属性_坦克大战
 	{
 		public int ShieldPower { get; set; } = 100;
 
+		public Shield(Tank tank) : base(tank)
+		{
+			
+		}
+
 		public override void BeAttacked()
 		{
-			const int DAMAGE_PER_ATTACK = 20;
-			ShieldPower = ShieldPower - DAMAGE_PER_ATTACK;
+			const int damagePerAttack = 20;
+			ShieldPower = ShieldPower - damagePerAttack;
 			if (ShieldPower > 0)
 			{
-				Console.WriteLine("受到攻击，护盾-{0}，为{1}，坦克未受损害", DAMAGE_PER_ATTACK, ShieldPower);
+				Console.WriteLine("坦克受到攻击，护盾减{0}，仍有{1}，坦克未受损害", damagePerAttack, ShieldPower);
 			}
 			else if (ShieldPower == 0)
 			{
-				Console.WriteLine("受到攻击，护盾-{0}，为0，护盾消失，坦克未受损害", DAMAGE_PER_ATTACK);
+				Console.WriteLine("坦克受到攻击，护盾减{0}，护盾消失，坦克未受损害", damagePerAttack);
 			}
 			else
 			{

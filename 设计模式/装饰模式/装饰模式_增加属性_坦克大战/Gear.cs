@@ -8,7 +8,7 @@ namespace 装饰模式_增加属性_坦克大战
 	{
 		private Tank _tank;
 
-		public void Decorate(Tank tank)
+		public Gear(Tank tank)
 		{
 			_tank = tank;
 		}
