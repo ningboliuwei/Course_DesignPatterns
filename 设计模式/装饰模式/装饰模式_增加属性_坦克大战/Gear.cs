@@ -10,23 +10,17 @@ namespace 装饰模式_增加属性_坦克大战
 
 		public void Decorate(Tank tank)
 		{
-			this._tank = tank;
+			_tank = tank;
 		}
 
 		public override void BeAttacked()
 		{
-			if (this._tank != null)
-			{
-				this._tank.BeAttacked();
-			}
+			_tank.BeAttacked();
 		}
 
 		public override void Move()
 		{
-			if (this._tank != null)
-			{
-				this._tank.Move();
-			}
+			_tank.Move();
 		}
 	}
 }

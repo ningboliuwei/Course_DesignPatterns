@@ -6,19 +6,7 @@ namespace 装饰模式_增加属性_坦克大战
 {
 	internal class Shield : Gear
 	{
-		private int _shieldPower = 100;
-
-		public int ShieldPower
-		{
-			get
-			{
-				return this._shieldPower;
-			}
-			set
-			{
-				this._shieldPower = value;
-			}
-		}
+		public int ShieldPower { get; set; } = 100;
 
 		public override void BeAttacked()
 		{

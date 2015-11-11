@@ -6,28 +6,16 @@ namespace 装饰模式_增加属性_坦克大战
 {
 	internal class Tank
 	{
-		private int _HP = 100;
-
-		public int HP
-		{
-			get
-			{
-				return this._HP;
-			}
-			set
-			{
-				this._HP = value;
-			}
-		}
+		public int HealthPower { get; set; } = 100;
 
 		public virtual void BeAttacked()
 		{
-			const int DAMAGE_PER_ATTACK = 20;
-			HP = HP - DAMAGE_PER_ATTACK;
+			const int damagePerAttack = 20;
+			HealthPower = HealthPower - damagePerAttack;
 
-			if (HP > 0)
+			if (HealthPower > 0)
 			{
-				Console.WriteLine("坦克受到攻击，HP减{0}，还有{1}", DAMAGE_PER_ATTACK, HP);
+				Console.WriteLine("坦克受到攻击，HP减{0}，还有{1}", damagePerAttack, HealthPower);
 			}
 			else
 			{
