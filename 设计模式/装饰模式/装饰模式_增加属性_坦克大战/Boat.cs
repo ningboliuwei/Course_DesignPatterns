@@ -1,24 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace 装饰模式_增加属性_坦克大战
 {
 	internal class Boat : Gear
 	{
-		private int _leftTime = 60;
-
-		public int LeftTime
-		{
-			get
-			{
-				return this._leftTime;
-			}
-			set
-			{
-				this._leftTime = value;
-			}
-		}
+		public int LeftTime { get; set; } = 60;
 
 		public override void Move()
 		{
