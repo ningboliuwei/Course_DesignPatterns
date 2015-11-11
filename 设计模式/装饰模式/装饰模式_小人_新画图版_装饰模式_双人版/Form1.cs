@@ -22,51 +22,51 @@ namespace 装饰模式_小人_新画图版_装饰模式_双人版
 
 			#region 基本形象
 
-			Person person = new PersonFat(g);
+			Person person = new PersonThin(g);
 			person.Show();
 
 			#endregion
 
-//			#region 正式装扮
-//
-//			Pants pants = new Pants(g);
-//			pants.Decorate(person);
-//			pants.Show();
-//
-//			Jacket jacket = new Jacket(g);
-//			jacket.Decorate(person);
-//			jacket.Show();
-//
-//			Tie tie = new Tie(g);
-//			tie.Decorate(pants);
-//			tie.Show();
-//
-//
-//			Shoes shoes = new Shoes(g);
-//			shoes.Decorate(pants);
-//			shoes.Show();
-//
-//			#endregion
+			#region 正式装扮
 
-			#region 休闲装扮
+			Pants pants = new Pants(g);
+			pants.Decorate(person);
+			pants.Show();
 
-			Shirt shirt = new Shirt(g);
-			shirt.Decorate(person);
-			shirt.Show();
+			Jacket jacket = new Jacket(g);
+			jacket.Decorate(pants);
+			jacket.Show();
 
-			Shorts shorts = new Shorts(g);
-			shorts.Decorate(shirt);
-			shorts.Show();
+			Tie tie = new Tie(g);
+			tie.Decorate(jacket);
+			tie.Show();
 
-			Hat hat = new Hat(g);
-			hat.Decorate(shorts);
-			hat.Show();
 
-			Sneakers sneakers = new Sneakers(g);
-			sneakers.Decorate(hat);
-			sneakers.Show();
+			Shoes shoes = new Shoes(g);
+			shoes.Decorate(tie);
+			shoes.Show();
 
 			#endregion
+
+//			#region 休闲装扮
+//
+//			Shirt shirt = new Shirt(g);
+//			shirt.Decorate(person);
+//			shirt.Show();
+//
+//			Shorts shorts = new Shorts(g);
+//			shorts.Decorate(shirt);
+//			shorts.Show();
+//
+//			Hat hat = new Hat(g);
+//			hat.Decorate(shorts);
+//			hat.Show();
+//
+//			Sneakers sneakers = new Sneakers(g);
+//			sneakers.Decorate(hat);
+//			sneakers.Show();
+//
+//			#endregion
 		}
 
 		static string s = "";
