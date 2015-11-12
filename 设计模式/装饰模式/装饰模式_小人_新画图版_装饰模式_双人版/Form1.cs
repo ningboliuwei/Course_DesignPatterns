@@ -23,7 +23,6 @@ namespace 装饰模式_小人_新画图版_装饰模式_双人版
 			#region 基本形象
 
 			Person person = new PersonThin(g);
-			person.Show();
 
 			#endregion
 
@@ -31,16 +30,12 @@ namespace 装饰模式_小人_新画图版_装饰模式_双人版
 
 			Pants pants = new Pants(g);
 			pants.Decorate(person);
-			pants.Show();
 
 			Jacket jacket = new Jacket(g);
 			jacket.Decorate(pants);
-			jacket.Show();
 
 			Tie tie = new Tie(g);
 			tie.Decorate(jacket);
-			tie.Show();
-
 
 			Shoes shoes = new Shoes(g);
 			shoes.Decorate(tie);
@@ -50,20 +45,37 @@ namespace 装饰模式_小人_新画图版_装饰模式_双人版
 
 //			#region 休闲装扮
 //
-//			Shirt shirt = new Shirt(g);
-//			shirt.Decorate(person);
-//			shirt.Show();
+			//			Shirt shirt = new Shirt(g);
+			//			shirt.Decorate(person);
+			//
+			//			Shorts shorts = new Shorts(g);
+			//			shorts.Decorate(shirt);
+			//
+			//			Hat hat = new Hat(g);
+			//			hat.Decorate(shorts);
+			//
+			//			Sneakers sneakers = new Sneakers(g);
+			//			sneakers.Decorate(hat);
+			//			sneakers.Show();
 //
-//			Shorts shorts = new Shorts(g);
-//			shorts.Decorate(shirt);
-//			shorts.Show();
+//			#endregion
+
+//			#region 混搭装扮
+//
+//			Pants pants = new Pants(g);
+//			pants.Decorate(person);
+//
+//			Shirt shirt = new Shirt(g);
+//			shirt.Decorate(pants);
 //
 //			Hat hat = new Hat(g);
-//			hat.Decorate(shorts);
-//			hat.Show();
+//			hat.Decorate(shirt);
+//
+//			Tie tie = new Tie(g);
+//			tie.Decorate(hat);
 //
 //			Sneakers sneakers = new Sneakers(g);
-//			sneakers.Decorate(hat);
+//			sneakers.Decorate(tie);
 //			sneakers.Show();
 //
 //			#endregion

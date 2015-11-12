@@ -4,7 +4,7 @@ using System.Text;
 
 namespace 装饰模式_增加属性_坦克大战
 {
-	internal class Shield : Gear
+	class Shield : Gear
 	{
 		public int ShieldPower { get; set; } = 100;
 
