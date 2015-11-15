@@ -34,6 +34,8 @@ namespace 工厂方法模式_汽车
 			Console.WriteLine("Please input engine type: Gasoline/Solar/Nuclear");
 			string engineType = Console.ReadLine();
 
+			
+
 			//EngineFactory engineFactory = new SolarEngineFactory();
 			//EngineFactory engineFactory = new GasonlineEngineFactory();
 			EngineFactory engineFactory = new NuclearEngineFactory();
