@@ -2,7 +2,7 @@
 
 namespace 装饰模式_增加属性_坦克大战
 {
-	internal class Boat : Gear
+	class Boat : Gear
 	{
 		public int LeftTime { get; set; } = 60;
 

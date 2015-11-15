@@ -4,7 +4,7 @@ using System.Text;
 
 namespace 装饰模式_增加属性_坦克大战
 {
-	internal class Tank
+	class Tank
 	{
 		public int HealthPower { get; set; } = 100;
 
