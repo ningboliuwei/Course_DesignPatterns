@@ -1,22 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace 策略模式_输出数组_反射
 {
-	internal class OutputFileContext
+	class OutputFileContext
 	{
-		private IOutputFile m_outputFile;
+		private IOutputFileStrategy _outputFileStrategy;
 
-		public OutputFileContext(IOutputFile outputFile)
+		public OutputFileContext(IOutputFileStrategy outputFileStrategy)
 		{
-			m_outputFile = outputFile;
+			_outputFileStrategy = outputFileStrategy;
 		}
 
-		public void OutputFile(string[] data)
+		public void SaveFile(string[] data)
 		{
-			m_outputFile.OutputFile(data);
+			_outputFileStrategy.OutputFile(data);
+		}
+
+		public static IOutputFileStrategy GetStrategy()
+		{
+			string configPath = Environment.CurrentDirectory + "\\config.txt";
+			string strategyString = File.ReadAllText(configPath);
+
+			return Assembly.Load("策略模式_输出数组_反射")
+					.CreateInstance($"策略模式_输出数组_反射.Output{strategyString}FileStrategy") as IOutputFileStrategy;
 		}
 	}
 }
