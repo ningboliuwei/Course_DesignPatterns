@@ -75,11 +75,11 @@
     <Compile Include="Caculator.Designer.cs">
       <DependentUpon>Caculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="CashContext.cs" />
-    <Compile Include="CashDiscount.cs" />
-    <Compile Include="CashNormal.cs" />
-    <Compile Include="CashReturn.cs" />
-    <Compile Include="CashSuper.cs" />
+    <Compile Include="CaculatorContext.cs" />
+    <Compile Include="CaculatorDiscount.cs" />
+    <Compile Include="CaculatorNormal.cs" />
+    <Compile Include="CaculatorReturn.cs" />
+    <Compile Include="ICaculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Caculator.resx">

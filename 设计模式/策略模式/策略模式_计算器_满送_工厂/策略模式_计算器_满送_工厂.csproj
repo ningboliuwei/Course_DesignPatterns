@@ -69,21 +69,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caculator.cs">
+    <Compile Include="frmCaculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caculator.Designer.cs">
-      <DependentUpon>Caculator.cs</DependentUpon>
+    <Compile Include="frmCaculator.Designer.cs">
+      <DependentUpon>frmCaculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="CashFactory.cs" />
-    <Compile Include="CashNormal.cs" />
-    <Compile Include="CashDiscount.cs" />
-    <Compile Include="CashReturn.cs" />
-    <Compile Include="CashSuper.cs" />
+    <Compile Include="CaculatorFactory.cs" />
+    <Compile Include="CaculatorNormal.cs" />
+    <Compile Include="CaculatorDiscount.cs" />
+    <Compile Include="CaculatorReturn.cs" />
+    <Compile Include="Caculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Caculator.resx">
-      <DependentUpon>Caculator.cs</DependentUpon>
+    <EmbeddedResource Include="frmCaculator.resx">
+      <DependentUpon>frmCaculator.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

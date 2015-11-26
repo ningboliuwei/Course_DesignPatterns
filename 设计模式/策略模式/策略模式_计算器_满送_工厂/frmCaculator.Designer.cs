@@ -1,6 +1,6 @@
 ﻿namespace 策略模式_计算器_满送_工厂
 {
-	partial class Caculator
+	partial class frmCaculator
 	{
 		/// <summary>
 		/// Required designer variable.

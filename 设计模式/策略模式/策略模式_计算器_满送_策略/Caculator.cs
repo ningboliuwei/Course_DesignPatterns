@@ -21,21 +21,21 @@ namespace 策略模式_计算器_满送_策略
 		{
 			double totalPrices = 0;
 
-			CashContext cc = null;
+			CaculatorContext cc = null;
 
 			switch (cbxType.SelectedItem.ToString())
 			{
 				case "正常收费":
-					cc = new CashContext(new CashNormal());
+					cc = new CaculatorContext(new CaculatorNormal());
 					break;
 				case "满300返100":
-					cc = new CashContext(new CashReturn("300", "100"));
+					cc = new CaculatorContext(new CaculatorReturn(300, 100));
 					break;
 				case "打八折":
-					cc = new CashContext(new CashDiscount("0.8"));
+					cc = new CaculatorContext(new CaculatorDiscount(0.8));
 					break;
 			}
-			totalPrices = cc.GetResult(Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text));
+			totalPrices = cc.GetPrice(Convert.ToDouble(txtPrice.Text)*Convert.ToDouble(txtNum.Text));
 
 			total += totalPrices;
 			lbxList.Items.Add(
@@ -45,7 +45,7 @@ namespace 策略模式_计算器_满送_策略
 
 		private void Caculator_Load(object sender, EventArgs e)
 		{
-			cbxType.Items.AddRange(new object[] { "正常收费", "打八折", "满300返100" });
+			cbxType.Items.AddRange(new object[] {"正常收费", "打八折", "满300返100"});
 			cbxType.SelectedIndex = 0;
 		}
 	}

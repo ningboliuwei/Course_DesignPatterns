@@ -4,11 +4,11 @@ using System.Text;
 
 namespace 策略模式_计算器_满送_策略
 {
-	internal class CashNormal : CashSuper
+	class CaculatorNormal : ICaculator
 	{
-		public override double AcceptCash(double money)
+		public override double CaculatePrice(double originalPrice)
 		{
-			return money;
+			return originalPrice;
 		}
 	}
 }

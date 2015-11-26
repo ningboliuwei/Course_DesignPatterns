@@ -31,16 +31,12 @@ namespace 装饰模式_小人_新画图版_装饰模式
 //
 //			Pants pants = new Pants(g);
 //			pants.Decorate(person);
-//			pants.Show();
 //
 //			Jacket jacket = new Jacket(g);
 //			jacket.Decorate(person);
-//			jacket.Show();
 //
 //			Tie tie = new Tie(g);
 //			tie.Decorate(pants);
-//			tie.Show();
-//
 //
 //			Shoes shoes = new Shoes(g);
 //			shoes.Decorate(pants);
@@ -52,15 +48,12 @@ namespace 装饰模式_小人_新画图版_装饰模式
 
 			Shirt shirt = new Shirt(g);
 			shirt.Decorate(person);
-			shirt.Show();
 
 			Shorts shorts = new Shorts(g);
 			shorts.Decorate(shirt);
-			shorts.Show();
 
 			Hat hat = new Hat(g);
 			hat.Decorate(shorts);
-			hat.Show();
 
 			Sneakers sneakers = new Sneakers(g);
 			sneakers.Decorate(hat);

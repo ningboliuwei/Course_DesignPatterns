@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +17,13 @@ namespace 建造者模式_画小人_建造者模式_装配版
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-                        PersonThinBuilder thinBuilder = new PersonThinBuilder(pictureBox1.CreateGraphics());
-                        PersonDirector thinDirector = new PersonDirector(thinBuilder);
-                        thinDirector.CreatePerson().Show(); //创建瘦小人
+            PersonThinBuilder thinBuilder = new PersonThinBuilder(pictureBox1.CreateGraphics());
+            PersonDirector thinDirector = new PersonDirector(thinBuilder);
+            thinDirector.CreatePerson().Show(); //创建瘦小人
 
-//            PersonFatBuilder fatBuilder = new PersonFatBuilder(pictureBox1.CreateGraphics());
-//            PersonDirector fatDirector = new PersonDirector(fatBuilder);
-//            fatDirector.CreatePerson().Show(); //创建胖小人
+            PersonFatBuilder fatBuilder = new PersonFatBuilder(pictureBox1.CreateGraphics());
+            PersonDirector fatDirector = new PersonDirector(fatBuilder);
+            fatDirector.CreatePerson().Show(); //创建胖小人
         }
     }
 }
