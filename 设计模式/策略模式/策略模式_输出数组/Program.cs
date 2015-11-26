@@ -9,8 +9,8 @@ namespace 策略模式_输出数组
 	{
 		private static void Main(string[] args)
 		{
-			string[] data = new string[] { "tom", "jane", "alex" };
-			Console.WriteLine("Choose output type(1:Text; 2:HTML");
+			string[] data = { "tom", "jane", "alex" };
+			Console.WriteLine("Choose output type(1:Text; 2:HTML; 3: XML)");
 
 			int type;
 			type = int.Parse(Console.ReadLine());
@@ -18,15 +18,16 @@ namespace 策略模式_输出数组
 			switch (type)
 			{
 				case 1:
-					file = new OutputFileContext(new OutputTextFile());
+					file = new OutputFileContext(new OutputTextFileStrategy());
 					break;
 				case 2:
-					file = new OutputFileContext(new OutputHTMLFile());
+					file = new OutputFileContext(new OutputHtmlFileStrategy());
 					break;
-				default:
+				case 3:
+					file = new OutputFileContext(new OutputXmlFileStrategy());
 					break;
 			}
-			file.OutputFile(data);
+			file.SaveFile(data);
 
 			Console.ReadLine();
 		}

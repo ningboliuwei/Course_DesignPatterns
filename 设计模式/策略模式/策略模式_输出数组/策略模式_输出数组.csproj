@@ -66,10 +66,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IOutputFile.cs" />
+    <Compile Include="IOutputFileStrategy.cs" />
     <Compile Include="OutputFileContext.cs" />
-    <Compile Include="OutputHTMLFile.cs" />
-    <Compile Include="OutputTextFile.cs.cs" />
+    <Compile Include="OutputXmlFileStrategy.cs" />
+    <Compile Include="OutputHtmlFileStrategy.cs" />
+    <Compile Include="OutputTextFileStrategy.cs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
