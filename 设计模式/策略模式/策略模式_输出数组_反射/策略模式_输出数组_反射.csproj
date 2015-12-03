@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9137D5E8-C640-4AE5-84E3-966BA7A05D37}</ProjectGuid>
+    <ProjectGuid>{5B6F15BD-1908-4BBF-922C-4619C8F5DA4C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>策略模式_输出数组_反射</RootNamespace>
