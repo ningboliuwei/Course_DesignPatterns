@@ -4,45 +4,58 @@ using System.Text;
 
 namespace 原型模式_简历_Clone版
 {
-	internal class Resume : ICloneable
+	class Resume
 	{
-		private string _name;
+		public string Name { get; set; }
+		public string Sex { get; set; }
+		public DateTime BirthDate { get; set; }
+		public string Phone { get; set; }
+		public string EduExp { get; set; }
+		public string WorkExp { get; set; }
+		public string Post { get; set; }
 
-		private string _sex;
-
-		private string _age;
-
-		private string _timeArea;
-
-		private string _company;
-
-		public Resume(string name)
+		public Resume()
 		{
-			this._name = name;
+
 		}
-
-		public void SetPersonalInfo(string sex, string age)
+		
+		public Resume(string name, string sex, DateTime birthDate, string phone, string eduExp, string workExp, string post)
 		{
-			this._sex = sex;
-			this._age = age;
-		}
-
-		public void SetWorkExperience(string timeArea, string company)
-		{
-			this._timeArea = timeArea;
-			this._company = company;
+			Name = name;
+			Sex = sex;
+			BirthDate = birthDate;
+			Phone = phone;
+			EduExp = eduExp;
+			WorkExp = workExp;
+			Post = post;
 		}
 
 		public void Display()
 		{
-			Console.WriteLine("{0} {1} {2}", _name, _sex, _age);
-			Console.WriteLine("工作经历：{0} {1}", _timeArea, _company);
+			Console.WriteLine($"姓名：{Name}");
+			Console.WriteLine($"性别：{Sex}");
+			Console.WriteLine($"出生日期：{BirthDate.ToString("yyyy-MM-dd")}");
+			Console.WriteLine($"电话号码：{Phone}");
+			Console.WriteLine($"教育经历：{EduExp}");
+			Console.WriteLine($"工作经历：{WorkExp}");
+			Console.WriteLine($"应聘岗位：{Post}");
 		}
 
-		public object Clone()
+		public Resume Clone()
 		{
-			return this.MemberwiseClone();
-						
+			Resume resume = new Resume();
+			resume.Name = Name;
+			resume.Sex = Sex;
+			resume.BirthDate = BirthDate;
+			resume.Phone = Phone;
+			resume.EduExp = EduExp;
+			resume.WorkExp = WorkExp;
+			resume.Post = Post;
+			return resume;
+
+			//也可以写成
+			//return new Resume(Name, Sex, BirthDate, Phone, EduExp, WorkExp, Post);
 		}
 	}
+
 }

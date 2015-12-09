@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace 原型模式_简历_内含对象版
+namespace 原型模式_简历_MemberwiseClone版
 {
 	class Resume : ICloneable
 	{
@@ -10,8 +10,8 @@ namespace 原型模式_简历_内含对象版
 		public string Sex { get; set; }
 		public DateTime BirthDate { get; set; }
 		public string Phone { get; set; }
-		public List<ExpInfo> EduExp { get; set; }
-		public List<ExpInfo> WorkExp { get; set; }
+		public string EduExp { get; set; }
+		public string WorkExp { get; set; }
 		public string Post { get; set; }
 
 		public Resume()
@@ -19,7 +19,7 @@ namespace 原型模式_简历_内含对象版
 
 		}
 		
-		public Resume(string name, string sex, DateTime birthDate, string phone, List<ExpInfo> eduExp, List<ExpInfo> workExp, string post)
+		public Resume(string name, string sex, DateTime birthDate, string phone, string eduExp, string workExp, string post)
 		{
 			Name = name;
 			Sex = sex;

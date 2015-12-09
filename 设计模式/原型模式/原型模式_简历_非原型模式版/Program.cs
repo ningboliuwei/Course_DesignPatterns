@@ -9,73 +9,30 @@ namespace 原型模式_简历_非原型模式版
 	{
 		private static void Main(string[] args)
 		{
-			Resume a = new Resume("张三");
-			a.SetPersonalInfo("男", "29");
-			a.SetWorkExperience("2000-2004", "IBM");
-
-			//int x = 5;
-			//int y = x;
-			//int z = x;
-
-			//Console.WriteLine(x);
-			//Console.WriteLine(y);
-			//Console.WriteLine(z);
-
-			//x = 10;
-			//Console.WriteLine(x);
-			//Console.WriteLine(y);
-			//Console.WriteLine(z);
-
-			//第一步开始——现在需要三份一样的简历，下面的写法会带来问题吗？
-			//Resume b = a;
-			//Resume c = a;
-
-			//a.Display();
-			//b.Display();
-			//c.Display();
-			//第一步结束
-
-			//第二步开始——假如a的个人信息发生了变化
-			//a.SetPersonalInfo("男", "保密");
-			
-			//a.Display();
-			//b.Display();
-			//c.Display();
-			//第二步结束
-
-		
-
-			//第三步开始——甚至简历a消失了
-			//a = null;
-			//a.Display();
-			//b.Display();
-			//c.Display();
-			//第三步结束
-
-			//第一步结束
-
-			//第四步开始——应该写成下面的样子
-			//Resume b = new Resume("张三");
-			//b.SetPersonalInfo("男", "29");
-			//b.SetWorkExperience("2000-2004", "IBM");
-
-			//Resume c = new Resume("张三");
-			//c.SetPersonalInfo("男", "29");
-			//c.SetWorkExperience("2000-2004", "IBM");
-
-			//a.Display();
-			//b.Display();
-			//c.Display();
-			//第四步结束
-
-			//第五步——重复第三和第四步
-			//a.SetPersonalInfo("男", "保密");
+			//最基本方式
+			//			Resume resume1 = new Resume("刘看山", "男", new DateTime(1988, 10, 1), "13566313313", "2006~2010：宁波大学；2010-2013：浙江大学", "2013~2014：百度；2014~2016：阿里巴巴；", "腾讯前端");
+			//			resume1.Display();
 
 
-			//a.Display();
-			//b.Display();
-			//c.Display();
-            //第五步结束
+			//得到三份简历的方法1（创建三次）
+			//			Resume resume1 = new Resume("刘看山", "男", new DateTime(1988, 10, 1), "13566313313", "2006~2010：宁波大学；2010-2013：浙江大学", "2013~2014：百度；2014~2016：阿里巴巴；", "腾讯前端");
+			//			Resume resume2 = new Resume("刘看山", "男", new DateTime(1988, 10, 1), "13566313313", "2006~2010：宁波大学；2010-2013：浙江大学", "2013~2014：百度；2014~2016：阿里巴巴；", "Facebook前端");
+			//			Resume resume3 = new Resume("刘看山", "男", new DateTime(1988, 10, 1), "13566313313", "2006~2010：宁波大学；2010-2013：浙江大学", "2013~2014：百度；2014~2016：阿里巴巴；", "Google前端");
+			//方法1结束
+
+
+			//得到三份简历的方法2（用直接赋值）
+			Resume resume1 = new Resume("刘看山", "男", new DateTime(1988, 10, 1), "13566313313", "2006~2010：宁波大学；2010-2013：浙江大学", "2013~2014：百度；2014~2016：阿里巴巴；", "腾讯前端");
+
+			Resume resume2 = resume1;
+			resume2.Post = "Facebook前端";
+
+			Resume resume3 = resume1;
+			resume3.Post = "Google前端";
+
+			resume1 = null;
+			//方法2结束
+
 			Console.ReadLine();
 		}
 	}

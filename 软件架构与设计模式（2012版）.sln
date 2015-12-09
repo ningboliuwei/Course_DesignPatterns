@@ -247,6 +247,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "外观模式_家庭影院_�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "外观模式_家庭影院_外观模式版", "外观模式_家庭影院_外观模式版\外观模式_家庭影院_外观模式版.csproj", "{0E8AF949-87AB-413A-A9AA-997A921673C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_MemberwiseClone版", "设计模式\原型模式\原型模式_简历_MemberwiseClone版\原型模式_简历_MemberwiseClone版.csproj", "{264CD625-CC29-4368-9EBF-98F0B228006E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -665,6 +667,10 @@ Global
 		{0E8AF949-87AB-413A-A9AA-997A921673C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E8AF949-87AB-413A-A9AA-997A921673C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E8AF949-87AB-413A-A9AA-997A921673C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264CD625-CC29-4368-9EBF-98F0B228006E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264CD625-CC29-4368-9EBF-98F0B228006E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264CD625-CC29-4368-9EBF-98F0B228006E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264CD625-CC29-4368-9EBF-98F0B228006E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -789,6 +795,7 @@ Global
 		{4DFAE653-A36F-49CE-AD8B-F642AF32A14A} = {88FE2A47-44D4-4034-AB69-18D638829DB4}
 		{9926772C-093C-4FA2-9621-B96D7792B6BF} = {F4009F33-7666-42ED-95D5-42E8CB62D71F}
 		{0E8AF949-87AB-413A-A9AA-997A921673C6} = {F4009F33-7666-42ED-95D5-42E8CB62D71F}
+		{264CD625-CC29-4368-9EBF-98F0B228006E} = {7CCBAD8F-AB44-47D7-9EE5-DD23DB5ED32B}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True

@@ -9,46 +9,23 @@ namespace 原型模式_简历_内含对象版
 	{
 		private static void Main(string[] args)
 		{
-            //第一步开始——通过Clone()得到三份一样的简历对象
-			Resume a = new Resume("张三");
-			a.SetPersonalInfo("男", "29");
-			a.SetWorkExperience("2000-2004", "IBM");
+			Resume resume1 = new Resume("刘看山", "男", new DateTime(1988, 10, 1), "13566313313", "2006~2010：宁波大学；2010-2013：浙江大学", "2013~2014：百度；2014~2016：阿里巴巴；", "腾讯前端");
 
-			Resume b = a.Clone() as Resume;
-			Resume c = a.Clone() as Resume;
+			Resume resume2 = resume1.Clone() as Resume;
+			resume2.Post = "Facebook前端";
 
+			Resume resume3 = resume1.Clone() as Resume;
+			resume3.Post = "Google前端";
 
-            a.Display();
-            b.Display();
-            c.Display();
-            //第一步结束
+			resume1.Name = "奥观海";
 
-            //第二步开始——修改第一份（原本）中的个人信息
-			a.SetPersonalInfo("男", "保密");
+			resume1.Display();
+			Console.WriteLine("-----------------------------------");
+			resume2.Display();
+			Console.WriteLine("-----------------------------------");
+			resume3.Display();
+			Console.WriteLine("-----------------------------------");
 
-			a.Display();
-			b.Display();
-			c.Display();
-            //第二步结束
-
-            //第三步开始——修改第二与三份（副本）中的个人信息
-			//b.SetPersonalInfo("男", "19");
-			//c.SetPersonalInfo("女", "29");
-
-			//a.Display();
-			//b.Display();
-			//c.Display();
-            //第三步结束
-
-            //第四步开始——修改原本的工作经历
-			a.SetWorkExperience("2004-2008", "Google");
-
-			a.Display();
-			b.Display();
-			c.Display();
-            //第四步结束
-
-			
 			Console.ReadLine();
 		}
 	}
