@@ -4,58 +4,71 @@ using System.Text;
 
 namespace 原型模式_简历_内含对象深复制版
 {
-	internal class Resume : ICloneable
+	class Resume : ICloneable
 	{
-		private string _name;
+		public string Name { get; set; }
+		public string Sex { get; set; }
+		public DateTime BirthDate { get; set; }
+		public string Phone { get; set; }
+		public List<ExpInfo> EduExp { get; set; }
+		public List<ExpInfo> WorkExp { get; set; }
+		public string Post { get; set; }
 
-		private string _sex;
-
-		private string _age;
-
-		private WorkExperience _work;
-
-		public Resume(string name)
+		public Resume()
 		{
-			this._name = name;
-			_work = new WorkExperience();
 		}
 
-		//private Resume(WorkExperience work)
-		//{
-		//	this._work = work.Clone() as WorkExperience;
-		//}
-
-		public void SetPersonalInfo(string sex, string age)
+		public Resume(string name, string sex, DateTime birthDate, string phone, List<ExpInfo> eduExp, List<ExpInfo> workExp,
+			string post)
 		{
-			this._sex = sex;
-			this._age = age;
-		}
-
-		public void SetWorkExperience(string timeArea, string company)
-		{
-			this._work.TimeArea = timeArea;
-			this._work.Company = company;
+			Name = name;
+			Sex = sex;
+			BirthDate = birthDate;
+			Phone = phone;
+			EduExp = eduExp;
+			WorkExp = workExp;
+			Post = post;
 		}
 
 		public void Display()
 		{
-			Console.WriteLine("{0} {1} {2}", _name, _sex, _age);
-			Console.WriteLine("工作经历：{0} {1}", _work.TimeArea, _work.Company);
+			Console.WriteLine($"姓名：{Name}");
+			Console.WriteLine($"性别：{Sex}");
+			Console.WriteLine($"出生日期：{BirthDate.ToString("yyyy-MM-dd")}");
+			Console.WriteLine($"电话号码：{Phone}");
+			Console.WriteLine("教育经历：");
+			foreach (var e in EduExp)
+			{
+				Console.WriteLine($"{e.StartDate.ToString("yyyy")} ~ {e.EndDate.ToString("yyyy")}：{e.Place}");
+			}
+			Console.WriteLine("工作经历：");
+			foreach (var e in WorkExp)
+			{
+				Console.WriteLine($"{e.StartDate.ToString("yyyy")} ~ {e.EndDate.ToString("yyyy")}：{e.Place}");
+			}
+			Console.WriteLine($"应聘岗位：{Post}");
 		}
 
 		public object Clone()
 		{
-			//Resume obj = new Resume(this.);
-			//obj._name = this._name;
-			//obj._sex = this._sex;
-			//obj._age = this._age;
-
-			Resume obj = new Resume(this._name);
-			obj._sex = this._sex;
-			obj._age = this._age;
-			obj._work.TimeArea = this._work.TimeArea;
-			obj._work.Company = this._work.Company;
-			return obj;
+			Resume resume = new Resume();
+			resume.Name = Name;
+			resume.Sex = Sex;
+			resume.BirthDate = BirthDate;
+			resume.Phone = Phone;
+			resume.Phone = Phone;
+			resume.EduExp = new List<ExpInfo>();
+			foreach (var e in EduExp)
+			{
+				resume.EduExp.Add(new ExpInfo(e.Place, e.StartDate, e.EndDate));
+			}
+			resume.WorkExp = new List<ExpInfo>();
+			foreach (var e in WorkExp)
+			{
+				resume.WorkExp.Add(new ExpInfo(e.Place, e.StartDate, e.EndDate));
+			}
+			resume.Post = Post;
+			return resume;
 		}
 	}
 }

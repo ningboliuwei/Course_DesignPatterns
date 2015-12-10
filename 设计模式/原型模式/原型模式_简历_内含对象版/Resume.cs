@@ -16,10 +16,10 @@ namespace 原型模式_简历_内含对象版
 
 		public Resume()
 		{
-
 		}
-		
-		public Resume(string name, string sex, DateTime birthDate, string phone, List<ExpInfo> eduExp, List<ExpInfo> workExp, string post)
+
+		public Resume(string name, string sex, DateTime birthDate, string phone, List<ExpInfo> eduExp, List<ExpInfo> workExp,
+			string post)
 		{
 			Name = name;
 			Sex = sex;
@@ -36,15 +36,22 @@ namespace 原型模式_简历_内含对象版
 			Console.WriteLine($"性别：{Sex}");
 			Console.WriteLine($"出生日期：{BirthDate.ToString("yyyy-MM-dd")}");
 			Console.WriteLine($"电话号码：{Phone}");
-			Console.WriteLine($"教育经历：{EduExp}");
-			Console.WriteLine($"工作经历：{WorkExp}");
+			Console.WriteLine("教育经历：}");
+			foreach (var e in EduExp)
+			{
+				Console.WriteLine($"{e.StartDate.ToString("yyyy")} ~ {e.EndDate.ToString("yyyy")}：{e.Place}");
+			}
+			Console.WriteLine("工作经历：}");
+			foreach (var e in WorkExp)
+			{
+				Console.WriteLine($"{e.StartDate.ToString("yyyy")} ~ {e.EndDate.ToString("yyyy")}：{e.Place}");
+			}
 			Console.WriteLine($"应聘岗位：{Post}");
 		}
 
 		public object Clone()
 		{
-			return this.MemberwiseClone(); 
+			return this.MemberwiseClone();
 		}
 	}
-
 }
