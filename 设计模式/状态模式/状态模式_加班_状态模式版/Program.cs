@@ -10,31 +10,31 @@ namespace 状态模式_加班_状态模式_状态类转换版
 		{
 			Work work = new Work();
 			work.Hour = 9;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 10;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 11;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 12;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 13;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 14;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 15;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 16;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 17;
-			work.WriteProgram();
+			work.Coding();
 
 			//第一步开始
 			work.TaskFinished = true;
@@ -45,19 +45,19 @@ namespace 状态模式_加班_状态模式_状态类转换版
 			//第二步结束
 
 			work.Hour = 18;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 19;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 20;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 21;
-			work.WriteProgram();
+			work.Coding();
 
 			work.Hour = 22;
-			work.WriteProgram();
+			work.Coding();
 
 			Console.ReadLine();
 		}

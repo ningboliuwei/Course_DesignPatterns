@@ -6,7 +6,7 @@ namespace 状态模式_加班_状态模式_状态类转换版
 {
 	public class Work
 	{
-		private State m_currentState;
+		private State _currentState;
 
 		public Work()
 		{
@@ -21,12 +21,12 @@ namespace 状态模式_加班_状态模式_状态类转换版
 
 		public void SetState(State state)
 		{
-			this.m_currentState = state;
+			this._currentState = state;
 		}
 
-		public void WriteProgram()
+		public void Coding()
 		{
-			m_currentState.WriteProgram(this);
+			_currentState.Coding(this);
 		}
 	}
 }

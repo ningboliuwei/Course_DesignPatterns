@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace 状态模式_加班_状态模式_环境类转换版
+﻿namespace 状态模式_加班_状态模式_环境类转换版
 {
     public class Work
     {
-        private State m_currentState;
+        private State _currentState;
 
         public Work()
         {
-            this.SetState(new MorningState());
+            SetState(new MorningState());
         }
 
         //当前钟点      
@@ -21,47 +17,47 @@ namespace 状态模式_加班_状态模式_环境类转换版
 
         public void SetState(State state)
         {
-            this.m_currentState = state;
+            _currentState = state;
         }
 
         public void ChangeState()
         {
             if (Hour < 12)
             {
-                m_currentState = new MorningState();
+                _currentState = new MorningState();
             }
             else if (Hour < 13)
             {
-                m_currentState = new NoonState();
+                _currentState = new NoonState();
             }
             else if (Hour < 17)
             {
-                m_currentState = new AfternoonState();
+                _currentState = new AfternoonState();
             }
             else
             {
                 if (TaskFinished)
                 {
-                    m_currentState = new RestState();
+                    _currentState = new RestState();
                 }
                 else
                 {
                     if (Hour < 21)
                     {
-                        m_currentState = new EveningState();
+                        _currentState = new EveningState();
                     }
                     else
                     {
-                        m_currentState = new SleepingState();
+                        _currentState = new SleepingState();
                     }
                 }
             }
         }
 
-        public void WriteProgram()
+        public void Coding()
         {
             ChangeState();
-            m_currentState.WriteProgram(this);
+            _currentState.Coding(this);
         }
     }
 }

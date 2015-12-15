@@ -6,12 +6,12 @@ namespace 状态模式_加班_状态模式_状态类转换版
 {
 	internal class EveningState : State
 	{
-		public override void WriteProgram(Work work)
+		public override void Coding(Work work)
 		{
 			if (work.TaskFinished)
 			{
 				work.SetState(new RestState());
-				work.WriteProgram();
+				work.Coding();
 			}
 			else
 			{
@@ -22,7 +22,7 @@ namespace 状态模式_加班_状态模式_状态类转换版
 				else
 				{
 					work.SetState(new SleepingState());
-					work.WriteProgram();
+					work.Coding();
 				}
 			}
 		}
