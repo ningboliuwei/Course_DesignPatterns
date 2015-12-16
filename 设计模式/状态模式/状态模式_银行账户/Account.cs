@@ -7,51 +7,38 @@ namespace 状态模式_银行账户
 {
     internal class Account
     {
-        private AccountState _state;
-        private double _balance = 0; 
+        public AccountState State { get; set; }
 
-        public string Owner { get; }
+        public string Owner { get; set; }
 
-        public double Balance { get;}
-
+        public double Balance { get; set; }
 
 
         public Account(string owner, double initialAmount)
         {
             Owner = owner;
             Balance = initialAmount;
-
-            _state = new NormalState(this); //设置初始状态
+            State = new NormalState(this); //设置初始状态
         }
 
 
         public void SetBalance(double amount)
         {
-            _balance = amount;
-        }
-
-        public void SetState(AccountState state)
-        {
-            _state = state;
+            Balance = amount;
         }
 
         public void Deposit(double amount)
         {
-            _state.Deposit(amount);
-
-            Console.WriteLine("现在账户状态为{0}", _state.ToString());
+            Console.WriteLine($"现要存款{amount}元。");
+            State.Deposit(amount);
+            Console.WriteLine($"账户状态变为{State}");
         }
 
         public void Withdraw(double amount)
         {
-            _state.Withdraw(amount);
-
-            Console.WriteLine("现在账户状态为{0}", _state.ToString());
-        }
-
-        public void ComputeInterest()
-        {
-            _state.ComputeInterest();
+            Console.WriteLine($"现要取款{amount}元。");
+            State.Withdraw(amount);
+            Console.WriteLine($"账户状态变为{State}");
         }
     }
 }
