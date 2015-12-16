@@ -5,7 +5,7 @@ using System.Text;
 
 namespace 状态模式_银行账户
 {
-    internal class OverdraftState : AccountState
+    class OverdraftState : AccountState
     {
         public OverdraftState(Account account)
         {

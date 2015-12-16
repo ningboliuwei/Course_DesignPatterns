@@ -21,12 +21,12 @@ namespace 状态模式_俱乐部
 
 		private void Initialize()
 		{
-			this.m_lowerLimit = 1000.0;
+			this._lowerLimit = 1000.0;
 		}
 
 		protected override void StateChangeCheck()
 		{
-			if (Balance < this.m_lowerLimit)
+			if (Balance < this._lowerLimit)
 			{
 				Account.State = new MemberState(this);
 				Console.WriteLine("你当前帐户金额为 {0}，你降级为‘普通级会员’服务!", Balance.ToString());

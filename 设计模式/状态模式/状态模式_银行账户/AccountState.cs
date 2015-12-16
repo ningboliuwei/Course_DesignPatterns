@@ -5,7 +5,7 @@ using System.Text;
 
 namespace 状态模式_银行账户
 {
-    internal abstract class AccountState
+    abstract class AccountState
     {
         protected Account Account;
         //存款
