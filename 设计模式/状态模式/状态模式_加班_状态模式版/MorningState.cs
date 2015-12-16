@@ -6,7 +6,7 @@ namespace 状态模式_加班_状态模式_状态类转换版
 {
 	internal class MorningState : State
 	{
-		public override void WriteProgram(Work work)
+		public override void Coding(Work work)
 		{
 			if (work.Hour < 12)
 			{
@@ -15,7 +15,7 @@ namespace 状态模式_加班_状态模式_状态类转换版
 			else
 			{
 				work.SetState(new NoonState());
-				work.WriteProgram();
+				work.Coding();
 			}
 		}
 	}

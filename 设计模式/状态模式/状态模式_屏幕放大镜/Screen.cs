@@ -7,47 +7,47 @@ namespace 状态模式_屏幕放大镜
 {
     class Screen
     {
-        private State m_currentState;
-        private State m_normalState;
-        private State m_largerState;
-        private State m_largestState;
+        private State _currentState;
+        private State _normalState;
+        private State _largerState;
+        private State _largestState;
 
         public Screen()
         {
-            m_normalState = new NormalState();
-            m_largerState = new LargerState();
-            m_largestState = new LargestState();
+            _normalState = new NormalState();
+            _largerState = new LargerState();
+            _largestState = new LargestState();
            
-            SetState(m_normalState);
-            m_currentState.Display();
+            SetState(_normalState);
+            _currentState.Display();
 
         }
 
         public void SetState(State state)
         {
-            m_currentState = state;
+            _currentState = state;
         }
 
         public void OnClick()
         {
-            if (m_currentState == m_normalState)
+            if (_currentState == _normalState)
             {
-                SetState(m_largerState);
+                SetState(_largerState);
             }
-            else if (m_currentState == m_largerState)
+            else if (_currentState == _largerState)
             {
-                SetState(m_largestState);
+                SetState(_largestState);
             }
-            else if (m_currentState == m_largestState)
+            else if (_currentState == _largestState)
             {
-                SetState(m_normalState);
+                SetState(_normalState);
             }
             else
             {
                 
             }
 
-            m_currentState.Display();//刘伟版将此行在三个分支中都重复了
+            _currentState.Display();//刘伟版将此行在三个分支中都重复了
         }
     }
 }
