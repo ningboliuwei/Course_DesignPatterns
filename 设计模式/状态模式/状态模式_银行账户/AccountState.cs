@@ -7,7 +7,7 @@ namespace 状态模式_银行账户
 {
     internal abstract class AccountState
     {
-        protected Account m_account;
+        protected Account _account;
         //存款
         public abstract void Deposit(double amount);
 
