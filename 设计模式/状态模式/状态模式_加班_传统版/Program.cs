@@ -10,18 +10,18 @@ namespace 状态模式_加班_传统版
 
 		private static bool WorkFinished = false;
 
-		private static void Main(string[] args)
+		private void Main(string[] args)
 		{
 			Hour = 9;
-			WriteProgram();
+			Coding();
 			Hour = 10;
-			WriteProgram();
+			Coding();
 			Hour = 12;
-			WriteProgram();
+			Coding();
 			Hour = 13;
-			WriteProgram();
+			Coding();
 			Hour = 14;
-			WriteProgram();
+			Coding();
 			Hour = 17;
 
 			//第一步开始
@@ -32,44 +32,44 @@ namespace 状态模式_加班_传统版
 			WorkFinished = false;
 			//第二步结束
 
-			WriteProgram();
+			Coding();
 			Hour = 19;
-			WriteProgram();
+			Coding();
 			Hour = 22;
-			WriteProgram();
+			Coding();
 
 			Console.Read();
 		}
 
-		public static void WriteProgram()
+		public void Coding()
 		{
 			if (Hour < 12)
 			{
-				Console.WriteLine("当前时间：{0}点 上午工作，精神百倍", Hour);
+				Console.WriteLine($"当前时间：{Hour}点 上午工作，精神百倍");
 			}
 			else if (Hour < 13)
 			{
-				Console.WriteLine("当前时间：{0}点 饿了，午饭；犯困，午休。", Hour);
+				Console.WriteLine($"当前时间：{Hour}点 饿了，午饭；犯困，午休。");
 			}
 			else if (Hour < 17)
 			{
-				Console.WriteLine("当前时间：{0}点 下午状态还不错，继续努力", Hour);
+				Console.WriteLine($"当前时间：{Hour}点 下午状态还不错，继续努力");
 			}
 			else
 			{
 				if (WorkFinished)
 				{
-					Console.WriteLine("当前时间：{0}点 下班回家了", Hour);
+					Console.WriteLine($"当前时间：{Hour}点 下班回家了");
 				}
 				else
 				{
 					if (Hour < 21)
 					{
-						Console.WriteLine("当前时间：{0}点 加班哦，疲累之极", Hour);
+						Console.WriteLine($"当前时间：{Hour}点 加班哦，疲累之极");
 					}
 					else
 					{
-						Console.WriteLine("当前时间：{0}点 不行了，睡着了。", Hour);
+						Console.WriteLine($"当前时间：{Hour}点 不行了，睡着了。");
 					}
 				}
 			}
