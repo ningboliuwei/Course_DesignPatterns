@@ -4,13 +4,14 @@ using System.Text;
 
 namespace 职责链模式_请假_职责链模式
 {
-	internal class CEOManager : Manager
+	public class DepartmentManager : Manager
 	{
 		public override void HandleRequest(Request request)
 		{
-			if (request.Type == "请假" || request.Type == "加薪")
+			if (request.Type == "请假" && request.Number <= 5)
 			{
-				Console.WriteLine($"{Name}：我全部批准");
+				Console.WriteLine(
+					$"{this.Name}:{request.Name}的{request.Content}{request.Type}申请 数量{request.Number} 被批准");
 			}
 			else
 			{
@@ -23,7 +24,7 @@ namespace 职责链模式_请假_职责链模式
 			}
 		}
 
-		public CEOManager(string name) : base(name)
+		public DepartmentManager(string name) : base(name)
 		{
 		}
 	}

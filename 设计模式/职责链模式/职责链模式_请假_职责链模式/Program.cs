@@ -8,32 +8,38 @@ namespace 职责链模式_请假_职责链模式
 	{
 		private static void Main(string[] args)
 		{
-			CommonManager cm = new CommonManager("CM");
-			MajorManager mm = new MajorManager("MM");
+			ProjectManager pm = new ProjectManager("PM");
+			DepartmentManager dm = new DepartmentManager("DM");
 			GeneralManager gm = new GeneralManager("GM");
-			CEOManager em = new CEOManager("EM");
+			CEOManager ceo = new CEOManager("CEO");
 
-			gm.SetSuperior(mm);
-			mm.SetSuperior(cm);
-
-			//cm.SetSuperior(mm);
-			// mm.SetSuperior(gm);
-			//gm.SetSuperior(em);
+			pm.Superior = dm;
+			dm.Superior = gm;
+			gm.Superior = ceo;
 
 			Request r1 = new Request("小明", "请假", "表弟结婚", 1);
-			cm.RequestApplications(r1);
+			pm.HandleRequest(r1);
+			Console.WriteLine("-------------------------------------");
 
 			Request r2 = new Request("小明", "请假", "表弟结婚", 4);
-			cm.RequestApplications(r2);
+			pm.HandleRequest(r2);
+			Console.WriteLine("-------------------------------------");
 
 			Request r3 = new Request("小明", "请假", "表弟结婚", 6);
-			cm.RequestApplications(r3);
+			pm.HandleRequest(r3);
+			Console.WriteLine("-------------------------------------");
 
 			Request r4 = new Request("小明", "加薪", "物价上涨太快", 500);
-			cm.RequestApplications(r4);
+			pm.HandleRequest(r4);
+			Console.WriteLine("-------------------------------------");
 
 			Request r5 = new Request("小明", "加薪", "物价上涨太快", 1000);
-			cm.RequestApplications(r5);
+			pm.HandleRequest(r5);
+			Console.WriteLine("-------------------------------------");
+
+			Request r6 = new Request("小明", "请假", "表弟结婚", 15);
+			pm.HandleRequest(r6);
+			Console.WriteLine("-------------------------------------");
 
 			Console.ReadLine();
 		}

@@ -59,9 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CEOManager.cs" />
-    <Compile Include="CommonManager.cs" />
+    <Compile Include="ProjectManager.cs" />
     <Compile Include="GeneralManager.cs" />
-    <Compile Include="MajorManager.cs" />
+    <Compile Include="DepartmentManager.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

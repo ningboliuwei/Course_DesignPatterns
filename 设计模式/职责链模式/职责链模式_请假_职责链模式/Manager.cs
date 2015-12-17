@@ -2,20 +2,14 @@
 {
 	public abstract class Manager
 	{
-		protected string _name;
-
-		protected Manager _superior;
+		public string Name { get; set; }
+		public Manager Superior { get; set; }
 
 		public Manager(string name)
 		{
-			_name = name;
+			Name = name;
 		}
 
-		public void SetSuperior(Manager superior)
-		{
-			_superior = superior;
-		}
-
-		public abstract void RequestApplications(Request request);
+		public abstract void HandleRequest(Request request);
 	}
 }
