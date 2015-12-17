@@ -5,17 +5,17 @@ using System.Text;
 
 namespace 状态模式_银行账户
 {
-    internal class RestrictedState : AccountState
+    class RestrictedState : AccountState
     {
         public RestrictedState(Account account)
         {
-            m_account = account;
+            Account = account;
         }
 
         public override void Deposit(double amount)
         {
-            m_account.SetBalance(m_account.GetBalance() + amount);
-            Console.WriteLine("向名为{0}的账户中存款{1}元，存款后账户余额为{2}元。", m_account.GetOwner(), amount, m_account.GetBalance());
+            Account.Balance += amount;
+            Console.WriteLine($"向名为{Account.Owner}的账户中存款{amount}元，存款后账户余额为{Account.Balance}元。");
             StateCheck();
         }
 
@@ -27,24 +27,16 @@ namespace 状态模式_银行账户
         }
 
 
-        //计算利息
-        public override void ComputeInterest()
-        {
-            Console.WriteLine("开始计算利息");
-        }
-
         //检查账户状态
         public override void StateCheck()
         {
-            double currentBalance = m_account.GetBalance();
-
-            if (currentBalance > -2000 && currentBalance < 0)
+            if (Account.Balance > -2000 && Account.Balance < 0)
             {
-                m_account.SetState(new OverdraftState(m_account));
+                Account.State = new OverdraftState(Account);
             }
-            else if (currentBalance >= 0)
+            else if (Account.Balance >= 0)
             {
-                m_account.SetState(new NormalState(m_account));
+                Account.State = new NormalState(Account);
             }
         }
     }
