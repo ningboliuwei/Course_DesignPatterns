@@ -15,9 +15,9 @@ namespace 状态模式_加班_状态模式_状态类转换版
 			}
 			else
 			{
-				work.SetState(new EveningState());
-				work.Coding();
-			}
+			        work.SetState(new EveningState());
+                work.Coding();
+            }
 		}
 	}
 }
