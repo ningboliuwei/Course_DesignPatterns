@@ -255,6 +255,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_多�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_多订阅者版", "设计模式\观察者模式\观察者模式_股票_多订阅者版\观察者模式_股票_多订阅者版.csproj", "{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_抽象观察者版", "设计模式\观察者模式\观察者模式_股票_抽象观察者版\观察者模式_股票_抽象观察者版.csproj", "{75AC6826-548F-4749-9E09-2C7EE69029A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_抽象观察对象版", "设计模式\观察者模式\观察者模式_股票_抽象观察对象版\观察者模式_股票_抽象观察对象版.csproj", "{914B3CCF-48B2-4379-AB83-316CA897B32E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -689,6 +693,14 @@ Global
 		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AC6826-548F-4749-9E09-2C7EE69029A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AC6826-548F-4749-9E09-2C7EE69029A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AC6826-548F-4749-9E09-2C7EE69029A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AC6826-548F-4749-9E09-2C7EE69029A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -817,6 +829,8 @@ Global
 		{017150E1-1E7D-43B6-B2EE-45600FBC39F4} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 		{FA8E99CC-E48F-45FE-9725-12B7685A3078} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{75AC6826-548F-4749-9E09-2C7EE69029A0} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{914B3CCF-48B2-4379-AB83-316CA897B32E} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
