@@ -251,6 +251,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "外观模式_家庭影院_�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_单股民版", "设计模式\观察者模式\观察者模式_股票_单股民版\观察者模式_股票_单股民版.csproj", "{017150E1-1E7D-43B6-B2EE-45600FBC39F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_多股民版", "设计模式\观察者模式\观察者模式_股票_多股民版\观察者模式_股票_多股民版.csproj", "{FA8E99CC-E48F-45FE-9725-12B7685A3078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_多订阅者版", "设计模式\观察者模式\观察者模式_股票_多订阅者版\观察者模式_股票_多订阅者版.csproj", "{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -677,6 +681,14 @@ Global
 		{017150E1-1E7D-43B6-B2EE-45600FBC39F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{017150E1-1E7D-43B6-B2EE-45600FBC39F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{017150E1-1E7D-43B6-B2EE-45600FBC39F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8E99CC-E48F-45FE-9725-12B7685A3078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8E99CC-E48F-45FE-9725-12B7685A3078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8E99CC-E48F-45FE-9725-12B7685A3078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8E99CC-E48F-45FE-9725-12B7685A3078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -803,6 +815,8 @@ Global
 		{264CD625-CC29-4368-9EBF-98F0B228006E} = {7CCBAD8F-AB44-47D7-9EE5-DD23DB5ED32B}
 		{0E8AF949-87AB-413A-A9AA-997A921673C6} = {F4009F33-7666-42ED-95D5-42E8CB62D71F}
 		{017150E1-1E7D-43B6-B2EE-45600FBC39F4} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{FA8E99CC-E48F-45FE-9725-12B7685A3078} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
