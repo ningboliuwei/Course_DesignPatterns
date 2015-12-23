@@ -9,16 +9,18 @@ namespace 观察者模式_股票_单股民版
     {
         static void Main(string[] args)
         {
-            Stock stock = new Stock() {Symbol =  "SINA", Price = 120.35};
-            Investor investor = new Investor() {Name = "丁蟹", Stock = stock};
-            stock.Investor = investor;
-            stock.Update();
+            Stock stock = new Stock() {Symbol = "SINA", Price = 120.35};
+            Investor investor = new Investor() {Name = "丁蟹"};
+            investor.SetStock(stock);
+            stock.SetInvestor(investor);
+
+            stock.Notify();
 
             stock.Price = 134.56;
-            stock.Update();
+            stock.Notify();
 
             stock.Price = 99.27;
-            stock.Update();
+            stock.Notify();
 
             Console.ReadKey();
         }
