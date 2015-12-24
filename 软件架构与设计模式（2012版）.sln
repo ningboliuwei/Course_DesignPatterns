@@ -259,6 +259,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_抽�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_抽象观察对象版", "设计模式\观察者模式\观察者模式_股票_抽象观察对象版\观察者模式_股票_抽象观察对象版.csproj", "{914B3CCF-48B2-4379-AB83-316CA897B32E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_单向组合关系版", "设计模式\观察者模式\观察者模式_股票_单向组合关系版\观察者模式_股票_单向组合关系版.csproj", "{DE76D032-DD9A-4BC6-BF7E-48D410A25F5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_事件机制_系统控件", "设计模式\观察者模式\观察者模式_事件机制_系统控件\观察者模式_事件机制_系统控件.csproj", "{6F6DEC2D-8EE3-40FA-A672-C739BB9056AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_游戏_遭到攻击", "设计模式\观察者模式\观察者模式_游戏_遭到攻击\观察者模式_游戏_遭到攻击.csproj", "{DDA9FE6F-8D01-4A8F-B750-6E568D6AED9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_游戏_遭到攻击_事件版", "设计模式\观察者模式\观察者模式_游戏_遭到攻击_事件版\观察者模式_游戏_遭到攻击_事件版.csproj", "{E211691D-B2E5-4001-88A6-A7BA3B832222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_更改数据事件", "设计模式\观察者模式\观察者模式_更改数据事件\观察者模式_更改数据事件.csproj", "{2E59CE3A-6BC6-4381-960F-A5F784F2F31A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -701,6 +711,26 @@ Global
 		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{914B3CCF-48B2-4379-AB83-316CA897B32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE76D032-DD9A-4BC6-BF7E-48D410A25F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE76D032-DD9A-4BC6-BF7E-48D410A25F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE76D032-DD9A-4BC6-BF7E-48D410A25F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE76D032-DD9A-4BC6-BF7E-48D410A25F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6DEC2D-8EE3-40FA-A672-C739BB9056AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6DEC2D-8EE3-40FA-A672-C739BB9056AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6DEC2D-8EE3-40FA-A672-C739BB9056AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6DEC2D-8EE3-40FA-A672-C739BB9056AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA9FE6F-8D01-4A8F-B750-6E568D6AED9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA9FE6F-8D01-4A8F-B750-6E568D6AED9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA9FE6F-8D01-4A8F-B750-6E568D6AED9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA9FE6F-8D01-4A8F-B750-6E568D6AED9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E211691D-B2E5-4001-88A6-A7BA3B832222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E211691D-B2E5-4001-88A6-A7BA3B832222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E211691D-B2E5-4001-88A6-A7BA3B832222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E211691D-B2E5-4001-88A6-A7BA3B832222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E59CE3A-6BC6-4381-960F-A5F784F2F31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E59CE3A-6BC6-4381-960F-A5F784F2F31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E59CE3A-6BC6-4381-960F-A5F784F2F31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E59CE3A-6BC6-4381-960F-A5F784F2F31A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -831,6 +861,11 @@ Global
 		{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 		{75AC6826-548F-4749-9E09-2C7EE69029A0} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 		{914B3CCF-48B2-4379-AB83-316CA897B32E} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{DE76D032-DD9A-4BC6-BF7E-48D410A25F5D} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{6F6DEC2D-8EE3-40FA-A672-C739BB9056AF} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{DDA9FE6F-8D01-4A8F-B750-6E568D6AED9F} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{E211691D-B2E5-4001-88A6-A7BA3B832222} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
+		{2E59CE3A-6BC6-4381-960F-A5F784F2F31A} = {96FAFA91-55F6-475F-A77D-8335E6D77552}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
