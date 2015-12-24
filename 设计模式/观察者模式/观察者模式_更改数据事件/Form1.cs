@@ -19,10 +19,10 @@ namespace 观察者模式_更改数据事件
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			ShowData();
+			ShowDataInForm1();
 		}
 
-		private void ShowData()
+		private void ShowDataInForm1()
 		{
 			string filePath = $"{Application.StartupPath}\\data.txt";
 
@@ -36,11 +36,20 @@ namespace 观察者模式_更改数据事件
 			}
 		}
 
+		private void ShowDataInForm3()
+		{
+			Form3 frm = new Form3(label1.Text);
+			frm.Show();
+		}
+
 		private void button1_Click(object sender, EventArgs e)
 		{
 			Form2 frm = new Form2();
-			frm.DataChanged += ShowData;
+			frm.DataChanged += ShowDataInForm1;
+			frm.DataChanged += ShowDataInForm3;
 			frm.ShowDialog();
 		}
+
+
 	}
 }
