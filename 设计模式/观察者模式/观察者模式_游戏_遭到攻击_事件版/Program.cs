@@ -23,8 +23,8 @@ namespace 观察者模式_游戏_遭到攻击_事件版
 			Console.WriteLine($"{team.Name}公告");
 			Console.WriteLine($"------------------------------");
 
+			
 			playerB.BeAttackedMethod();
-
 			Console.ReadKey();
 		}
 	}

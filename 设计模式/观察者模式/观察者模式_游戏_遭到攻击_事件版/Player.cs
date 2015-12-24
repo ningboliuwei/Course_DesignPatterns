@@ -16,16 +16,22 @@ namespace 观察者模式_游戏_遭到攻击_事件版
 		public void Join(Team team)
 		{
 			_team = team;
-			team.AddPlayer(this);
+			_team.Players.Add(this);
 		}
 
 		public void Quit(Team team)
 		{
-			_team.RemovePlayer(this);
+			_team.Players.Remove(this);
 		}
 
 		public void BeAttackedMethod()
 		{
+			Console.WriteLine($"{Name}遭到攻击！");
+			foreach (var p in _team.Players)
+			{
+				p.BeAttacked += Help;
+			}
+
 			OnBeAttacked();
 		}
 
