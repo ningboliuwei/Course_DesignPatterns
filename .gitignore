@@ -27,3 +27,7 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+/.vs/软件架构与设计模式（2019版）/v15/Server/sqlite3/db.lock
+/.vs/软件架构与设计模式（2019版）/v15/Server/sqlite3/storage.ide
+/.vs/软件架构与设计模式（2019版）/v15/Server/sqlite3/storage.ide-shm
+/.vs/软件架构与设计模式（2019版）/v15/Server/sqlite3/storage.ide-wal

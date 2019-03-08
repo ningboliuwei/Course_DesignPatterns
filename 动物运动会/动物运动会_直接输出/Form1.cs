@@ -18,6 +18,7 @@ namespace 动物运动会
 		private void btnShout_Click(object sender, EventArgs e)
 		{
 			MessageBox.Show("喵~");
+
 		}
 	}
 }

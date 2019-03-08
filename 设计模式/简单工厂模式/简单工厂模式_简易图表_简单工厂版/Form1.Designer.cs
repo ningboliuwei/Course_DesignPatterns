@@ -28,43 +28,47 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.cmbChartType = new System.Windows.Forms.ComboBox();
-			this.txtData = new System.Windows.Forms.TextBox();
-			this.SuspendLayout();
-			// 
-			// cmbChartType
-			// 
-			this.cmbChartType.FormattingEnabled = true;
-			this.cmbChartType.Items.AddRange(new object[] {
+            this.cmbChartType = new System.Windows.Forms.ComboBox();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // cmbChartType
+            // 
+            this.cmbChartType.FormattingEnabled = true;
+            this.cmbChartType.Items.AddRange(new object[] {
             "LINE",
             "BAR",
             "PIE"});
-			this.cmbChartType.Location = new System.Drawing.Point(651, 12);
-			this.cmbChartType.Name = "cmbChartType";
-			this.cmbChartType.Size = new System.Drawing.Size(121, 23);
-			this.cmbChartType.TabIndex = 0;
-			// 
-			// txtData
-			// 
-			this.txtData.Location = new System.Drawing.Point(651, 42);
-			this.txtData.Name = "txtData";
-			this.txtData.Size = new System.Drawing.Size(121, 22);
-			this.txtData.TabIndex = 1;
-			// 
-			// Form1
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(784, 745);
-			this.Controls.Add(this.txtData);
-			this.Controls.Add(this.cmbChartType);
-			this.Name = "Form1";
-			this.Text = "简易图表";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			this.Click += new System.EventHandler(this.Form1_Click);
-			this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.cmbChartType.Location = new System.Drawing.Point(992, 13);
+            this.cmbChartType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbChartType.Name = "cmbChartType";
+            this.cmbChartType.Size = new System.Drawing.Size(154, 26);
+            this.cmbChartType.TabIndex = 0;
+            this.cmbChartType.Text = "LINE";
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(992, 49);
+            this.txtData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(154, 28);
+            this.txtData.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1184, 1021);
+            this.Controls.Add(this.txtData);
+            this.Controls.Add(this.cmbChartType);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Form1";
+            this.Text = "简易图表";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.Form1_Click);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
