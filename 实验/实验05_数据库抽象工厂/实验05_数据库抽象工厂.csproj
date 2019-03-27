@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3FE93B4-8646-4CAB-A45F-0D17F4CBFFC2}</ProjectGuid>
+    <ProjectGuid>{CABEB586-E16C-4F90-B850-EDFC5CCB0148}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>实验05_数据库抽象工厂</RootNamespace>
+    <AssemblyName>实验05_数据库抽象工厂</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbCommand.cs" />
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="DbFactory.cs" />
+    <Compile Include="MySqlCommand.cs" />
+    <Compile Include="MySqlConnection.cs" />
+    <Compile Include="OracleCommand.cs" />
+    <Compile Include="OracleConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

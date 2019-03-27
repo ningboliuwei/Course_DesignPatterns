@@ -8,7 +8,7 @@ namespace 建造者模式_画小人_建造者模式版
 	internal class PersonThinBuilder : PersonBuilder
 	{
         public PersonThinBuilder(Graphics g)
-            : base(g)
+            : base(g,new Pen(Color.Red))
         {
         }
 

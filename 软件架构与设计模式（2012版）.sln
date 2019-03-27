@@ -253,6 +253,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验03_银行系统改进
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验03_银行系统改进原版", "实验\实验03_银行系统改进原版\实验03_银行系统改进原版.csproj", "{676F5D99-4E19-4F68-896E-0B77C1BE42A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验05_数据库抽象工厂", "实验\实验05_数据库抽象工厂\实验05_数据库抽象工厂.csproj", "{CABEB586-E16C-4F90-B850-EDFC5CCB0148}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -679,6 +681,10 @@ Global
 		{676F5D99-4E19-4F68-896E-0B77C1BE42A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{676F5D99-4E19-4F68-896E-0B77C1BE42A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{676F5D99-4E19-4F68-896E-0B77C1BE42A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABEB586-E16C-4F90-B850-EDFC5CCB0148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABEB586-E16C-4F90-B850-EDFC5CCB0148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABEB586-E16C-4F90-B850-EDFC5CCB0148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABEB586-E16C-4F90-B850-EDFC5CCB0148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -805,6 +811,7 @@ Global
 		{69AED8AB-E546-4376-96ED-68927924CDE5} = {E7E58A37-F55A-4BF4-AB29-50EE83CF03C8}
 		{328009F0-87E8-4B53-B564-568AB23E3A58} = {E7E58A37-F55A-4BF4-AB29-50EE83CF03C8}
 		{676F5D99-4E19-4F68-896E-0B77C1BE42A4} = {E7E58A37-F55A-4BF4-AB29-50EE83CF03C8}
+		{CABEB586-E16C-4F90-B850-EDFC5CCB0148} = {E7E58A37-F55A-4BF4-AB29-50EE83CF03C8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5EE82AC6-1C10-4D94-BDF5-0E2B9E458CE6}

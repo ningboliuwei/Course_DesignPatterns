@@ -7,6 +7,7 @@
             Id = id;
             Password = password;
             Limit = limit;
+            Credit = 0;
         }
 
         public double Limit { get; set; }
