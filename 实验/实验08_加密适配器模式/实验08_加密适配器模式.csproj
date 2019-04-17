@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{79CCD7F3-184F-478A-970A-01741080A897}</ProjectGuid>
+    <ProjectGuid>{181D5306-8AC2-4446-8516-4894C2B6CEAD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>实验08_双向适配器模式</RootNamespace>
-    <AssemblyName>实验08_双向适配器模式</AssemblyName>
+    <RootNamespace>实验08_加密适配器模式</RootNamespace>
+    <AssemblyName>实验08_加密适配器模式</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NewCipher">
-      <HintPath>..\实验08_加密适配器模式\NewCipher.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnimalAdapter.cs" />
-    <Compile Include="Cat.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="ICat.cs" />
-    <Compile Include="IDog.cs" />
+    <Compile Include="CipherAdapter.cs" />
+    <Compile Include="ICipher.cs" />
+    <Compile Include="Cipher.cs" />
+    <Compile Include="NewCipher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

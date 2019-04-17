@@ -1,4 +1,5 @@
 ﻿using System;
+using 实验08_加密适配器模式;
 
 namespace 实验08_双向适配器模式
 {
@@ -6,13 +7,24 @@ namespace 实验08_双向适配器模式
     {
         private static void Main(string[] args)
         {
-            ICat cat = new AnimalAdapter(new Dog());
+            Console.WriteLine("使用适配器模式之前");
+            ICat cat1 = new Cat();
             Console.Write("我是一只猫：");
-            cat.CatchMouse();
+            cat1.CatchMouse();
 
-            IDog dog = new AnimalAdapter(new Cat());
+            IDog dog1 = new Dog();
             Console.Write("我是一条狗：");
-            dog.Cry();
+            dog1.Cry();
+
+            Console.WriteLine();
+            Console.WriteLine("使用适配器模式之后");
+            ICat cat2 = new AnimalAdapter(new Dog());
+            Console.Write("我是一只猫：");
+            cat2.CatchMouse();
+
+            IDog dog2 = new AnimalAdapter(new Cat());
+            Console.Write("我是一条狗：");
+            dog2.Cry();
 
             Console.ReadKey();
         }
