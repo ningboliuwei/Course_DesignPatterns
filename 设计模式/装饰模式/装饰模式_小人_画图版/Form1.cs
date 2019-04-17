@@ -27,16 +27,16 @@ namespace 装饰模式_小人_画图版
 			//第一种装扮结束
 
 			//第二种装扮——只显示基础版瘦人
-			//Person person = new PersonThin(g, new Pen(Color.Maroon));//瘦人
-			//person.Show();
+//			Person person = new PersonThin(g, new Pen(Color.Maroon));//瘦人
+//			person.Show();
 			//第二种装扮结束
 
 			//第三种装扮——只穿一条垮裤的瘦人
-			//Person person = new PersonThin(g, new Pen(Color.Maroon));
-			//BigTrousers bigTrousers = new BigTrousers(g, new Pen(Color.Black));
-
-			//bigTrousers.Decorate(person);
-			//bigTrousers.Show();
+//			Person person = new PersonThin(g, new Pen(Color.Maroon));
+//			BigTrousers bigTrousers = new BigTrousers(g, new Pen(Color.Black));
+//
+//			bigTrousers.Decorate(person);
+//			bigTrousers.Show();
 			//第三种装扮结束
 
 			//第四种装扮——穿领带与球鞋的瘦人

@@ -8,10 +8,6 @@ namespace 实验05_数据库抽象工厂
 {
     class MySqlCommand:DbCommand
     {
-        public MySqlCommand() : base()
-        {
-        }
-
         public override void Execute()
         {
             Console.WriteLine($"在 MySql 数据库（连接字符串：{this.Connection.ConnectionString}）中执行 {this.CommandText} 命令");
