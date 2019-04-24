@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CipherContext.cs" />
     <Compile Include="ICipher.cs" />
     <Compile Include="MD5Cipher.cs" />
     <Compile Include="RSACipher.cs" />
