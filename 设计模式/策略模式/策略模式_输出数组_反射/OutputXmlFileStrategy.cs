@@ -22,7 +22,7 @@ namespace 策略模式_输出数组_反射
 				XmlWriterSettings settings = new XmlWriterSettings();
 				settings.Indent = true;
 
-				XmlWriter writer = XmlWriter.Create("E:\\#TEMP\\XMLReport.xml", settings);
+				XmlWriter writer = XmlWriter.Create("D:\\DEMO\\XMLReport.xml", settings);
 
 				writer.WriteStartElement("strings");
 

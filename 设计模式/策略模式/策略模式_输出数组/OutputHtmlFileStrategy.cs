@@ -27,7 +27,7 @@ namespace 策略模式_输出数组
 
 			try
 			{
-				StreamWriter writer = new StreamWriter("E:\\#TEMP\\HTMLReport.html");
+				StreamWriter writer = new StreamWriter("D:\\DEMO\\HTMLReport.html");
 				writer.Write(builder.ToString());
 				writer.Close();
 			}

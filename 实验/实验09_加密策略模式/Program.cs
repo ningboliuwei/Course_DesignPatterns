@@ -15,22 +15,22 @@ namespace 实验09_加密策略模式
             Console.Write("请选择加密算法：1. MD5 2. SHA 3. RSA\n");
             var option = Convert.ToInt32(Console.ReadLine()) - 1;
 
-            CipherContext context = null;
+            var context = new CipherContext();
 
             if (option == 1)
             {
-                context = new CipherContext(new MD5Cipher());
+                context.Cipher = new MD5Cipher();
             }
             else if (option == 2)
             {
-                context = new CipherContext(new SHACipher());
+                context.Cipher = new SHACipher();
             }
             else if (option == 2)
             {
-                context = new CipherContext(new RSACipher());
+                context.Cipher = new RSACipher();
             }
 
-            Console.WriteLine($"加密后的字符串为：{context?.Encrypt(text)}");
+            Console.WriteLine($"加密后的字符串为：{context.Encrypt(text)}");
 
             Console.ReadKey();
         }

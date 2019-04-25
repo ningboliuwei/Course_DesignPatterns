@@ -25,7 +25,7 @@ namespace 策略模式_输出数组_反射
 
 			try
 			{
-				StreamWriter writer = new StreamWriter("E:\\#TEMP\\TXTReport.txt");
+				StreamWriter writer = new StreamWriter("D:\\DEMO\\TXTReport.txt");
 				writer.Write(builder);
 				writer.Close();
 			}
