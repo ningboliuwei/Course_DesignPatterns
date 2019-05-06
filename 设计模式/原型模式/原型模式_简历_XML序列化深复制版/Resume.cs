@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Xml.Serialization;
 
-namespace 原型模式_简历_内含对象深复制版
+namespace 原型模式_简历_XML序列化深复制版
 {
-    class Resume : ICloneable
+    [Serializable]
+    public class Resume : ICloneable
     {
         public string Name { get; set; }
         public string Sex { get; set; }
@@ -13,6 +18,12 @@ namespace 原型模式_简历_内含对象深复制版
         public List<ExpInfo> EduExp { get; set; }
         public List<ExpInfo> WorkExp { get; set; }
         public string Post { get; set; }
+
+        public Resume()
+        {
+
+        }
+
         public Resume(string name, string sex, DateTime birthDate, string phone, List<ExpInfo> eduExp,
             List<ExpInfo> workExp,
             string post)
@@ -49,26 +60,43 @@ namespace 原型模式_简历_内含对象深复制版
 
         public object Clone()
         {
-            Resume resume = new Resume();
-            resume.Name = Name;
-            resume.Sex = Sex;
-            resume.BirthDate = BirthDate;
-            resume.Phone = Phone;
-            resume.Phone = Phone;
-            resume.EduExp = new List<ExpInfo>();
-            foreach (var e in EduExp)
+            Resume copy;
+            var tempFilePath = Path.Combine(Environment.CurrentDirectory, "temp.xml");
+            var fs = new FileStream(tempFilePath, FileMode.Create);
+            var serializer = new XmlSerializer(typeof(Resume));
+
+            try
             {
-                resume.EduExp.Add(new ExpInfo(e.Place, e.StartDate, e.EndDate));
+                serializer.Serialize(fs, this);
+            }
+            catch (SerializationException e)
+            {
+                Console.WriteLine($"Failed to serialize. Reason: {e.Message}");
+                throw;
+            }
+            finally
+            {
+                fs.Close();
             }
 
-            resume.WorkExp = new List<ExpInfo>();
-            foreach (var e in WorkExp)
+            var fs1 = new FileStream(tempFilePath, FileMode.Open);
+            var serializer1 = new XmlSerializer(typeof(Resume));
+
+            try
             {
-                resume.WorkExp.Add(new ExpInfo(e.Place, e.StartDate, e.EndDate));
+                copy = (Resume) serializer1.Deserialize(fs1);
+            }
+            catch (SerializationException e)
+            {
+                Console.WriteLine($"Failed to serialize. Reason: {e.Message}");
+                throw;
+            }
+            finally
+            {
+                fs1.Close();
             }
 
-            resume.Post = Post;
-            return resume;
+            return copy;
         }
     }
 }

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace 原型模式_简历_内含对象深复制版
+namespace 原型模式_简历_序列化深复制版
 {
+    [Serializable]
     class ExpInfo
     {
         public string Place { get; set; }
