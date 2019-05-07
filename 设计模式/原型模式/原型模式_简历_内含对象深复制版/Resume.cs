@@ -13,6 +13,11 @@ namespace 原型模式_简历_内含对象深复制版
         public List<ExpInfo> EduExp { get; set; }
         public List<ExpInfo> WorkExp { get; set; }
         public string Post { get; set; }
+
+        public Resume()
+        {
+
+        }
         public Resume(string name, string sex, DateTime birthDate, string phone, List<ExpInfo> eduExp,
             List<ExpInfo> workExp,
             string post)
