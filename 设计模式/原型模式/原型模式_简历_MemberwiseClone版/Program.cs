@@ -20,11 +20,8 @@ namespace 原型模式_简历_MemberwiseClone版
 			resume1.Name = "奥观海";
 
 			resume1.Display();
-			Console.WriteLine("-----------------------------------");
 			resume2.Display();
-			Console.WriteLine("-----------------------------------");
 			resume3.Display();
-			Console.WriteLine("-----------------------------------");
 
 			Console.ReadLine();
 		}

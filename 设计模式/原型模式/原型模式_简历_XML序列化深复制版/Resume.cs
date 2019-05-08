@@ -56,6 +56,7 @@ namespace 原型模式_简历_XML序列化深复制版
             }
 
             Console.WriteLine($"应聘岗位：{Post}");
+            Console.WriteLine("-----------------------------------");
         }
 
         public object Clone()

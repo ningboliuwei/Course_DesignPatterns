@@ -39,7 +39,8 @@ namespace 原型模式_简历_MemberwiseClone版
 			Console.WriteLine($"教育经历：{EduExp}");
 			Console.WriteLine($"工作经历：{WorkExp}");
 			Console.WriteLine($"应聘岗位：{Post}");
-		}
+			Console.WriteLine("-----------------------------------");
+        }
 
 		public object Clone()
 		{

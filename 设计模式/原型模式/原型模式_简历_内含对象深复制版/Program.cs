@@ -31,11 +31,8 @@ namespace 原型模式_简历_内含对象深复制版
 			resume1.WorkExp[0] = new ExpInfo("360", new DateTime(2013, 12, 1), new DateTime(2014, 12, 1));
 
 			resume1.Display();
-			Console.WriteLine("-----------------------------------");
 			resume2.Display();
-			Console.WriteLine("-----------------------------------");
 			resume3.Display();
-			Console.WriteLine("-----------------------------------");
 
 			Console.ReadLine();
 		}

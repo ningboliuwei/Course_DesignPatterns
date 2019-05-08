@@ -50,6 +50,7 @@ namespace 原型模式_简历_内含对象深复制版
             }
 
             Console.WriteLine($"应聘岗位：{Post}");
+            Console.WriteLine("-----------------------------------");
         }
 
         public object Clone()
@@ -61,6 +62,7 @@ namespace 原型模式_简历_内含对象深复制版
             resume.Phone = Phone;
             resume.Phone = Phone;
             resume.EduExp = new List<ExpInfo>();
+
             foreach (var e in EduExp)
             {
                 resume.EduExp.Add(new ExpInfo(e.Place, e.StartDate, e.EndDate));
@@ -73,6 +75,7 @@ namespace 原型模式_简历_内含对象深复制版
             }
 
             resume.Post = Post;
+
             return resume;
         }
     }

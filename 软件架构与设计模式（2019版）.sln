@@ -151,7 +151,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_Clone�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_非原型模式版", "设计模式\原型模式\原型模式_简历_非原型模式版\原型模式_简历_非原型模式版.csproj", "{64B820C9-444E-4B3E-970D-29672F5D11ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_内含对象版", "设计模式\原型模式\原型模式_简历_内含对象版\原型模式_简历_内含对象版.csproj", "{ADB5D7F8-131D-4F4C-80C1-FC0B76FB1E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_内含对象MemberwiseClone版", "设计模式\原型模式\原型模式_简历_内含对象版\原型模式_简历_内含对象MemberwiseClone版.csproj", "{ADB5D7F8-131D-4F4C-80C1-FC0B76FB1E48}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_内含对象深复制版", "设计模式\原型模式\原型模式_简历_内含对象深复制版\原型模式_简历_内含对象深复制版.csproj", "{7CBFD111-1D0B-47E8-B9BF-B6AFBBE5C1DD}"
 EndProject
