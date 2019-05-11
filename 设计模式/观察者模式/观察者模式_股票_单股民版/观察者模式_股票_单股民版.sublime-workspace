@@ -1,0 +1,241 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"cs",
+				"cs-script: New script"
+			],
+			[
+				"sync",
+				"Sync Settings: Upload"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/百度云同步盘/需要同步使用的便携软件/Sublime Text 3/Data/Packages/User/SyncSettings.sublime-settings",
+		"/C/GitHub/Course_DesignPatterns/设计模式/原型模式/原型模式_简历_序列化深复制版/ExpInfo.cs",
+		"/C/GitHub/Course_DesignPatterns/设计模式/原型模式/原型模式_简历_序列化深复制版/Resume.cs",
+		"/C/GitHub/Course_DesignPatterns/设计模式/原型模式/原型模式_简历_XML序列化深复制版/Resume.cs",
+		"/C/GitHub/Course_DesignPatterns/设计模式/原型模式/原型模式_简历_序列化深复制版/bin/Debug/temp.dat",
+		"/C/GitHub/HKY_UploadSuite/获取的填报数据.json",
+		"/E/百度云同步盘/需要同步使用的便携软件/Sublime Text 3/Data/Packages/User/cs-script/new_script.cs",
+		"/E/百度云同步盘/需要同步使用的便携软件/Sublime Text 3/Data/Packages/Sync Settings/SyncSettings.sublime-settings",
+		"/E/百度云同步盘/需要同步使用的便携软件/Sublime Text 3/Data/Packages/User/SyncSettings.sublime-settings",
+		"/C/2017XML大作业/154173421 宋诗波/GoodsSaleManagerSystem/GoodsSaleManagerSystem/Customers.aspx.designer.cs",
+		"/C/2017XML大作业/154173335 应伟伦/xml大作业/customer.aspx.cs",
+		"/C/2017XML大作业/154173412 金琪晨/大作业/dazuoye/dazuoye/sales.aspx.cs",
+		"/C/2017XML大作业/154173412 金琪晨/大作业/customer.xml",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/01+实验01—编写简单的XML文档/01+实验01—编写简单的XML文档+20170919092327+154173335应伟伦/Student.xml",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/01+实验01—编写简单的XML文档/01+实验01—编写简单的XML文档+20170919093027+154173331徐杨易/Cellphone.xml",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/01+实验01—编写简单的XML文档/01+实验01—编写简单的XML文档+20170919093027+154173331徐杨易/student.xml",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/05+实验05—HTML与XSLT基础/05+实验05—HTML与XSLT基础+20171031091507+154173520施恩来/作业5/shiyanwu.html",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/05+实验05—HTML与XSLT基础/05+实验05—HTML与XSLT基础+20171031150816+154173402陈丁荣/实验5/books.html",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/05+实验05—HTML与XSLT基础/05+实验05—HTML与XSLT基础+20171031185400+154177335徐俊飞/XML实验五XJF/bookstore.html",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/05+实验05—HTML与XSLT基础/05+实验05—HTML与XSLT基础+20171110205831+154173338周宇/实验五/books.xml",
+		"/E/百度云同步盘/#01历年来教学相关/2017-2018学年第1学期/XML 技术/WEEK07_LAB【HTML与XSLT基础】/books.xml",
+		"/C/2017XML平时作业/upload/07+实验07—用XML Reader读取XML文档/07+实验07—用XML Reader读取XML文档+20171120080103+154173301蔡成元/CarsReader/CarsReader.aspx",
+		"/C/2017XML平时作业/upload/07+实验07—用XML Reader读取XML文档/07+实验07—用XML Reader读取XML文档+20171120080103+154173301蔡成元/CarsReader/CarsReader.aspx.cs",
+		"/C/2017XML平时作业/upload/07+实验07—用XML Reader读取XML文档/07+实验07—用XML Reader读取XML文档+20171120080103+154173301蔡成元/XmlValidator/XmlValidator.aspx",
+		"/C/2017XML平时作业/upload/08+实验08—使用XmlWriter写入XML文档/08+实验08—使用XmlWriter写入XML文档+20171114090556+154173505郭钊沁/CustomersWriter/Customers.xml",
+		"/C/2017XML大作业/154173436 张峰/代码/WebApplication1/WebApplication1/sales.aspx.cs",
+		"/C/2017XML平时作业/upload/07+实验07—用XML Reader读取XML文档/07+实验07—用XML Reader读取XML文档+20171120080103+154173301蔡成元/Customers/Customers.aspx.cs",
+		"/C/2017XML平时作业/upload/07+实验07—用XML Reader读取XML文档/07+实验07—用XML Reader读取XML文档+20171120080103+154173301蔡成元/Customers/Customers.aspx",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/01+实验01—编写简单的XML文档/01+实验01—编写简单的XML文档+20170919092327+154173335应伟伦/Cellphone.xml",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/01+实验01—编写简单的XML文档/01+实验01—编写简单的XML文档+20170919091732+154173334杨考/Student.xml",
+		"/E/HTTP/CourseworkUploadSystem4XML/upload/01+实验01—编写简单的XML文档/01+实验01—编写简单的XML文档+20170919091732+154173334杨考/Cellphone.xml",
+		"/E/HTTP/CourseworkUploadSystem4YIJI2/uploadhistory.txt",
+		"/E/HTTP/CourseworkUploadSystem4YIJI1/uploadhistory.txt",
+		"/C/Users/Liu Wei/Desktop/Untitled-1.md",
+		"/E/百度云同步盘/#01历年来教学相关/2017-2018学年第1学期/计算机应用基础/实验3-4 宣传海报（课外）/实验3-4 评分标准.txt",
+		"/C/Users/Liu Wei/AppData/Roaming/Code/User/syncLocalSettings.json",
+		"/E/百度云同步盘/#01历年来教学相关/2017-2018学年第1学期/XML 技术/雷同统计.txt",
+		"/E/百度云同步盘/需要同步使用的便携软件/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/C/GitHub/Course_XML/LINQ2XML/serialized.xml",
+		"/E/百度云同步盘/需要同步使用的便携软件/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/GitHub/Course_XML/LINQ2XML/empty.xml",
+		"/C/GitHub/GaAutoTestSystem/GaAutoTestSystem/bin/Debug/TestSuiteFiles/TS_TriangleType_20171204125733.xml",
+		"/E/百度云同步盘/需要同步使用的便携软件/PPT2PDFVBS/PPT2PDF.vbs",
+		"/E/百度云同步盘/需要同步使用的便携软件/PPT2PDFVBS/PPT2PDF.reg",
+		"/C/GitHub/GaAutoTestSystem/GaAutoTestSystem/bin/Debug/TestSuiteFiles/TS_TriangleType_20171204130228.xml",
+		"/E/HTTP/教学相关/XML2013/XmlDocument的使用_实验_编写简单的RSS阅读器/RSSFeed.xml",
+		"/E/百度云同步盘/#01历年来教学相关/2017-2018学年第1学期/XML 技术/WEEK13_LAB【编写简单的RSS阅读器】/RSSFeed.xml",
+		"/G/ZJCAI/CPRTest/irunin.xml",
+		"/E/HTTP/教学相关/XML2013/XML的显示_实验/Web.config",
+		"/E/HTTP/教学相关/XML2013/XML的显示_实验/Web.sitemap",
+		"/C/GitHub/GaAutoTestSystem/GaAutoTestSystem/bin/Debug/TestSuiteFiles/TS_TriangleType_20171212100759.xml",
+		"/C/GitHub/GaAutoTestSystem/GaAutoTestSystem/bin/Debug/TestSuiteFiles/TS_TriangleType_20171204140656.xml",
+		"/C/GitHub/GaAutoTestSystem/GaAutoTestSystem/bin/Debug/TestSuiteFiles/TS_TriangleType_20171204140648.xml",
+		"/E/百度云同步盘/#02历年来科研教研相关/2017年度/宁波大学科研/需要用到的代码文件/三角形分类_测试用例文件.xml",
+		"/C/Program Files/MacType/UserParams.ini",
+		"/C/Program Files/MacType/ini/LIUWEIOFFICE.ini",
+		"/C/#GA_DEMO/log.txt",
+		"/E/百度云同步盘/#02历年来科研教研相关/2017年度/宁波大学科研/需要用到的代码文件/TestSuite.xsd",
+		"/E/百度云同步盘/#02历年来科研教研相关/2017年度/宁波大学科研/需要用到的代码文件/TestSuite.xml",
+		"/E/HTTP/教学相关/XML2013/XmlDocument的使用__实验_使用XmlDocument更新XML文档/Cellphone.xml",
+		"/C/Users/Liu Wei/Desktop/books.xml"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "观察者模式_股票_单股民版.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
