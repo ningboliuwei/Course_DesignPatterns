@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.156
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "动物运动会", "动物运动会", "{2ADEAA4C-550B-476D-9498-934A01065743}"
 EndProject
@@ -253,7 +253,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_单�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_多股民版", "设计模式\观察者模式\观察者模式_股票_多股民版\观察者模式_股票_多股民版.csproj", "{FA8E99CC-E48F-45FE-9725-12B7685A3078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_多订阅者版", "设计模式\观察者模式\观察者模式_股票_多订阅者版\观察者模式_股票_多订阅者版.csproj", "{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_股民及手机版", "设计模式\观察者模式\观察者模式_股票_多订阅者版\观察者模式_股票_股民及手机版.csproj", "{40F39B7F-65D1-4AC9-9920-F490CBBD5FE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式_股票_抽象观察者版", "设计模式\观察者模式\观察者模式_股票_抽象观察者版\观察者模式_股票_抽象观察者版.csproj", "{75AC6826-548F-4749-9E09-2C7EE69029A0}"
 EndProject

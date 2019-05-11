@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace 观察者模式_股票_抽象观察对象版
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Stock stock = new Stock() {Symbol = "SINA", Price = 120.35};
-            Bond bond = new Bond() {Company = "BAIDU", Price = 90.42};
+namespace 观察者模式_股票_抽象观察对象版 {
+    class Program {
+        static void Main(string[] args) {
+            Stock stock = new Stock {Symbol = "SINA", Price = 120.35};
+            Bond bond = new Bond {Company = "BAIDU", Price = 90.42};
 
             Investor observerA = new Investor {Name = "丁蟹"};
             observerA.SetSubject(stock);
