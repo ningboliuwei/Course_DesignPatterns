@@ -19,7 +19,7 @@ namespace 观察者模式_股票_单股民版
 
         public void Notify()
         {
-            _investor.Update();
+            _investor.Response();
         }
     }
 }
