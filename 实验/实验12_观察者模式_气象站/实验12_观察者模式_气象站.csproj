@@ -46,9 +46,10 @@
     <Compile Include="Lcd.cs" />
     <Compile Include="Phone.cs" />
     <Compile Include="Subject.cs" />
-    <Compile Include="WeatherDataDevice.cs" />
+    <Compile Include="Device.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrafficData.cs" />
     <Compile Include="WeatherData.cs" />
   </ItemGroup>
   <ItemGroup>
