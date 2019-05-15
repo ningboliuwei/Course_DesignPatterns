@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace 实验12_观察者模式_气象站 {
-    abstract class Subject {
+    abstract class Data {
         private List<Device> _devices = new List<Device>();
 
         public void RegisterDevice(Device device) {

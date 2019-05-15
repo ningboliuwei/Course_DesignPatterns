@@ -299,6 +299,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "原型模式_简历_序列�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验12_观察者模式_气象站", "实验\实验12_观察者模式_气象站\实验12_观察者模式_气象站.csproj", "{950BF96C-EE03-406F-92C8-00494193DB43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验12_观察者模式_计数器", "实验\实验12_观察者模式_计数器\实验12_观察者模式_计数器.csproj", "{8438BD28-1AD7-4551-AC4A-10AD07A3B985}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -813,6 +815,10 @@ Global
 		{950BF96C-EE03-406F-92C8-00494193DB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{950BF96C-EE03-406F-92C8-00494193DB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{950BF96C-EE03-406F-92C8-00494193DB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8438BD28-1AD7-4551-AC4A-10AD07A3B985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8438BD28-1AD7-4551-AC4A-10AD07A3B985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8438BD28-1AD7-4551-AC4A-10AD07A3B985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8438BD28-1AD7-4551-AC4A-10AD07A3B985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -962,6 +968,7 @@ Global
 		{0D619B15-2FFF-462F-AD02-1C9AD2266CD8} = {7CCBAD8F-AB44-47D7-9EE5-DD23DB5ED32B}
 		{ADBC5FB8-0968-4CDE-877A-FBBD49F41603} = {7CCBAD8F-AB44-47D7-9EE5-DD23DB5ED32B}
 		{950BF96C-EE03-406F-92C8-00494193DB43} = {41E2FE92-B57D-43EC-BA70-03B10282107F}
+		{8438BD28-1AD7-4551-AC4A-10AD07A3B985} = {41E2FE92-B57D-43EC-BA70-03B10282107F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0B70BD5-489B-42B9-A96A-BCD01B88FB00}

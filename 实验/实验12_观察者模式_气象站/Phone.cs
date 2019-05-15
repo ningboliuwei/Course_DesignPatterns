@@ -8,7 +8,7 @@ namespace 实验12_观察者模式_气象站 {
     class Phone : Device {
         public string PhoneNumber { get; set; }
 
-        public override void Update(Subject data) {
+        public override void Update(Data data) {
             if (data.GetType().ToString().ToUpper().Contains("WEATHER")) {
                 var weatherData = data as WeatherData;
 

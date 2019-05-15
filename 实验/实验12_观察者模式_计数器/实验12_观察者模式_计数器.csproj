@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{950BF96C-EE03-406F-92C8-00494193DB43}</ProjectGuid>
+    <ProjectGuid>{8438BD28-1AD7-4551-AC4A-10AD07A3B985}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>实验12_观察者模式_气象站</RootNamespace>
-    <AssemblyName>实验12_观察者模式_气象站</AssemblyName>
+    <RootNamespace>实验12_观察者模式_计数器</RootNamespace>
+    <AssemblyName>实验12_观察者模式_计数器</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lcd.cs" />
-    <Compile Include="Phone.cs" />
-    <Compile Include="Data.cs" />
-    <Compile Include="Device.cs" />
+    <Compile Include="CountEndEventArgs.cs" />
+    <Compile Include="CountingEventArgs.cs" />
+    <Compile Include="CountStartEventArgs.cs" />
+    <Compile Include="Incrementor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrafficData.cs" />
-    <Compile Include="WeatherData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

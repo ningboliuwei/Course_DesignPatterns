@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace 实验12_观察者模式_气象站 {
-    class WeatherData : Subject {
+    class WeatherData : Data {
         public float Temperature;
         public float Humidity;
         public float Pressure;
