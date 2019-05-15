@@ -43,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleOutputer.cs" />
     <Compile Include="CountEndEventArgs.cs" />
+    <Compile Include="CountEndHandler.cs" />
     <Compile Include="CountingEventArgs.cs" />
+    <Compile Include="CountingHandler.cs" />
     <Compile Include="CountStartEventArgs.cs" />
-    <Compile Include="Incrementor.cs" />
+    <Compile Include="CountStartHandler.cs" />
+    <Compile Include="FileOutputer.cs" />
+    <Compile Include="Incrementer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
