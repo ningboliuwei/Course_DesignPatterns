@@ -17,7 +17,7 @@ namespace 实验12_观察者模式_计数器 {
         public void Count() {
             CountStart?.Invoke(this, new CountStartEventArgs {StartNumber = StartNumber});
 
-            for (int i = StartNumber; i < StartNumber + CountNumber; i++) {
+            for (int i = StartNumber; i <= StartNumber + CountNumber; i++) {
                 Counting?.Invoke(this, new CountingEventArgs {CurrentNumber = i});
                 Thread.Sleep(1000);
             }
