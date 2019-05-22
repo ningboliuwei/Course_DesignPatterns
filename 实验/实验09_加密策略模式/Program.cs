@@ -13,7 +13,7 @@ namespace 实验09_加密策略模式
             Console.Write("请输入要加密的字符串：");
             var text = Console.ReadLine();
             Console.Write("请选择加密算法：1. MD5 2. SHA 3. RSA\n");
-            var option = Convert.ToInt32(Console.ReadLine()) - 1;
+            var option = Convert.ToInt32(Console.ReadLine());
 
             var context = new CipherContext();
 
@@ -25,7 +25,7 @@ namespace 实验09_加密策略模式
             {
                 context.Cipher = new SHACipher();
             }
-            else if (option == 2)
+            else if (option == 3)
             {
                 context.Cipher = new RSACipher();
             }
