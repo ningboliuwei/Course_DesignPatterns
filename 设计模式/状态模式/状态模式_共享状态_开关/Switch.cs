@@ -8,34 +8,25 @@ namespace 状态模式_共享状态_开关
 {
     class Switch
     {
-        private static SwitchState _currentState;
-        private static SwitchState _onState = new OnState();
-        private static SwitchState _offState = new OffState();
+        private readonly Dictionary<string, SwitchState> _states = new Dictionary<string, SwitchState> {
+            {"ON", new OnState()},
+            {"OFF", new OffState()}
+        };
 
         public string Name { get; set; }
 
+        public SwitchState CurrentState { get; set; }
+
         public Switch() {
-            _currentState = _offState;
+            CurrentState = GetState("OFF");
         }
 
-        public void SetState(SwitchState state) {
-            _currentState = state;
-        }
-
-        public SwitchState GetCurrentState() {
-            return _currentState;
-        }
-
-        public SwitchState GetOnState() {
-            return _onState;
-        }
-
-        public SwitchState GetOffState() {
-            return _offState;
+        public SwitchState GetState(string key) {
+            return _states[key];
         }
 
         public void Press() {
-            _currentState.Press(this);
+            CurrentState.Press(this);
         }
     }
 }

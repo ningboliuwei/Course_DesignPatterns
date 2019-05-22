@@ -9,7 +9,7 @@ namespace 状态模式_共享状态_开关
     class OffState : SwitchState
     {
         public override void Press(Switch s) {
-            s.SetState(s.GetOnState());
+            s.CurrentState = s.GetState("ON");
             Console.WriteLine($"开关 {s.Name} 被打开了");
         }
     }
