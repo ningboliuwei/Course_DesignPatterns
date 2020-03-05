@@ -20,7 +20,7 @@ namespace 动物运动会
 			Shout();
 		}
 
-		private void Shout()
+		public void Shout()
 		{
 			MessageBox.Show("喵~");
 		}

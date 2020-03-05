@@ -19,8 +19,12 @@ namespace 动物运动会
 
 		private void btnShout_Click(object sender, EventArgs e)
 		{
-			Cat cat = new Cat();
-			MessageBox.Show(cat.Shout());
+			Cat cat1 = new Cat();
+			Cat cat2 = new Cat();
+
+			cat1.Shout();
+			cat2.Shout();
+
 		}
 	}
 }

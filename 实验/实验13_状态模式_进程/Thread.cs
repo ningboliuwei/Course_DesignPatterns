@@ -9,7 +9,6 @@ namespace 实验13_状态模式_进程
     class Thread
     {
         public State CurrentState { get; set; } = new New();
-
         public int ThreadId { get; set; }
 
         public void Start() {
