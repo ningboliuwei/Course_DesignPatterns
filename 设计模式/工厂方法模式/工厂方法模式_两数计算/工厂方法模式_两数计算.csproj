@@ -69,7 +69,7 @@
     <Compile Include="MulFactory.cs" />
     <Compile Include="OperationAdd.cs" />
     <Compile Include="OperationDiv.cs" />
-    <Compile Include="OperationFactory.cs" />
+    <Compile Include="IOperationFactory.cs" />
     <Compile Include="OperationMul.cs" />
     <Compile Include="OperationSub.cs" />
     <Compile Include="SubFactory.cs" />

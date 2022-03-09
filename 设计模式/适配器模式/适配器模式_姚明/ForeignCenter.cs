@@ -1,33 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 适配器模式_姚明
-{
-	internal class ForeignCenter
-	{
-		private string _name;
+using System;
 
-		public string Name
-		{
-			get
-			{
-				return _name;
-			}
-			set
-			{
-				_name = value;
-			}
-		}
+#endregion
 
-		public void JinGong()
-		{
-			Console.Write("外籍中锋{0}进攻", _name);
-		}
+namespace 适配器模式_姚明 {
+    internal class ForeignCenter {
+        public string Name { get; set; }
 
-		public void FangShou()
-		{
-			Console.Write("外籍中锋{0}防守", _name);
-		}
-	}
+        public void FangShou() {
+            Console.Write("外籍中锋{0}防守", Name);
+        }
+
+        public void JinGong() {
+            Console.Write("外籍中锋{0}进攻", Name);
+        }
+    }
 }

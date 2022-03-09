@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "93cd6ac4-91fb-45d3-888a-527410011552": {
+      "ProjectGuid": "93cd6ac4-91fb-45d3-888a-527410011552",
+      "DisplayName": "策略模式_电影票折扣",
+      "ColorIndex": 0
+    },
+    "3ef9d3fd-6b1a-40f4-bbb4-b915e9700ce7": {
+      "ProjectGuid": "3ef9d3fd-6b1a-40f4-bbb4-b915e9700ce7",
+      "DisplayName": "动物运动会_循环叫",
+      "ColorIndex": 1
+    },
+    "3f9ab38e-9574-4acc-92c7-583b28bcf676": {
+      "ProjectGuid": "3f9ab38e-9574-4acc-92c7-583b28bcf676",
+      "DisplayName": "策略模式_计算器_满送_策略",
+      "ColorIndex": 2
+    },
+    "64b820c9-444e-4b3e-970d-29672f5d11ed": {
+      "ProjectGuid": "64b820c9-444e-4b3e-970d-29672f5d11ed",
+      "DisplayName": "原型模式_简历_非原型模式版",
+      "ColorIndex": 3
+    },
+    "8fef8cc8-d004-44d9-bbf4-403a8228d0ec": {
+      "ProjectGuid": "8fef8cc8-d004-44d9-bbf4-403a8228d0ec",
+      "DisplayName": "动物运动会_直接输出",
+      "ColorIndex": 4
+    },
+    "b2b722bf-3284-49a9-817c-2104ece9153d": {
+      "ProjectGuid": "b2b722bf-3284-49a9-817c-2104ece9153d",
+      "DisplayName": "动物运动会_函数",
+      "ColorIndex": 5
+    },
+    "c237d3d6-fe1c-4765-afdc-d46e214e1ebe": {
+      "ProjectGuid": "c237d3d6-fe1c-4765-afdc-d46e214e1ebe",
+      "DisplayName": "动物运动会_有名字",
+      "ColorIndex": 6
+    },
+    "8e41ba53-c509-4c0a-9e46-09add704c475": {
+      "ProjectGuid": "8e41ba53-c509-4c0a-9e46-09add704c475",
+      "DisplayName": "动物运动会_类",
+      "ColorIndex": 7
+    },
+    "ba63e973-da23-4920-b482-16f77fcd9aff": {
+      "ProjectGuid": "ba63e973-da23-4920-b482-16f77fcd9aff",
+      "DisplayName": "动物运动会_继承",
+      "ColorIndex": 8
+    },
+    "90a8b355-2ff9-4a2a-9dfe-db34901a0dd7": {
+      "ProjectGuid": "90a8b355-2ff9-4a2a-9dfe-db34901a0dd7",
+      "DisplayName": "动物运动会_虚方法",
+      "ColorIndex": 9
+    },
+    "7279b3dc-9a6f-4809-ae20-662d6ffe5bac": {
+      "ProjectGuid": "7279b3dc-9a6f-4809-ae20-662d6ffe5bac",
+      "DisplayName": "动物运动会_虚方法改进",
+      "ColorIndex": 10
+    },
+    "c73728ee-b4dd-4118-b5cc-84334244cf74": {
+      "ProjectGuid": "c73728ee-b4dd-4118-b5cc-84334244cf74",
+      "DisplayName": "动物运动会_抽象类",
+      "ColorIndex": 11
+    }
+  },
+  "NextColorIndex": 12
+}

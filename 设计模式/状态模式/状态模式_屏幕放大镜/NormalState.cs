@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 状态模式_屏幕放大镜
-{
-    class NormalState:State
-    {
-        public override void Display()
-        {
+using System;
+
+#endregion
+
+namespace 状态模式_屏幕放大镜 {
+    internal class NormalState : State {
+        public override void Display() {
             Console.WriteLine("普通大小");
         }
     }

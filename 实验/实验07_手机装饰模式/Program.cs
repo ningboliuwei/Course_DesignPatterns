@@ -1,11 +1,12 @@
-﻿using System;
+﻿#region
 
-namespace 实验07_手机装饰模式
-{
-    internal class Program
-    {
-        private static void Main(string[] args)
-        {
+using System;
+
+#endregion
+
+namespace 实验07_手机装饰模式 {
+    internal class Program {
+        private static void Main(string[] args) {
             MobilePhone phone = new ApplePhone();
             phone.SendMessage();
             phone.Call();

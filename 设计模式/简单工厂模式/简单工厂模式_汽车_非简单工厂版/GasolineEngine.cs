@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-using 简单工厂模式_汽车_非简单工厂版;
+using System;
 
-namespace 简单工厂模式_汽车_非简单工厂版
-{
-	internal class GasolineEngine : Engine
-	{
-		public override void Launch()
-		{
-			Console.WriteLine("Gasonline engine starts...");
-		}
-	}
+#endregion
+
+namespace 简单工厂模式_汽车_非简单工厂版 {
+    internal class GasolineEngine : Engine {
+        public override void Launch() {
+            Console.WriteLine("Gasonline engine starts...");
+        }
+    }
 }

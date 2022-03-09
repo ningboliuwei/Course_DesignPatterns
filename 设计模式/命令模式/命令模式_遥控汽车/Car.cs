@@ -1,36 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 命令模式_遥控汽车
-{
-	public class Car
-	{
-		public string _curStateStr;
+using System;
 
-		public Car()
-		{
-			_curStateStr = "";
-		}
+#endregion
 
-		public void Start()
-		{
-			Console.WriteLine("车子起动");
-		}
+namespace 命令模式_遥控汽车 {
+    public class Car {
+        public string _curStateStr;
 
-		public void MoveForwards()
-		{
-			Console.WriteLine("车子前进");
-		}
+        public Car() {
+            _curStateStr = "";
+        }
 
-		public void MoveBackwards()
-		{
-			Console.WriteLine("车子倒退");
-		}
+        public void MoveBackwards() {
+            Console.WriteLine("车子倒退");
+        }
 
-		public void Stop()
-		{
-			Console.WriteLine("车子停止");
-		}
-	}
+        public void MoveForwards() {
+            Console.WriteLine("车子前进");
+        }
+
+        public void Start() {
+            Console.WriteLine("车子起动");
+        }
+
+        public void Stop() {
+            Console.WriteLine("车子停止");
+        }
+    }
 }

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 实验13_状态模式_进程
-{
-    class Ready:State
-    {
-        public Ready()
-        {
+using System;
+
+#endregion
+
+namespace 实验13_状态模式_进程 {
+    internal class Ready : State {
+        public Ready() {
             StateName = "就绪";
         }
 

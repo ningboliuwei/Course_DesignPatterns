@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 外观模式_家庭影院_外观模式版
-{
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			Remote remote = new Remote();
+using System;
 
-			remote.WatchMovie();
+#endregion
 
-			Console.WriteLine("------------------------------");
-			remote.EndMovie();
-			Console.ReadKey();
-		}
-	}
+namespace 外观模式_家庭影院_外观模式版 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var remote = new Remote();
+
+            remote.WatchMovie();
+
+            Console.WriteLine("------------------------------");
+            remote.EndMovie();
+            Console.ReadKey();
+        }
+    }
 }

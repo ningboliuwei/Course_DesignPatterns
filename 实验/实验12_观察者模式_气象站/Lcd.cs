@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace 实验12_观察者模式_气象站 {
-    class Lcd : Device {
+    internal class Lcd : Device {
         public string Location { get; set; }
 
         public override void Update(Data data) {

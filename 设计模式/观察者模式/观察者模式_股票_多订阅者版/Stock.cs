@@ -1,40 +1,40 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+#endregion
 
 namespace 观察者模式_股票_多订阅者版 {
-    class Stock {
-        public string Symbol { get; set; }
+    internal class Stock {
+        private readonly List<Investor> _investors = new List<Investor>();
+        private readonly List<Phone> _phones = new List<Phone>();
         public double Price { get; set; }
-
-        private List<Investor> _investors = new List<Investor>();
-        private List<Phone> _phones = new List<Phone>();
+        public string Symbol { get; set; }
 
         public void AddInvestor(Investor investor) {
             _investors.Add(investor);
-        }
-
-        public void RemoveInvestor(Investor investor) {
-            _investors.Remove(investor);
         }
 
         public void AddPhone(Phone phone) {
             _phones.Add(phone);
         }
 
-        public void RemovePhone(Phone phone) {
-            _phones.Remove(phone);
-        }
-
         public void Notify() {
-            foreach (Investor investor in _investors) {
+            foreach (var investor in _investors) {
                 investor.Response();
             }
 
-            foreach (Phone phone in _phones) {
+            foreach (var phone in _phones) {
                 phone.Response();
             }
+        }
+
+        public void RemoveInvestor(Investor investor) {
+            _investors.Remove(investor);
+        }
+
+        public void RemovePhone(Phone phone) {
+            _phones.Remove(phone);
         }
     }
 }

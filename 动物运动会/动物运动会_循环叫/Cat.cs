@@ -1,49 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace 动物运动会_循环叫 {
+    public class Cat {
+        private readonly string name = "";
+        private int shoutNum = 0;
 
-namespace 动物运动会_循环叫
-{
-	public class Cat
-	{
-		private string name = "";
+        public Cat(string name) {
+            this.name = name;
+        }
 
-		private int shoutNum = 3;
+        public Cat() {
+            name = "无名";
+        }
 
-		public Cat(string name)
-		{
-			this.name = name;
-		}
+        public int ShoutNum { get; set; } = 3;
+        // public int ShoutNum {
+        //     get { return shoutNum; }
+        //     set { shoutNum = value; }
+        // }
 
-		public Cat()
-		{
-			this.name = "无名";
-		}
+        public string Shout() {
+            var resultStr = "";
+            resultStr += "我是" + name + ", ";
 
-		public string Shout()
-		{
-			string resultStr = "";
-			resultStr += "我是" + name + ", ";
+            for (var i = 0; i < ShoutNum; i++) {
+                resultStr += "喵~";
+            }
 
-			for (int i = 0; i < shoutNum; i++)
-			{
-				resultStr += "喵~";
-			}
-			return resultStr;
-		}
-
-		public int ShoutNum
-		{
-			get
-			{
-				return shoutNum;
-			}
-
-			set
-			{
-				shoutNum = value;
-			}
-		}
-	}
+            return resultStr;
+        }
+    }
 }

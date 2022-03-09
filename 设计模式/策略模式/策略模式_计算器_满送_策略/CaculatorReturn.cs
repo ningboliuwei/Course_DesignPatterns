@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 策略模式_计算器_满送_策略
-{
-	class CaculatorReturn : ICaculator
-	{
-		private readonly double _priceCondition;
-		private readonly double _priceReturn;
+using System;
 
-		public CaculatorReturn(double priceCondition, double priceReturn)
-		{
-			_priceCondition = priceCondition;
-			_priceReturn = priceReturn;
-		}
+#endregion
 
-		public override double CaculatePrice(double originalPrice)
-		{
-			double result = originalPrice;
+namespace 策略模式_计算器_满送_策略 {
+    internal class CaculatorReturn : ICaculator {
+        private readonly double _priceCondition;
+        private readonly double _priceReturn;
 
-			if (originalPrice >= _priceCondition)
-			{
-				result = originalPrice - Math.Floor(originalPrice/_priceCondition)*_priceReturn;
-			}
-			return result;
-		}
-	}
+        public CaculatorReturn(double priceCondition, double priceReturn) {
+            _priceCondition = priceCondition;
+            _priceReturn = priceReturn;
+        }
+
+        public override double CaculatePrice(double originalPrice) {
+            var result = originalPrice;
+
+            if (originalPrice >= _priceCondition) {
+                result = originalPrice - Math.Floor(originalPrice / _priceCondition) * _priceReturn;
+            }
+
+            return result;
+        }
+    }
 }

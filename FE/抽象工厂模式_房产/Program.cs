@@ -1,30 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 抽象工厂模式_房产
-{
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
-			IFactory vFactory = new VankeFactory();
-			IFactory sFactory = new SohoFactory();
+using System;
 
-			IVilla vVilla = vFactory.ProduceVilla();
-			IApartment vApartment = vFactory.ProduceApartment();
+#endregion
 
-			IVilla sVilla = sFactory.ProduceVilla();
-			IApartment sApartment = sFactory.ProduceApartment();
+namespace 抽象工厂模式_房产 {
+    internal class Program {
+        private static void Main(string[] args) {
+            IFactory vFactory = new VankeFactory();
+            IFactory sFactory = new SohoFactory();
 
-			vVilla.Show();
-			vApartment.Show();
+            var vVilla = vFactory.ProduceVilla();
+            var vApartment = vFactory.ProduceApartment();
 
-			sVilla.Show();
-			sApartment.Show();
+            var sVilla = sFactory.ProduceVilla();
+            var sApartment = sFactory.ProduceApartment();
 
-			Console.ReadLine();
-		}
-	}
+            vVilla.Show();
+            vApartment.Show();
+
+            sVilla.Show();
+            sApartment.Show();
+
+            Console.ReadLine();
+        }
+    }
 }

@@ -1,26 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 建造者模式_端口设备_建造者模式版
-{
-	public class Machine
-	{
-		public Machine()
-		{
-		}
+using System;
 
-		public Machine(string machineName)
-		{
-			Name = machineName;
-		}
+#endregion
 
-		public string Name { get; set; }
-		public string PortType { get; set; }
+namespace 建造者模式_端口设备_建造者模式版 {
+    public class Machine {
+        public Machine() {
+        }
 
-		public void Run()
-		{
-			Console.WriteLine("The machine {0} is running, the port type is {1}", Name, PortType);
-		}
-	}
+        public Machine(string machineName) {
+            Name = machineName;
+        }
+
+        public string Name { get; set; }
+        public string PortType { get; set; }
+
+        public void Run() {
+            Console.WriteLine("The machine {0} is running, the port type is {1}", Name, PortType);
+        }
+    }
 }

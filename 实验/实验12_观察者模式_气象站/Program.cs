@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace 实验12_观察者模式_气象站 {
-    class Program {
-        static void Main(string[] args) {
+    internal class Program {
+        private static void Main(string[] args) {
             var weatherData = new WeatherData();
             var trafficData = new TrafficData();
 
-            weatherData.RegisterDevice(new Phone {PhoneNumber = "13566311411"});
-            weatherData.RegisterDevice(new Lcd {Location = "天一广场"});
-            weatherData.RegisterDevice(new Phone {PhoneNumber = "13566777888"});
-            weatherData.RegisterDevice(new Lcd {Location = "万科广场"});
+            weatherData.RegisterDevice(new Phone { PhoneNumber = "13566311411" });
+            weatherData.RegisterDevice(new Lcd { Location = "天一广场" });
+            weatherData.RegisterDevice(new Phone { PhoneNumber = "13566777888" });
+            weatherData.RegisterDevice(new Lcd { Location = "万科广场" });
             weatherData.SetMeasurements(30, 80, 320);
             Console.WriteLine("---------------------------------");
             trafficData.RegisterDevice(new Phone { PhoneNumber = "13566311411" });

@@ -1,8 +1,6 @@
-﻿namespace 实验07_手机装饰模式
-{
-    abstract class MobilePhone
-    {
-        public abstract void SendMessage();
+﻿namespace 实验07_手机装饰模式 {
+    internal abstract class MobilePhone {
         public abstract void Call();
+        public abstract void SendMessage();
     }
 }

@@ -1,22 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 原型模式_简历_非原型模式版
-{
-    class Resume
-    {
-        public string Name { get; set; }
-        public string Sex { get; set; }
-        public DateTime BirthDate { get; set; }
-        public string Phone { get; set; }
-        public string EduExp { get; set; }
-        public string WorkExp { get; set; }
-        public string Post { get; set; }
+using System;
 
+#endregion
+
+namespace 原型模式_简历_非原型模式版 {
+    internal class Resume {
         public Resume(string name, string sex, DateTime birthDate, string phone, string eduExp, string workExp,
-            string post)
-        {
+            string post) {
             Name = name;
             Sex = sex;
             BirthDate = birthDate;
@@ -26,8 +17,15 @@ namespace 原型模式_简历_非原型模式版
             Post = post;
         }
 
-        public void Display()
-        {
+        public DateTime BirthDate { get; set; }
+        public string EduExp { get; set; }
+        public string Name { get; set; }
+        public string Phone { get; set; }
+        public string Post { get; set; }
+        public string Sex { get; set; }
+        public string WorkExp { get; set; }
+
+        public void Display() {
             Console.WriteLine($"姓名：{Name}");
             Console.WriteLine($"性别：{Sex}");
             Console.WriteLine($"出生日期：{BirthDate.ToString("yyyy-MM-dd")}");

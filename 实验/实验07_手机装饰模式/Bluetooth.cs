@@ -1,22 +1,21 @@
-﻿using System;
+﻿#region
 
-namespace 实验07_手机装饰模式
-{
-    class Bluetooth : Module
-    {
-        public Bluetooth(MobilePhone phone) : base(phone)
-        {
+using System;
+
+#endregion
+
+namespace 实验07_手机装饰模式 {
+    internal class Bluetooth : Module {
+        public Bluetooth(MobilePhone phone) : base(phone) {
         }
 
-        public void Connect()
-        {
-            Console.WriteLine("正在连接蓝牙……");
-        }
-
-        public override void Call()
-        {
+        public override void Call() {
             Connect();
             base.Call();
+        }
+
+        public void Connect() {
+            Console.WriteLine("正在连接蓝牙……");
         }
     }
 }

@@ -1,37 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+﻿#region
 
+using System.Drawing;
 using 装饰模式_小人_画图版;
 
-namespace 装饰模式
-{
-	internal class Finery : Person
-	{
-		protected Person _person;
+#endregion
 
-		public Finery()
-			: base()
-		{
-		}
+namespace 装饰模式 {
+    internal class Finery : Person {
+        protected Person _person;
 
-		public Finery(Graphics g, Pen p)
-			: base(g, p)
-		{
-		}
+        public Finery() {
+        }
 
-		public void Decorate(Person person)
-		{
-			this._person = person;
-		}
+        public Finery(Graphics g, Pen p)
+            : base(g, p) {
+        }
 
-		public override void Show()
-		{
-			if (this._person != null)
-			{
-				this._person.Show();
-			}
-		}
-	}
+        public void Decorate(Person person) {
+            _person = person;
+        }
+
+        public override void Show() {
+            if (_person != null) {
+                _person.Show();
+            }
+        }
+    }
 }

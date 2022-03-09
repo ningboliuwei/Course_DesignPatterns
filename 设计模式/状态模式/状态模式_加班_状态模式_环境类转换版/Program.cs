@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 状态模式_加班_状态模式_环境类转换版
-{
-    internal class Program
-    {
-        private static void Main(string[] args)
-        {
-            Work work = new Work();
+using System;
+
+#endregion
+
+namespace 状态模式_加班_状态模式_环境类转换版 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var work = new Work();
             work.Hour = 9;
             work.Coding();
 

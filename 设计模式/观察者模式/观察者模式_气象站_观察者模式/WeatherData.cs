@@ -1,64 +1,53 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace 观察者模式_气象站_观察者模式
-{
-	public class WeatherData : ISubject
-	{
-		private List<IObserver> m_observers = new List<IObserver>();
+#endregion
 
-		private float m_temperature = 0;
+namespace 观察者模式_气象站_观察者模式 {
+    public class WeatherData : ISubject {
+        private float m_humidity;
+        private readonly List<IObserver> m_observers = new List<IObserver>();
 
-		private float m_humidity = 0;
+        private float m_pressure;
 
-		private float m_pressure = 0;
+        private float m_temperature;
 
-		public float GetTemperature()
-		{
-			return 25;
-		}
+        public void NotifyObserver() {
+            foreach (var observer in m_observers) {
+                observer.Update(m_temperature, m_humidity, m_pressure);
+            }
+        }
 
-		public float GetHumidity()
-		{
-			return 30;
-		}
+        public void RegisterObserver(IObserver observer) {
+            m_observers.Add(observer);
+        }
 
-		public float GetPressure()
-		{
-			return 1000;
-		}
+        public void RemoveObserver(IObserver observer) {
+            m_observers.Remove(observer);
+        }
 
-		public void RegisterObserver(IObserver observer)
-		{
-			this.m_observers.Add(observer);
-		}
+        public float GetHumidity() {
+            return 30;
+        }
 
-		public void RemoveObserver(IObserver observer)
-		{
-			this.m_observers.Remove(observer);
-		}
+        public float GetPressure() {
+            return 1000;
+        }
 
-		public void NotifyObserver()
-		{
-			foreach (IObserver observer in this.m_observers)
-			{
-				observer.Update(this.m_temperature, this.m_humidity, this.m_pressure);
-			}
-		}
+        public float GetTemperature() {
+            return 25;
+        }
 
-		public void MeasurementsChanged()
-		{
-			NotifyObserver();
-		}
+        public void MeasurementsChanged() {
+            NotifyObserver();
+        }
 
-		public void SetMeasurements(float temperature, float humidity, float pressure)
-		{
-			this.m_temperature = temperature;
-			this.m_humidity = humidity;
-			this.m_pressure = pressure;
-			MeasurementsChanged();
-		}
-	}
+        public void SetMeasurements(float temperature, float humidity, float pressure) {
+            m_temperature = temperature;
+            m_humidity = humidity;
+            m_pressure = pressure;
+            MeasurementsChanged();
+        }
+    }
 }

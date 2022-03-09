@@ -1,12 +1,13 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+#endregion
 
 namespace 观察者模式_游戏_遭到攻击 {
-    class Team {
+    internal class Team {
+        private readonly List<Player> _players = new List<Player>();
         public string Name { get; set; }
-        List<Player> _players = new List<Player>();
 
         public void AddPlayer(Player player) {
             _players.Add(player);

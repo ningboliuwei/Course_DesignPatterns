@@ -1,30 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 简单工厂模式_汽车_简单工厂版
-{
-	internal class Car
-	{
-		private Engine _engine;
+using System;
 
-		public Engine Engine
-		{
-			get
-			{
-				return _engine;
-			}
-			set
-			{
-				_engine = value;
-			}
-		}
+#endregion
 
-		public void Drive()
-		{
-			_engine.Launch();
-			Console.WriteLine("Car is running");
-		}
-	}
+namespace 简单工厂模式_汽车_简单工厂版 {
+    internal class Car {
+        public Engine Engine { get; set; }
+
+        public void Drive() {
+            Engine.Launch();
+            Console.WriteLine("Car is running");
+        }
+    }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.352
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "动物运动会", "动物运动会", "{2ADEAA4C-550B-476D-9498-934A01065743}"
 EndProject
@@ -179,8 +179,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "命令模式_计算器_命�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "状态模式", "状态模式", "{1E14A106-A8D1-4821-91C4-A6230EB471B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_状态模式_状态类转换版", "设计模式\状态模式\状态模式_加班_状态模式版\状态模式_加班_状态模式_状态类转换版.csproj", "{500CB046-7AF6-472D-AD3C-6CFF83BBC770}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_俱乐部", "设计模式\状态模式\状态模式_俱乐部\状态模式_俱乐部.csproj", "{031E9A2E-1ABB-4999-9408-0024FB33E46C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_传统版", "设计模式\状态模式\状态模式_加班_传统版\状态模式_加班_传统版.csproj", "{29A0B95A-3E69-4D96-9541-06C7E627F798}"
@@ -305,7 +303,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_共享状态_�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验13_状态模式_进程", "实验\实验13_状态模式_进程\实验13_状态模式_进程.csproj", "{E5829A8D-62B6-4D0C-99D8-78AE4D3DA1EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验13_状态模式_论坛", "实验\实验13_状态模式_论坛\实验13_状态模式_论坛.csproj", "{C44140DD-98A3-4743-9B9A-31E5B7B97BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "实验13_状态模式_论坛", "实验\实验13_状态模式_论坛\实验13_状态模式_论坛.csproj", "{C44140DD-98A3-4743-9B9A-31E5B7B97BEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LECTURE_DEMO", "LECTURE_DEMO\LECTURE_DEMO.csproj", "{7DFAA18B-B165-4ADD-B76E-C08E10A2AB28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "状态模式_共享状态_开关_多私有成员版", "设计模式\状态模式\状态模式_共享状态_开关_多私有成员版\状态模式_共享状态_开关_多私有成员版.csproj", "{101BC1BC-9E2E-4CFF-91F6-8E48C0FA6DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "状态模式_加班_状态模式_状态类转换版", "设计模式\状态模式\状态模式_加班_状态模式_状态类转换版\状态模式_加班_状态模式_状态类转换版.csproj", "{500CB046-7AF6-472D-AD3C-6CFF83BBC770}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "命令模式_游戏手柄_面向对象版", "设计模式\命令模式\命令模式_游戏手柄_面向对象版\命令模式_游戏手柄_面向对象版.csproj", "{92691272-5BD6-4B93-9990-CE0BEADFD1A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "命令模式_游戏手柄_传统版", "设计模式\命令模式\命令模式_游戏手柄_传统版\命令模式_游戏手柄_传统版.csproj", "{9C629F46-E1D3-4F29-A813-EA4E158C1C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "动物运动会_泛型", "动物运动会\动物运动会_IEnumerable接口\动物运动会_泛型.csproj", "{8D3B51C5-44CB-47A6-9A88-FF872BC20008}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -601,10 +611,6 @@ Global
 		{A7038BC5-39E4-47DE-9C06-A63384EC44F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7038BC5-39E4-47DE-9C06-A63384EC44F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7038BC5-39E4-47DE-9C06-A63384EC44F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Release|Any CPU.Build.0 = Release|Any CPU
 		{031E9A2E-1ABB-4999-9408-0024FB33E46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{031E9A2E-1ABB-4999-9408-0024FB33E46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{031E9A2E-1ABB-4999-9408-0024FB33E46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -837,6 +843,30 @@ Global
 		{C44140DD-98A3-4743-9B9A-31E5B7B97BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C44140DD-98A3-4743-9B9A-31E5B7B97BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C44140DD-98A3-4743-9B9A-31E5B7B97BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFAA18B-B165-4ADD-B76E-C08E10A2AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFAA18B-B165-4ADD-B76E-C08E10A2AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFAA18B-B165-4ADD-B76E-C08E10A2AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFAA18B-B165-4ADD-B76E-C08E10A2AB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101BC1BC-9E2E-4CFF-91F6-8E48C0FA6DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101BC1BC-9E2E-4CFF-91F6-8E48C0FA6DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101BC1BC-9E2E-4CFF-91F6-8E48C0FA6DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101BC1BC-9E2E-4CFF-91F6-8E48C0FA6DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500CB046-7AF6-472D-AD3C-6CFF83BBC770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92691272-5BD6-4B93-9990-CE0BEADFD1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92691272-5BD6-4B93-9990-CE0BEADFD1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92691272-5BD6-4B93-9990-CE0BEADFD1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92691272-5BD6-4B93-9990-CE0BEADFD1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C629F46-E1D3-4F29-A813-EA4E158C1C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C629F46-E1D3-4F29-A813-EA4E158C1C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C629F46-E1D3-4F29-A813-EA4E158C1C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C629F46-E1D3-4F29-A813-EA4E158C1C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3B51C5-44CB-47A6-9A88-FF872BC20008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3B51C5-44CB-47A6-9A88-FF872BC20008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3B51C5-44CB-47A6-9A88-FF872BC20008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3B51C5-44CB-47A6-9A88-FF872BC20008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -928,7 +958,6 @@ Global
 		{19869EC5-D14C-453A-88B1-2FE2E06E3DD4} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{A7038BC5-39E4-47DE-9C06-A63384EC44F5} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 		{1E14A106-A8D1-4821-91C4-A6230EB471B0} = {FEC15005-1EFE-4DF0-83E3-65F3300AA076}
-		{500CB046-7AF6-472D-AD3C-6CFF83BBC770} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{031E9A2E-1ABB-4999-9408-0024FB33E46C} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{29A0B95A-3E69-4D96-9541-06C7E627F798} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{8C0B09D0-F2B3-4795-8D89-3CFE48C8D5A7} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
@@ -990,6 +1019,10 @@ Global
 		{2A6A912C-905B-463A-9FEB-9E58805DDFC8} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
 		{E5829A8D-62B6-4D0C-99D8-78AE4D3DA1EE} = {41E2FE92-B57D-43EC-BA70-03B10282107F}
 		{C44140DD-98A3-4743-9B9A-31E5B7B97BEA} = {41E2FE92-B57D-43EC-BA70-03B10282107F}
+		{101BC1BC-9E2E-4CFF-91F6-8E48C0FA6DDD} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
+		{500CB046-7AF6-472D-AD3C-6CFF83BBC770} = {1E14A106-A8D1-4821-91C4-A6230EB471B0}
+		{92691272-5BD6-4B93-9990-CE0BEADFD1A6} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
+		{9C629F46-E1D3-4F29-A813-EA4E158C1C71} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0B70BD5-489B-42B9-A96A-BCD01B88FB00}

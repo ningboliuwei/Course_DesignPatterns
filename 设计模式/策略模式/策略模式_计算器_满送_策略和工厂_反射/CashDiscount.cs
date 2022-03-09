@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace 策略模式_计算器_满送_策略和工厂_反射 {
+    internal class CashDiscount : CashSuper {
+        private readonly double moneyDiscount = 1;
 
-namespace 策略模式_计算器_满送_策略和工厂_反射
-{
-	internal class CashDiscount : CashSuper
-	{
-		private double moneyDiscount = 1;
+        public CashDiscount(string moneyRebate) {
+            moneyDiscount = double.Parse(moneyRebate);
+        }
 
-		public CashDiscount(string moneyRebate)
-		{
-			this.moneyDiscount = double.Parse(moneyRebate);
-		}
-
-		public override double AcceptCash(double money)
-		{
-			return money * moneyDiscount;
-		}
-	}
+        public override double AcceptCash(double money) {
+            return money * moneyDiscount;
+        }
+    }
 }

@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿#region
+
+using System;
 using System.Windows.Forms;
+
+#endregion
 
 namespace 观察者模式_更改数据事件 {
     public partial class Form3 : Form {
-        private string _data;
+        private readonly string _data;
 
         public Form3(string data) {
             InitializeComponent();

@@ -1,28 +1,25 @@
-﻿using System;
+﻿#region
+
 using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 
-namespace 命令模式_遥控汽车
-{
-	internal class StartCommand : CarSeperateCommand
-	{
-		private Car _car;
+#endregion
 
-		private ArrayList CarState;
+namespace 命令模式_遥控汽车 {
+    internal class StartCommand : CarSeperateCommand {
+        private readonly Car _car;
 
-		public StartCommand(Car car, ArrayList state)
-			: base(car)
-		{
-			this._car = car;
-			CarState = state;
-		}
+        private readonly ArrayList CarState;
 
-		public override void Excute()
-		{
-			_car.Start();
-			_car._curStateStr += "-Start";
-			CarState.Add(_car._curStateStr);
-		}
-	}
+        public StartCommand(Car car, ArrayList state)
+            : base(car) {
+            _car = car;
+            CarState = state;
+        }
+
+        public override void Excute() {
+            _car.Start();
+            _car._curStateStr += "-Start";
+            CarState.Add(_car._curStateStr);
+        }
+    }
 }

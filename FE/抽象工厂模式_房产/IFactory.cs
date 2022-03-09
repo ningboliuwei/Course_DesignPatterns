@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace 抽象工厂模式_房产
-{
-	internal interface IFactory
-	{
-		IVilla ProduceVilla();
-
-		IApartment ProduceApartment();
-	}
+﻿namespace 抽象工厂模式_房产 {
+    internal interface IFactory {
+        IApartment ProduceApartment();
+        IVilla ProduceVilla();
+    }
 }

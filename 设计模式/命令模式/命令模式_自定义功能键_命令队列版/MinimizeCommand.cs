@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace 命令模式_自定义功能键_命令队列版 {
+    internal class MinimizeCommand : Command {
+        private readonly MinimizeHandler minimizeHandler;
 
-namespace 命令模式_自定义功能键_命令队列版
-{
-	class MinimizeCommand : Command
-	{
-		private MinimizeHandler minimizeHandler;
+        public MinimizeCommand() {
+            minimizeHandler = new MinimizeHandler();
+        }
 
-		public MinimizeCommand()
-		{
-			minimizeHandler = new MinimizeHandler();
-		}
-		public override void Execute()
-		{
-			minimizeHandler.Minimize();
-		}
-	}
+        public override void Execute() {
+            minimizeHandler.Minimize();
+        }
+    }
 }

@@ -1,34 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data;
-using System.Data.OleDb;
+﻿#region
 
-namespace 抽象工厂模式_数据库_抽象工厂_非反射版
-{
-	using System.Data.SqlClient;
+using System;
 
-	class Program
-	{
-		private static void Main(string[] args)
-		{
-			User user = new User();
-			Department dept = new Department();
+#endregion
 
-			//创建在SQL Server环境下使用的数据对象
-			IFactory factory = new SqlserverFactory();
-			//创建在MySQL环境下使用的数据对象
-			//IFactory factory = new MysqlFactory();
+namespace 抽象工厂模式_数据库_抽象工厂_非反射版 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var user = new User();
+            var dept = new Department();
 
-			IUser u = factory.CreateUser();
-			u.Insert(user);
-			u.GetUser(1);
+            //创建在SQL Server环境下使用的数据对象
+            IFactory factory = new SqlserverFactory();
+            //创建在MySQL环境下使用的数据对象
+            //IFactory factory = new MysqlFactory();
 
-			// IDepartment idept = factory.CreateDepartment();
-			// idept.Insert(dept);
-			// idept.GetDepartment(1);
+            var u = factory.CreateUser();
+            u.Insert(user);
+            u.GetUser(1);
 
-			Console.ReadLine();
-		}
-	}
+            // IDepartment idept = factory.CreateDepartment();
+            // idept.Insert(dept);
+            // idept.GetDepartment(1);
+
+            Console.ReadLine();
+        }
+    }
 }

@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace 动物运动会_接口 {
+    internal interface IFly {
+        string Fly();
 
-namespace 动物运动会_接口
-{
-	internal interface IFly
-	{
-		string Fly();
-
-		//string FastFly();
-	}
+        //string FastFly();
+    }
 }

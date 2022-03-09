@@ -1,58 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace 命令模式_遥控汽车 {
+    internal class CarSeperateInvoker {
+        private readonly CarSeperateCommand _movebackwards;
 
-namespace 命令模式_遥控汽车
-{
-	internal class CarSeperateInvoker
-	{
-		private CarSeperateCommand _start;
+        private readonly CarSeperateCommand _moveforwards;
+        private readonly CarSeperateCommand _start;
 
-		private CarSeperateCommand _moveforwards;
+        private readonly CarSeperateCommand _stop;
 
-		private CarSeperateCommand _movebackwards;
+        private readonly CarSeperateCommand _undo;
 
-		private CarSeperateCommand _stop;
+        public CarSeperateInvoker(
+            CarSeperateCommand start,
+            CarSeperateCommand moveforwards,
+            CarSeperateCommand movebackwards,
+            CarSeperateCommand stop,
+            CarSeperateCommand undo) {
+            _start = start;
+            _moveforwards = moveforwards;
+            _movebackwards = movebackwards;
+            _stop = stop;
+            _undo = undo;
+        }
 
-		private CarSeperateCommand _undo;
+        public void MoveBackwards() {
+            _movebackwards.Excute();
+        }
 
-		public CarSeperateInvoker(
-			CarSeperateCommand start,
-			CarSeperateCommand moveforwards,
-			CarSeperateCommand movebackwards,
-			CarSeperateCommand stop,
-			CarSeperateCommand undo)
-		{
-			this._start = start;
-			this._moveforwards = moveforwards;
-			this._movebackwards = movebackwards;
-			this._stop = stop;
-			this._undo = undo;
-		}
+        public void MoveForwards() {
+            _moveforwards.Excute();
+        }
 
-		public void Start()
-		{
-			_start.Excute();
-		}
+        public void Start() {
+            _start.Excute();
+        }
 
-		public void MoveForwards()
-		{
-			_moveforwards.Excute();
-		}
+        public void Stop() {
+            _stop.Excute();
+        }
 
-		public void MoveBackwards()
-		{
-			_movebackwards.Excute();
-		}
-
-		public void Stop()
-		{
-			_stop.Excute();
-		}
-
-		public void Undo()
-		{
-			_undo.Excute();
-		}
-	}
+        public void Undo() {
+            _undo.Excute();
+        }
+    }
 }

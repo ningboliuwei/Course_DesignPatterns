@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 装饰模式_小人_面向对象版
-{
-	internal class Person
-	{
-		private string m_name;
+using System;
 
-		public Person(string name)
-		{
-			m_name = name;
-		}
+#endregion
 
-		public void Show()
-		{
-			Console.WriteLine("装扮的{0}", m_name);
-		}
-	}
+namespace 装饰模式_小人_面向对象版 {
+    internal class Person {
+        private readonly string m_name;
+
+        public Person(string name) {
+            m_name = name;
+        }
+
+        public void Show() {
+            Console.WriteLine("装扮的{0}", m_name);
+        }
+    }
 }

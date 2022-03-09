@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 组合模式_形状
-{
-	using System.Data.SqlClient;
+using System;
 
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
-		
+#endregion
 
-			Console.ReadLine();
-		}
-	}
+namespace 组合模式_形状 {
+    internal class Program {
+        private static void Main(string[] args) {
+            Console.ReadLine();
+        }
+    }
 }

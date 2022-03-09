@@ -1,32 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 原型模式_简历_XML序列化深复制版
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Resume resume1 = new Resume("刘看山", "男", new DateTime(1988, 10, 1),
+using System;
+using System.Collections.Generic;
+
+#endregion
+
+namespace 原型模式_简历_XML序列化深复制版 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var resume1 = new Resume("刘看山", "男", new DateTime(1988, 10, 1),
                 "13566313313",
-                new List<ExpInfo>()
-                {
+                new List<ExpInfo> {
                     new ExpInfo("宁波大学", new DateTime(2006, 1, 1), new DateTime(2010, 1, 1)),
                     new ExpInfo("浙江大学", new DateTime(2010, 1, 1), new DateTime(2013, 1, 1))
                 },
-                new List<ExpInfo>()
-                {
+                new List<ExpInfo> {
                     new ExpInfo("百度", new DateTime(2013, 1, 1), new DateTime(2014, 1, 1)),
                     new ExpInfo("阿里巴巴", new DateTime(2014, 1, 1), new DateTime(2016, 1, 1))
                 }, "腾讯前端");
 
-            Resume resume2 = resume1.Clone() as Resume;
+            var resume2 = resume1.Clone() as Resume;
             resume2.Post = "Facebook前端";
 
-            Resume resume3 = resume1.Clone() as Resume;
+            var resume3 = resume1.Clone() as Resume;
             resume3.Post = "Google前端";
 
             resume1.WorkExp[0] = new ExpInfo("360", new DateTime(2013, 12, 1), new DateTime(2014, 12, 1));

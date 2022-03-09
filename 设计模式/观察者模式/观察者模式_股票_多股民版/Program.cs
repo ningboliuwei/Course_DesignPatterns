@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace 观察者模式_股票_多股民版 {
-    class Program {
-        static void Main(string[] args) {
-            Stock stock = new Stock() {Symbol = "SINA", Price = 120.35};
+    internal class Program {
+        private static void Main(string[] args) {
+            var stock = new Stock { Symbol = "SINA", Price = 120.35 };
 
-            Investor investorA = new Investor {Name = "丁蟹", LowerPrice = 100, UpperPrice = 130};
+            var investorA = new Investor { Name = "丁蟹", LowerPrice = 100, UpperPrice = 130 };
             investorA.SetStock(stock);
 
-            Investor investorB = new Investor {Name = "陈万贤", LowerPrice = 90, UpperPrice = 120};
+            var investorB = new Investor { Name = "陈万贤", LowerPrice = 90, UpperPrice = 120 };
             investorB.SetStock(stock);
 
-            Investor investorC = new Investor {Name = "周济生", LowerPrice = 110, UpperPrice = 140};
+            var investorC = new Investor { Name = "周济生", LowerPrice = 110, UpperPrice = 140 };
             investorC.SetStock(stock);
 
             stock.AddInvestor(investorA);

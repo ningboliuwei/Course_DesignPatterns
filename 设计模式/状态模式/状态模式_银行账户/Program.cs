@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 状态模式_银行账户
-{
-    internal class Program
-    {
-        private static void Main(string[] args)
-        {
-            Account account = new Account("张三丰", 0);
+using System;
+
+#endregion
+
+namespace 状态模式_银行账户 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var account = new Account("张三丰", 0);
             Console.WriteLine($"开户成功。姓名：{account.Owner} 初始金额：{account.Balance}");
             Console.WriteLine("---------------------------------------");
 
@@ -30,7 +28,6 @@ namespace 状态模式_银行账户
 
             account.Withdraw(1800);
             Console.WriteLine("---------------------------------------");
-
 
             account.Withdraw(100);
             Console.WriteLine("---------------------------------------");

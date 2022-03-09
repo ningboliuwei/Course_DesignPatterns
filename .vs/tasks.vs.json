@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "任务-LECTURE2",
+      "appliesTo": "上课演示/LECTURE2/",
+      "type": "launch"
+    }
+  ]
+}

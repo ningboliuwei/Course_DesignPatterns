@@ -1,30 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 简单工厂模式_简易图表_简单工厂版
-{
-	using System.Drawing;
+using System.Drawing;
 
-	internal abstract class Chart
-	{
-		protected Graphics _g;
+#endregion
 
-		protected Pen _p;
+namespace 简单工厂模式_简易图表_简单工厂版 {
+    internal abstract class Chart {
+        protected int[] _data;
+        protected Graphics _g;
 
-		protected int[] _data;
+        protected Pen _p;
 
-		public Chart(Graphics g, Pen p)
-		{
-			_g = g;
-			_p = p;
-		}
+        public Chart(Graphics g, Pen p) {
+            _g = g;
+            _p = p;
+        }
 
-		public int[] Data { get; set; }
+        public int[] Data { get; set; }
 
-		public virtual void Display()
-		{
-		}
-	}
+        public virtual void Display() {
+        }
+    }
 }

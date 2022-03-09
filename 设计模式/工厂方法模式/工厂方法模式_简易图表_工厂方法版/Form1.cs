@@ -1,76 +1,73 @@
-﻿namespace 工厂方法模式_简易图表_工厂方法版
-{
-	using System;
-	using System.Drawing;
-	using System.Reflection;
-	using System.Windows.Forms;
+﻿#region
 
-	public partial class Form1 : Form
-	{
-		#region Constructors and Destructors
+using System;
+using System.Drawing;
+using System.Reflection;
+using System.Windows.Forms;
 
-		public Form1()
-		{
-			this.InitializeComponent();
-		}
+#endregion
 
-		#endregion
+namespace 工厂方法模式_简易图表_工厂方法版 {
+    public partial class Form1 : Form {
+        #region Constructors and Destructors
 
-		#region Methods
+        public Form1() {
+            InitializeComponent();
+        }
 
-		private void Form1_Click(object sender, EventArgs e)
-		{
-			//string AssemblyName = "工厂方法模式_简易图表_工厂方法版";//直接指定当前程序集名称
-			string AssemblyName = Assembly.GetExecutingAssembly().GetName().Name; //得到当前程序集名称
+        #endregion
 
-			Graphics g = this.CreateGraphics();
-			var p = new Pen(Color.Maroon);
+        #region Methods
 
-			g.Clear(Color.LightBlue);
+        private void Form1_Click(object sender, EventArgs e) {
+            //string AssemblyName = "工厂方法模式_简易图表_工厂方法版";//直接指定当前程序集名称
+            var AssemblyName = Assembly.GetExecutingAssembly().GetName().Name; //得到当前程序集名称
 
-			IChartFactory chartFactory = null;
+            var g = CreateGraphics();
+            var p = new Pen(Color.Maroon);
 
-			//利用swich语句，选择要创建的工厂类对象
-			//switch (this.comboBox1.Text)
-			//{
-			//	case "Pie":
-			//		chartFactory = new PieChartFactory();
-			//		break;
-			//	case "Bar":
-			//		chartFactory = new BarChartFactory();
-			//		break;
-			//	case "Line":
-			//		chartFactory = new LineChartFactory();
-			//		break;
-			//}
+            g.Clear(Color.LightBlue);
 
-			string className = AssemblyName + "." + comboBox1.Text + "ChartFactory"; //组装出需要的工厂类的类名
-			chartFactory = (IChartFactory)Assembly.Load(AssemblyName).CreateInstance(className); //利用反射，创建指定类名的实例
+            IChartFactory chartFactory = null;
 
-			Chart chart = chartFactory.Create(g, p);
+            //利用swich语句，选择要创建的工厂类对象
+            //switch (this.comboBox1.Text)
+            //{
+            //	case "Pie":
+            //		chartFactory = new PieChartFactory();
+            //		break;
+            //	case "Bar":
+            //		chartFactory = new BarChartFactory();
+            //		break;
+            //	case "Line":
+            //		chartFactory = new LineChartFactory();
+            //		break;
+            //}
 
-			//chart.Data = new int[]{100,400,300,500,200};
-			//chart.Data = new int[] { 300, 200, 400, 500, 100 };
-			string[] content = this.textBox1.Text.Split(',');
+            var className = AssemblyName + "." + comboBox1.Text + "ChartFactory"; //组装出需要的工厂类的类名
+            chartFactory = (IChartFactory)Assembly.Load(AssemblyName).CreateInstance(className); //利用反射，创建指定类名的实例
 
-			chart.Data = new int[content.Length]; //创建需要的长度的int数组
+            var chart = chartFactory.Create(g, p);
 
-			for (int i = 0; i < content.Length; i++)
-			{
-				chart.Data[i] = Convert.ToInt32(content[i]);
-			} //将字符串数组中各字符串转换为整型
+            //chart.Data = new int[]{100,400,300,500,200};
+            //chart.Data = new int[] { 300, 200, 400, 500, 100 };
+            var content = textBox1.Text.Split(',');
 
-			chart.Display();
-		}
+            chart.Data = new int[content.Length]; //创建需要的长度的int数组
 
-		private void Form1_Load(object sender, EventArgs e)
-		{
-		}
+            for (var i = 0; i < content.Length; i++) {
+                chart.Data[i] = Convert.ToInt32(content[i]);
+            } //将字符串数组中各字符串转换为整型
 
-		private void Form1_MouseClick(object sender, MouseEventArgs e)
-		{
-		}
+            chart.Display();
+        }
 
-		#endregion
-	}
+        private void Form1_Load(object sender, EventArgs e) {
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e) {
+        }
+
+        #endregion
+    }
 }

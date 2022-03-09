@@ -1,44 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
+﻿#region
+
+using System;
 using System.Xml;
-using System.Xml.Linq;
 
-namespace 策略模式_输出数组_反射
-{
-	class OutputXmlFileStrategy : IOutputFileStrategy
-	{
-		public void OutputFile(string[] data)
-		{
-			if (data == null)
-			{
-				throw new Exception("Null data");
-			}
+#endregion
 
-			try
-			{
-				XmlWriterSettings settings = new XmlWriterSettings();
-				settings.Indent = true;
+namespace 策略模式_输出数组_反射 {
+    internal class OutputXmlFileStrategy : IOutputFileStrategy {
+        public void OutputFile(string[] data) {
+            if (data == null) {
+                throw new Exception("Null data");
+            }
 
-				XmlWriter writer = XmlWriter.Create("D:\\DEMO\\XMLReport.xml", settings);
+            try {
+                var settings = new XmlWriterSettings();
+                settings.Indent = true;
 
-				writer.WriteStartElement("strings");
+                var writer = XmlWriter.Create("D:\\DEMO\\XMLReport.xml", settings);
 
-				foreach (string s in data)
-				{
-					writer.WriteElementString("string", s);
-				}
+                writer.WriteStartElement("strings");
 
-				writer.WriteEndElement();
-				writer.Close();
-			}
-			catch (Exception exception)
-			{
-				throw new Exception(exception.Message);
-			}
-			Console.WriteLine("Output .xml file succeeded");
-		}
-	}
+                foreach (var s in data) {
+                    writer.WriteElementString("string", s);
+                }
+
+                writer.WriteEndElement();
+                writer.Close();
+            }
+            catch (Exception exception) {
+                throw new Exception(exception.Message);
+            }
+
+            Console.WriteLine("Output .xml file succeeded");
+        }
+    }
 }

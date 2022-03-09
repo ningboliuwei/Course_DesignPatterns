@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace 实验12_观察者模式_气象站 {
-    class Phone : Device {
+    internal class Phone : Device {
         public string PhoneNumber { get; set; }
 
         public override void Update(Data data) {

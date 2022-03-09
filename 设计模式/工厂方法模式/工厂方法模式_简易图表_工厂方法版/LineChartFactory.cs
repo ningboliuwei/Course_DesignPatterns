@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 工厂方法模式_简易图表_工厂方法版
-{
-	using System.Drawing;
+using System.Drawing;
 
-	internal class LineChartFactory : IChartFactory
-	{
-		public Chart Create(Graphics g, Pen p)
-		{
-			return new LineChart(g, p);
-		}
-	}
+#endregion
+
+namespace 工厂方法模式_简易图表_工厂方法版 {
+    internal class LineChartFactory : IChartFactory {
+        public Chart Create(Graphics g, Pen p) {
+            return new LineChart(g, p);
+        }
+    }
 }

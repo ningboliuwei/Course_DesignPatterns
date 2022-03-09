@@ -1,26 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 适配器模式_姚明
-{
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
-			Player b = new Forwards("巴蒂尔");
-			b.Attack();
+using System;
 
-			Player m = new Guards("麦迪");
-			m.Attack();
+#endregion
 
-			
+namespace 适配器模式_姚明 {
+    internal class Program {
+        private static void Main(string[] args) {
+            Player b = new Forwards("巴蒂尔");
+            b.Attack();
 
-			Player y = new Translator("姚明");
-			y.Attack();
-			y.Defense();
+            Player m = new Guards("麦迪");
+            m.Attack();
 
-			Console.ReadLine();
-		}
-	}
+            Player y = new Translator("姚明");
+            y.Attack();
+            y.Defense();
+
+            Console.ReadLine();
+        }
+    }
 }

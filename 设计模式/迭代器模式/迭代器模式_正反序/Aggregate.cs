@@ -1,33 +1,19 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace 迭代器模式_正反序
-{
-	internal class Aggregate
-	{
-		protected readonly IList<object> Items = new List<object>();
+#endregion
 
-		public int Count
-		{
-			get
-			{
-				return Items.Count;
-			}
-		}
+namespace 迭代器模式_正反序 {
+    internal class Aggregate {
+        protected readonly IList<object> Items = new List<object>();
 
-		public object this[int index]
-		{
-			get
-			{
-				return Items[index];
-			}
+        public int Count => Items.Count;
 
-			set
-			{
-				Items.Insert(index, value);
-			}
-		}
-	}
+        public object this[int index] {
+            get => Items[index];
+
+            set => Items.Insert(index, value);
+        }
+    }
 }

@@ -1,24 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace 动物运动会_ArrayList {
+    internal class Monkey : Animal {
+        public Monkey() {
+        }
 
-namespace 动物运动会_ArrayList
-{
-	internal class Monkey : Animal
-	{
-		public Monkey()
-			: base()
-		{
-		}
+        public Monkey(string name)
+            : base(name) {
+        }
 
-		public Monkey(string name)
-			: base(name)
-		{
-		}
-
-		protected override string getShoutSound()
-		{
-			return "吱~";
-		}
-	}
+        protected override string getShoutSound() {
+            return "吱~";
+        }
+    }
 }

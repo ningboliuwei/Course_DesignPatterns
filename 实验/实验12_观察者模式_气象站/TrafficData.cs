@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace 实验12_观察者模式_气象站 {
-    class TrafficData : Data {
-        public string Street;
+﻿namespace 实验12_观察者模式_气象站 {
+    internal class TrafficData : Data {
         public string Status;
+        public string Street;
 
         public void SetStatus(string street, string status) {
             Street = street;

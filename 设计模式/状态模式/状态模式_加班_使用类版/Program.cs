@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 状态模式_加班_使用类版
-{
-    internal class Program
-    {
+using System;
+
+#endregion
+
+namespace 状态模式_加班_使用类版 {
+    internal class Program {
         private static void Main(string[] args) {
             //紧急项目
-            Work emergencyProjects = new Work();
+            var emergencyProjects = new Work();
             emergencyProjects.Hour = 9;
             emergencyProjects.WriteProgram();
 

@@ -1,18 +1,26 @@
-﻿using System;
+﻿#region
 
-namespace 实验03_银行系统改进
-{
-    class ATM
-    {
+using System;
+
+#endregion
+
+namespace 实验03_银行系统改进 {
+    internal class ATM {
         private readonly Bank bank;
 
-        public ATM(Bank bank)
-        {
+        public ATM(Bank bank) {
             this.bank = bank;
         }
 
-        public void Transaction()
-        {
+        private string GetInput() {
+            return Console.ReadLine();
+        }
+
+        private void Show(string message) {
+            Console.WriteLine(message);
+        }
+
+        public void Transaction() {
             Show("请输入卡号");
 
             var id = GetInput();
@@ -22,8 +30,7 @@ namespace 实验03_银行系统改进
             var password = GetInput();
             var account = bank.FindAccount(id);
 
-            if (account == null || !account.Validate(id, password))
-            {
+            if (account == null || !account.Validate(id, password)) {
                 Show("无效的卡号或密码");
                 return;
             }
@@ -31,46 +38,35 @@ namespace 实验03_银行系统改进
             Show("1. 查询金额; 2. 存款; 3. 取款");
             var op = GetInput();
 
-            if (op == "1")
-            {
+            if (op == "1") {
                 Show("当前金额: " + account.Balance);
             }
-            else if (op == "2")
-            {
+            else if (op == "2") {
                 Show("输入要存入的金额");
 
                 var amountString = GetInput();
                 var amount = double.Parse(amountString);
                 var ok = account.SaveMoney(amount);
 
-                if (ok) Show("存款成功");
-                else Show("存款错误");
+                if (ok) {
+                    Show("存款成功");
+                }
+                else {
+                    Show("存款错误");
+                }
 
                 Show("当前金额: " + account.Balance);
             }
-            else if (op == "3")
-            {
+            else if (op == "3") {
                 Show("输入要取出的金额");
 
                 var amountString = GetInput();
                 var amount = double.Parse(amountString);
                 var ok = account.WithdrawMoney(amount);
 
-                if (ok) Show("取款成功");
-                else Show("取款错误");
-
+                Show(ok ? "取款成功" : "取款错误");
                 Show("当前金额: " + account.Balance);
             }
-        }
-
-        private void Show(string message)
-        {
-            Console.WriteLine(message);
-        }
-
-        private string GetInput()
-        {
-            return Console.ReadLine();
         }
     }
 }

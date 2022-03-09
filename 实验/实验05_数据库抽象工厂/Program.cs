@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 实验05_数据库抽象工厂
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+using System;
+
+#endregion
+
+namespace 实验05_数据库抽象工厂 {
+    internal class Program {
+        private static void Main(string[] args) {
             Console.WriteLine("请输入要连接的数据库类型（Oracle/MySql）：");
             var dbType = Console.ReadLine();
             Console.WriteLine("请输入数据库连接字符串（如：10.22.149.105;user=a;pwd=1）");
@@ -31,6 +28,5 @@ namespace 实验05_数据库抽象工厂
 
             Console.ReadKey();
         }
-
     }
 }

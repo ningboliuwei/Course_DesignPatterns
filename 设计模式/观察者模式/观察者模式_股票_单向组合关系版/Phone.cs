@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace 观察者模式_股票_单向组合关系版 {
-    class Phone : Observer {
+    internal class Phone : Observer {
         public string PhoneNumber { get; set; }
 
         public override void Response(Subject subject) {

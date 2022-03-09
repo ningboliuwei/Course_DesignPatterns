@@ -1,71 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace 命令模式_计算器_命令模式 {
+    public class CaculatorCommand : Command {
+        private readonly Caculator m_caculator;
 
-namespace 命令模式_计算器_命令模式
-{
-	public class CaculatorCommand : Command
-	{
-		private char m_optr;
+        private int m_operand;
+        private char m_optr;
 
-		private int m_operand;
+        public CaculatorCommand(Caculator mCaculator, char mOptr, int mOperand) {
+            m_optr = mOptr;
+            m_operand = mOperand;
+            m_caculator = mCaculator;
+        }
 
-		private Caculator m_caculator;
+        public int Operand {
+            set => m_operand = value;
+        }
 
-		public CaculatorCommand(Caculator mCaculator, char mOptr, int mOperand)
-		{
-			this.m_optr = mOptr;
-			this.m_operand = mOperand;
-			this.m_caculator = mCaculator;
-		}
+        public char Optr {
+            set => m_optr = value;
+        }
 
-		public char Optr
-		{
-			set
-			{
-				this.m_optr = value;
-			}
-		}
+        public override void Execute() {
+            m_caculator.Operaion(m_optr, m_operand);
+        }
 
-		public int Operand
-		{
-			set
-			{
-				this.m_operand = value;
-			}
-		}
+        private char Undo(char optr) {
+            var undo = ' ';
 
-		private char Undo(char optr)
-		{
-			char undo = ' ';
+            switch (optr) {
+                case '+':
+                    undo = '-';
+                    break;
+                case '-':
+                    undo = '+';
+                    break;
+                case '*':
+                    undo = '/';
+                    break;
+                case '/':
+                    undo = '*';
+                    break;
+            }
 
-			switch (optr)
-			{
-				case '+':
-					undo = '-';
-					break;
-				case '-':
-					undo = '+';
-					break;
-				case '*':
-					undo = '/';
-					break;
-				case '/':
-					undo = '*';
-					break;
-			}
+            return undo;
+        }
 
-			return undo;
-		}
-
-		public override void Execute()
-		{
-			this.m_caculator.Operaion(this.m_optr, this.m_operand);
-		}
-
-		public override void UnExecute()
-		{
-			this.m_caculator.Operaion(Undo(this.m_optr), this.m_operand);
-		}
-	}
+        public override void UnExecute() {
+            m_caculator.Operaion(Undo(m_optr), m_operand);
+        }
+    }
 }

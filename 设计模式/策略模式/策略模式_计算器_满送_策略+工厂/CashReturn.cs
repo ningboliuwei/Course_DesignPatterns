@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 策略模式_计算器_满送_策略和工厂
-{
-	internal class CashReturn : CashSuper
-	{
-		private double moneyCondition = 0.0;
+using System;
 
-		private double moneyReturn = 0.0;
+#endregion
 
-		public CashReturn(string moneyCondition, string moneyReturn)
-		{
-			this.moneyCondition = double.Parse(moneyCondition);
-			this.moneyReturn = double.Parse(moneyReturn);
-		}
+namespace 策略模式_计算器_满送_策略和工厂 {
+    internal class CashReturn : CashSuper {
+        private readonly double moneyCondition;
 
-		public override double AcceptCash(double money)
-		{
-			double result = money;
-			if (money >= moneyCondition)
-			{
-				result = money - Math.Floor(money / moneyCondition) * moneyReturn;
-			}
-			return result;
-		}
-	}
+        private readonly double moneyReturn;
+
+        public CashReturn(string moneyCondition, string moneyReturn) {
+            this.moneyCondition = double.Parse(moneyCondition);
+            this.moneyReturn = double.Parse(moneyReturn);
+        }
+
+        public override double AcceptCash(double money) {
+            var result = money;
+            if (money >= moneyCondition) {
+                result = money - Math.Floor(money / moneyCondition) * moneyReturn;
+            }
+
+            return result;
+        }
+    }
 }

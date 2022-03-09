@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region
+
 using System.Drawing;
-using System.Text;
 
-namespace 装饰模式_小人_画图版
-{
-	internal class Person
-	{
-		protected Graphics _g;
+#endregion
 
-		protected Pen _p;
+namespace 装饰模式_小人_画图版 {
+    internal class Person {
+        protected Graphics _g;
 
-		public Person()
-		{
-		}
+        protected Pen _p;
 
-		public Person(Graphics g, Pen p)
-		{
-			_g = g;
-			_p = p;
-		}
+        public Person() {
+        }
 
-		public virtual void Show()
-		{
-		}
-	}
+        public Person(Graphics g, Pen p) {
+            _g = g;
+            _p = p;
+        }
+
+        public virtual void Show() {
+        }
+    }
 }

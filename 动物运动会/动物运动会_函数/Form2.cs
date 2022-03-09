@@ -1,28 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿#region
+
+using System;
 using System.Windows.Forms;
 
-namespace 动物运动会
-{
-	public partial class Form2 : Form
-	{
-		public Form2()
-		{
-			InitializeComponent();
-		}
+#endregion
 
-		private void btnShout_Click(object sender, EventArgs e)
-		{
-			Shout();
-		}
+namespace 动物运动会 {
+    public partial class Form2 : Form {
+        public Form2() {
+            InitializeComponent();
+        }
 
-		public void Shout()
-		{
-			MessageBox.Show("喵~");
-		}
-	}
+        private void btnShout_Click(object sender, EventArgs e) {
+            Shout();
+        }
+
+        private void Form2_Load(object sender, EventArgs e) {
+        }
+
+        public void Shout() {
+            MessageBox.Show("喵~");
+        }
+    }
 }

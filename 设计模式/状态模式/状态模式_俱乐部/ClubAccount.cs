@@ -1,44 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace 状态模式_俱乐部 {
+    internal class ClubAccount {
+        public ClubAccount(string name) //构造函数
+        {
+            CustomerName = name;
+            State = new VisitorState(0.0, this);
+        }
 
-namespace 状态模式_俱乐部
-{
-	internal class ClubAccount
-	{
-		//顾客姓名
-		public string CustomerName { get; set; }
+        //金额属性（只能通过Deposit()和Cost()方法改变）
+        public double Balance => State.Balance;
 
-		public ClubState State { get; set; }
+        //顾客姓名
+        public string CustomerName { get; set; }
 
-		//金额属性（只能通过Deposit()和Cost()方法改变）
-		public double Balance
-		{
-			get
-			{
-				return State.Balance;
-			}
-		}
+        public ClubState State { get; set; }
 
-		public ClubAccount(string name) //构造函数
-		{
-			CustomerName = name;
-			State = new VisitorState(0.0, this);
-		}
+        public void ClubService() {
+            State.ClubService();
+        }
 
-		public void Deposit(double amount)
-		{
-			State.Deposit(amount);
-		}
+        public void Cost(double amount) {
+            State.Cost(amount);
+        }
 
-		public void Cost(double amount)
-		{
-			State.Cost(amount);
-		}
-
-		public void ClubService()
-		{
-			State.ClubService();
-		}
-	}
+        public void Deposit(double amount) {
+            State.Deposit(amount);
+        }
+    }
 }

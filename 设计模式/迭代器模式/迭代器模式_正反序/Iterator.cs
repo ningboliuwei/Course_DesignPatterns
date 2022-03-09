@@ -1,13 +1,10 @@
-﻿namespace 迭代器模式_正反序
-{
-	internal interface IIterator
-	{
-		object First();
+﻿namespace 迭代器模式_正反序 {
+    internal interface IIterator {
+        object Current();
+        object First();
 
-		object Next();
+        object Last();
 
-		object Last();
-
-		object Current();
-	}
+        object Next();
+    }
 }

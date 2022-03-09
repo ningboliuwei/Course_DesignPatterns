@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 外观模式_家庭影院_外观模式版
-{
-	class Screen
-	{
-		public void Up()
-		{
-			Console.WriteLine("屏幕已升起");
-		}
+using System;
 
-		public void Down()
-		{
-			Console.WriteLine("屏幕已放下");
-		}
-	}
+#endregion
+
+namespace 外观模式_家庭影院_外观模式版 {
+    internal class Screen {
+        public void Down() {
+            Console.WriteLine("屏幕已放下");
+        }
+
+        public void Up() {
+            Console.WriteLine("屏幕已升起");
+        }
+    }
 }

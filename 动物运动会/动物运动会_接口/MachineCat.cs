@@ -1,36 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
 using 动物运动会_接口;
 
-namespace 动物运动会
-{
-	internal class MachineCat : Cat, IChange, IFly
-	{
-		public MachineCat()
-			: base()
-		{
-		}
+#endregion
 
-		public MachineCat(string name)
-			: base(name)
-		{
-		}
+namespace 动物运动会 {
+    internal class MachineCat : Cat, IChange, IFly {
+        public MachineCat() {
+        }
 
-		public string ChangeThing(string thing)
-		{
-			return base.Shout() + "我有异次元口袋，我变出了" + thing;
-		}
+        public MachineCat(string name)
+            : base(name) {
+        }
 
-		public string Fly()
-		{
-			return "我正在用竹蜻蜓飞";
-		}
+        public string ChangeThing(string thing) {
+            return Shout() + "我有异次元口袋，我变出了" + thing;
+        }
 
-		//public string FastFly()
-		//{
-		//	return "我正在用火箭飞";
-		//}
-	}
+        public string Fly() {
+            return "我正在用竹蜻蜓飞";
+        }
+
+        //public string FastFly()
+        //{
+        //	return "我正在用火箭飞";
+        //}
+    }
 }

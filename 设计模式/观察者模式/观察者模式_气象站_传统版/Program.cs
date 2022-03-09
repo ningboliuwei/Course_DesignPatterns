@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 观察者模式_气象站_传统版
-{
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
-			WeatherData weatherData = new WeatherData();
+using System;
 
-			weatherData.MeasurementsChanged();
+#endregion
 
-			Console.ReadLine();
-		}
-	}
+namespace 观察者模式_气象站_传统版 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var weatherData = new WeatherData();
+
+            weatherData.MeasurementsChanged();
+
+            Console.ReadLine();
+        }
+    }
 }

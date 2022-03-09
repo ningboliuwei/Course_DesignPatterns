@@ -1,28 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿#region
+
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+
+#endregion
 
 namespace 观察者模式_更改数据事件 {
     public partial class Form2 : Form {
-        public event DataEventHandler DataChanged;
-
         public delegate void DataEventHandler();
-
 
         public Form2() {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e) {
-            Close();
-        }
-
 
         private void button1_Click(object sender, EventArgs e) {
             WriteData(textBox1.Text);
@@ -30,8 +20,18 @@ namespace 观察者模式_更改数据事件 {
             Close();
         }
 
+        private void button2_Click(object sender, EventArgs e) {
+            Close();
+        }
+
+        public event DataEventHandler DataChanged;
+
+        protected virtual void OnDataChanged() {
+            DataChanged?.Invoke();
+        }
+
         private void WriteData(string data) {
-            string filePath = $"{Application.StartupPath}\\data.txt";
+            var filePath = $"{Application.StartupPath}\\data.txt";
 
             try {
                 File.WriteAllText(filePath, data);
@@ -39,10 +39,6 @@ namespace 观察者模式_更改数据事件 {
             catch (Exception ex) {
                 throw new Exception(ex.Message);
             }
-        }
-
-        protected virtual void OnDataChanged() {
-            DataChanged?.Invoke();
         }
     }
 }

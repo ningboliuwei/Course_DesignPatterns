@@ -1,13 +1,23 @@
-﻿using System;
+﻿#region
 
-namespace 实验02_银行系统
-{
-    class ATM
-    {
+using System;
+
+#endregion
+
+namespace 实验02_银行系统 {
+    internal class ATM {
         private readonly Bank bank;
 
         public ATM(Bank bank) {
             this.bank = bank;
+        }
+
+        private string GetInput() {
+            return Console.ReadLine();
+        }
+
+        private void Show(string message) {
+            Console.WriteLine(message);
         }
 
         public void Transaction() {
@@ -38,8 +48,12 @@ namespace 实验02_银行系统
                 var amount = double.Parse(amountString);
                 var ok = account.SaveMoney(amount);
 
-                if (ok) Show("存款成功");
-                else Show("存款错误");
+                if (ok) {
+                    Show("存款成功");
+                }
+                else {
+                    Show("存款错误");
+                }
 
                 Show("当前金额: " + account.Balance);
             }
@@ -50,19 +64,15 @@ namespace 实验02_银行系统
                 var amount = double.Parse(amountString);
                 var ok = account.WithdrawMoney(amount);
 
-                if (ok) Show("存款成功");
-                else Show("存款错误");
+                if (ok) {
+                    Show("存款成功");
+                }
+                else {
+                    Show("存款错误");
+                }
 
                 Show("当前金额: " + account.Balance);
             }
-        }
-
-        private void Show(string message) {
-            Console.WriteLine(message);
-        }
-
-        private string GetInput() {
-            return Console.ReadLine();
         }
     }
 }

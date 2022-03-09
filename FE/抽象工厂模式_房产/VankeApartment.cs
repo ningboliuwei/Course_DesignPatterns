@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-using 抽象工厂模式_房产;
+using System;
 
-namespace 抽象工厂模式_房产
-{
-	internal class VankeApartment : IApartment
-	{
-		public void Show()
-		{
-			Console.WriteLine("This is a Vanke Apartment");
-		}
-	}
+#endregion
+
+namespace 抽象工厂模式_房产 {
+    internal class VankeApartment : IApartment {
+        public void Show() {
+            Console.WriteLine("This is a Vanke Apartment");
+        }
+    }
 }

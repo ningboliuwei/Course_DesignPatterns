@@ -1,37 +1,21 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace 组合模式_形状
-{
-	internal class TriangleMatrix : Shape
-	{
-		private List<Shape> m_shapList = new List<Shape>();
+#endregion
 
-		public List<Shape> ShapeList
-		{
-			get
-			{
-				return m_shapList;
-			}
-			set
-			{
-				m_shapList = value;
-			}
-		}
+namespace 组合模式_形状 {
+    internal class TriangleMatrix : Shape {
+        public List<Shape> ShapeList { get; set; } = new List<Shape>();
 
-		public void AddShape(Shape shape)
-		{
-			m_shapList.Add(shape);
-		}
+        public void AddShape(Shape shape) {
+            ShapeList.Add(shape);
+        }
 
-		public override void Draw()
-		{
-			foreach (Shape shape in m_shapList)
-			{
-				shape.Draw();
-			}
-		}
-	}
+        public override void Draw() {
+            foreach (var shape in ShapeList) {
+                shape.Draw();
+            }
+        }
+    }
 }

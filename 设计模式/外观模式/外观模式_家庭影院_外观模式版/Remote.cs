@@ -1,59 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace 外观模式_家庭影院_外观模式版 {
+    internal class Remote {
+        public void EndMovie() {
+            var popper = new Popper();
+            var lights = new Lights();
+            var screen = new Screen();
+            var projector = new Projector();
+            var amp = new Amp();
+            var dvd = new Dvd();
 
-namespace 外观模式_家庭影院_外观模式版
-{
-	class Remote
-	{
-		public void WatchMovie()
-		{
-			Popper popper = new Popper();
-			Lights lights = new Lights();
-			Screen screen = new Screen();
-			Projector projector = new Projector();
-			Amp amp = new Amp();
-			Dvd dvd = new Dvd();
+            popper.Off();
+            screen.Up();
 
-			popper.On();
-			popper.Pop();
+            projector.Off();
 
-			lights.SetBrightness(10);
+            amp.Off();
 
-			screen.Down();
+            dvd.Off();
+        }
 
-			projector.On();
-			projector.SetDvd();
-			projector.SetWideScreenMode();
+        public void WatchMovie() {
+            var popper = new Popper();
+            var lights = new Lights();
+            var screen = new Screen();
+            var projector = new Projector();
+            var amp = new Amp();
+            var dvd = new Dvd();
 
-			amp.On();
-			amp.SetDvd();
-			amp.SetSurround();
-			amp.SetVolume(5);
+            popper.On();
+            popper.Pop();
 
-			dvd.On();
-			dvd.Play();
-		}
+            lights.SetBrightness(10);
 
-		public void EndMovie()
-		{
-			Popper popper = new Popper();
-			Lights lights = new Lights();
-			Screen screen = new Screen();
-			Projector projector = new Projector();
-			Amp amp = new Amp();
-			Dvd dvd = new Dvd();
+            screen.Down();
 
-			popper.Off();
-			screen.Up();
+            projector.On();
+            projector.SetDvd();
+            projector.SetWideScreenMode();
 
-			projector.Off();
+            amp.On();
+            amp.SetDvd();
+            amp.SetSurround();
+            amp.SetVolume(5);
 
-			amp.Off();
-
-			dvd.Off();
-		}
-	}
+            dvd.On();
+            dvd.Play();
+        }
+    }
 }

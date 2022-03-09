@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿#region
+
 using System.Windows.Forms;
 
-namespace 单例模式_无防多开机制
-{
-	public partial class frmToolBox : Form
-	{
-		public frmToolBox()
-		{
-			InitializeComponent();
-		}
-	}
+#endregion
+
+namespace 单例模式_无防多开机制 {
+    public partial class frmToolBox : Form {
+        public frmToolBox() {
+            InitializeComponent();
+        }
+    }
 }

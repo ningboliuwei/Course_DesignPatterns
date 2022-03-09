@@ -1,42 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 外观模式_家庭影院_传统版
-{
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			Popper popper = new Popper();
-			Lights lights = new Lights();
-			Screen screen = new Screen();
-			Projector projector = new Projector();
-			Amp amp = new Amp();
-			Dvd dvd = new Dvd();
+using System;
 
-			popper.On();
-			popper.Pop();
+#endregion
 
-			lights.SetBrightness(10);
+namespace 外观模式_家庭影院_传统版 {
+    internal class Program {
+        private static void Main(string[] args) {
+            var popper = new Popper();
+            var lights = new Lights();
+            var screen = new Screen();
+            var projector = new Projector();
+            var amp = new Amp();
+            var dvd = new Dvd();
 
-			screen.Down();
+            popper.On();
+            popper.Pop();
 
-			projector.On();
-			projector.SetDvd();
-			projector.SetWideScreenMode();
+            lights.SetBrightness(10);
 
-			amp.On();
-			amp.SetDvd();
-			amp.SetSurround();
-			amp.SetVolume(5);
+            screen.Down();
 
-			dvd.On();
-			dvd.Play();
+            projector.On();
+            projector.SetDvd();
+            projector.SetWideScreenMode();
 
-			Console.ReadKey();
-		}
-	}
+            amp.On();
+            amp.SetDvd();
+            amp.SetSurround();
+            amp.SetVolume(5);
+
+            dvd.On();
+            dvd.Play();
+
+            Console.ReadKey();
+        }
+    }
 }

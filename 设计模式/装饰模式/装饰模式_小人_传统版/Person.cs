@@ -1,51 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 装饰模式_小人_传统版
-{
-	internal class Person
-	{
-		private string m_name;
+using System;
 
-		public Person(string name)
-		{
-			m_name = name;
-		}
+#endregion
 
-		public void WearTShirts()
-		{
-			Console.Write("大T恤 ");
-		}
+namespace 装饰模式_小人_传统版 {
+    internal class Person {
+        private readonly string m_name;
 
-		public void WearBigTrouser()
-		{
-			Console.Write("垮裤 ");
-		}
+        public Person(string name) {
+            m_name = name;
+        }
 
-		public void WearSneakers()
-		{
-			Console.Write("破球鞋 ");
-		}
+        public void Show() {
+            Console.WriteLine("装扮的{0}", m_name);
+        }
 
-		public void WearSuit()
-		{
-			Console.Write("西装 ");
-		}
+        public void WearBigTrouser() {
+            Console.Write("垮裤 ");
+        }
 
-		public void WearTie()
-		{
-			Console.Write("领带 ");
-		}
+        public void WearLeatherShoes() {
+            Console.Write("皮鞋 ");
+        }
 
-		public void WearLeatherShoes()
-		{
-			Console.Write("皮鞋 ");
-		}
+        public void WearSneakers() {
+            Console.Write("破球鞋 ");
+        }
 
-		public void Show()
-		{
-			Console.WriteLine("装扮的{0}", m_name);
-		}
-	}
+        public void WearSuit() {
+            Console.Write("西装 ");
+        }
+
+        public void WearTie() {
+            Console.Write("领带 ");
+        }
+
+        public void WearTShirts() {
+            Console.Write("大T恤 ");
+        }
+    }
 }

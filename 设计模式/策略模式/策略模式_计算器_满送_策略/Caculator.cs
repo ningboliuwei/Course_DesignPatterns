@@ -1,52 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿#region
+
+using System;
 using System.Windows.Forms;
 
-namespace 策略模式_计算器_满送_策略
-{
-	public partial class Caculator : Form
-	{
-		private double total = 0;
+#endregion
 
-		public Caculator()
-		{
-			InitializeComponent();
-		}
+namespace 策略模式_计算器_满送_策略 {
+    public partial class Caculator : Form {
+        private double total;
 
-		private void btnOK_Click(object sender, EventArgs e)
-		{
-			double totalPrices = 0;
+        public Caculator() {
+            InitializeComponent();
+        }
 
-			CaculatorContext cc = null;
+        private void btnOK_Click(object sender, EventArgs e) {
+            double totalPrices = 0;
 
-			switch (cbxType.SelectedItem.ToString())
-			{
-				case "正常收费":
-					cc = new CaculatorContext(new CaculatorNormal());
-					break;
-				case "满300返100":
-					cc = new CaculatorContext(new CaculatorReturn(300, 100));
-					break;
-				case "打八折":
-					cc = new CaculatorContext(new CaculatorDiscount(0.8));
-					break;
-			}
-			totalPrices = cc.GetPrice(Convert.ToDouble(txtPrice.Text)*Convert.ToDouble(txtNum.Text));
+            CaculatorContext cc = null;
 
-			total += totalPrices;
-			lbxList.Items.Add(
-				"单价：" + txtPrice.Text + " 数量：" + txtNum.Text + " " + cbxType.SelectedItem + " 合计：" + totalPrices.ToString());
-			lblResult.Text = total.ToString();
-		}
+            switch (cbxType.SelectedItem.ToString()) {
+                case "正常收费":
+                    cc = new CaculatorContext(new CaculatorNormal());
+                    break;
+                case "满300返100":
+                    cc = new CaculatorContext(new CaculatorReturn(300, 100));
+                    break;
+                case "打八折":
+                    cc = new CaculatorContext(new CaculatorDiscount(0.8));
+                    break;
+            }
 
-		private void Caculator_Load(object sender, EventArgs e)
-		{
-			cbxType.Items.AddRange(new object[] {"正常收费", "打八折", "满300返100"});
-			cbxType.SelectedIndex = 0;
-		}
-	}
+            totalPrices = cc.GetPrice(Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text));
+
+            total += totalPrices;
+            lbxList.Items.Add(
+                "单价：" + txtPrice.Text + " 数量：" + txtNum.Text + " " + cbxType.SelectedItem + " 合计：" + totalPrices);
+            lblResult.Text = total.ToString();
+        }
+
+        private void Caculator_Load(object sender, EventArgs e) {
+            cbxType.Items.AddRange(new object[] { "正常收费", "打八折", "满300返100" });
+            cbxType.SelectedIndex = 0;
+        }
+    }
 }

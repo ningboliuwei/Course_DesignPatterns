@@ -1,27 +1,27 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+#endregion
 
 namespace 观察者模式_股票_抽象观察者版 {
-    class Stock {
-        public string Symbol { get; set; }
+    internal class Stock {
+        private readonly List<Observer> _observers = new List<Observer>();
         public double Price { get; set; }
-
-        private List<Observer> _observers = new List<Observer>();
+        public string Symbol { get; set; }
 
         public void AddObserver(Observer observer) {
             _observers.Add(observer);
         }
 
-        public void RemoveObserver(Observer observer) {
-            _observers.Remove(observer);
-        }
-
         public void Notify() {
-            foreach (Observer o in _observers) {
+            foreach (var o in _observers) {
                 o.Response();
             }
+        }
+
+        public void RemoveObserver(Observer observer) {
+            _observers.Remove(observer);
         }
     }
 }

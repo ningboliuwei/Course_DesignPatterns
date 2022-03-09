@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
-namespace 外观模式_基金_传统
-{
-	internal class Stock3
-	{
-		public void Buy()
-		{
-			Console.WriteLine("买入股票3");
-		}
+using System;
 
-		public void Sell()
-		{
-			Console.WriteLine("卖出股票3");
-		}
-	}
+#endregion
+
+namespace 外观模式_基金_传统 {
+    internal class Stock3 {
+        public void Buy() {
+            Console.WriteLine("买入股票3");
+        }
+
+        public void Sell() {
+            Console.WriteLine("卖出股票3");
+        }
+    }
 }

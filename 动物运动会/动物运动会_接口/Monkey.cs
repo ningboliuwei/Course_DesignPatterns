@@ -1,26 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region
 
 using 动物运动会_接口;
 
-namespace 动物运动会
-{
-	internal class Monkey : Animal
-	{
-		public Monkey()
-			: base()
-		{
-		}
+#endregion
 
-		public Monkey(string name)
-			: base(name)
-		{
-		}
+namespace 动物运动会 {
+    internal class Monkey : Animal {
+        public Monkey() {
+        }
 
-		protected override string getShoutSound()
-		{
-			return "吱~";
-		}
-	}
+        public Monkey(string name)
+            : base(name) {
+        }
+
+        protected override string getShoutSound() {
+            return "吱~";
+        }
+    }
 }

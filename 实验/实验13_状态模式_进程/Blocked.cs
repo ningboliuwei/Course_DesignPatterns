@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
 
-namespace 实验13_状态模式_进程
-{
-    class Blocked : State
-    {
+using System;
+
+#endregion
+
+namespace 实验13_状态模式_进程 {
+    internal class Blocked : State {
         public Blocked() {
             StateName = "阻塞";
         }

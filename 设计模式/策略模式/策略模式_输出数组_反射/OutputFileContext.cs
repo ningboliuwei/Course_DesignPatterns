@@ -1,33 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region
+
+using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 
-namespace 策略模式_输出数组_反射
-{
-	class OutputFileContext
-	{
-		private IOutputFileStrategy _outputFileStrategy;
+#endregion
 
-		public OutputFileContext(IOutputFileStrategy outputFileStrategy)
-		{
-			_outputFileStrategy = outputFileStrategy;
-		}
+namespace 策略模式_输出数组_反射 {
+    internal class OutputFileContext {
+        private readonly IOutputFileStrategy _outputFileStrategy;
 
-		public void SaveFile(string[] data)
-		{
-			_outputFileStrategy.OutputFile(data);
-		}
+        public OutputFileContext(IOutputFileStrategy outputFileStrategy) {
+            _outputFileStrategy = outputFileStrategy;
+        }
 
-		public static IOutputFileStrategy GetStrategy()
-		{
-			string configPath = Environment.CurrentDirectory + "\\config.txt";
-			string strategyString = File.ReadAllText(configPath);
+        public static IOutputFileStrategy GetStrategy() {
+            var configPath = Environment.CurrentDirectory + "\\config.txt";
+            var strategyString = File.ReadAllText(configPath);
 
-			return Assembly.Load("策略模式_输出数组_反射")
-					.CreateInstance($"策略模式_输出数组_反射.Output{strategyString}FileStrategy") as IOutputFileStrategy;
-		}
-	}
+            return Assembly.Load("策略模式_输出数组_反射")
+                .CreateInstance($"策略模式_输出数组_反射.Output{strategyString}FileStrategy") as IOutputFileStrategy;
+        }
+
+        public void SaveFile(string[] data) {
+            _outputFileStrategy.OutputFile(data);
+        }
+    }
 }

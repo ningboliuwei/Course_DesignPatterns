@@ -1,36 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace 工厂方法模式_简易图表_工厂方法版
-{
-	using System.Drawing;
+using System;
+using System.Drawing;
 
-	internal class PieChart : Chart
-	{
-		public PieChart(Graphics g, Pen p)
-			: base(g, p)
-		{
-		}
+#endregion
 
-		public override void Display()
-		{
-			int sum = 0;
+namespace 工厂方法模式_简易图表_工厂方法版 {
+    internal class PieChart : Chart {
+        public PieChart(Graphics g, Pen p)
+            : base(g, p) {
+        }
 
-			for (int i = 0; i < Data.Length; i++)
-			{
-				sum = sum + Data[i];
-			}
+        public override void Display() {
+            var sum = 0;
 
-			int lastAngle = -90;
+            for (var i = 0; i < Data.Length; i++) {
+                sum = sum + Data[i];
+            }
 
-			for (int i = 0; i < Data.Length - 1; i++)
-			{
-				_g.DrawPie(_p, 150, 150, 400, 400, lastAngle, Convert.ToInt32(360 * Data[i] / sum));
-				lastAngle = lastAngle + Convert.ToInt32(360 * Data[i] / sum);
-			}
-			_g.DrawEllipse(_p, 150, 150, 400, 400);
-		}
-	}
+            var lastAngle = -90;
+
+            for (var i = 0; i < Data.Length - 1; i++) {
+                _g.DrawPie(_p, 150, 150, 400, 400, lastAngle, Convert.ToInt32(360 * Data[i] / sum));
+                lastAngle = lastAngle + Convert.ToInt32(360 * Data[i] / sum);
+            }
+
+            _g.DrawEllipse(_p, 150, 150, 400, 400);
+        }
+    }
 }
