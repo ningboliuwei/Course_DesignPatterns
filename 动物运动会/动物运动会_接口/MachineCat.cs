@@ -13,9 +13,9 @@ namespace 动物运动会 {
             : base(name) {
         }
 
-        public string ChangeThing(string thing) {
-            return Shout() + "我有异次元口袋，我变出了" + thing;
-        }
+        // public string ChangeThing(string thing) {
+        //     return Shout() + "我有异次元口袋，我变出了" + thing;
+        // }
 
         public string Fly() {
             return "我正在用竹蜻蜓飞";

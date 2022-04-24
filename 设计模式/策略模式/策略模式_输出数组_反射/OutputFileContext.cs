@@ -18,8 +18,9 @@ namespace 策略模式_输出数组_反射 {
             var configPath = Environment.CurrentDirectory + "\\config.txt";
             var strategyString = File.ReadAllText(configPath);
 
-            return Assembly.Load("策略模式_输出数组_反射")
+            var o = Assembly.Load("策略模式_输出数组_反射")
                 .CreateInstance($"策略模式_输出数组_反射.Output{strategyString}FileStrategy") as IOutputFileStrategy;
+            return o;
         }
 
         public void SaveFile(string[] data) {

@@ -1,33 +1,37 @@
-﻿namespace 迭代器模式_普通 {
-    internal class ConcreteIterator : Iterator {
-        private readonly ConcreteAggregate _aggregate;
+﻿#region
 
-        private int current;
+using System;
+
+#endregion
+
+namespace 迭代器模式_普通 {
+    public class ConcreteIterator : IIterator {
+        private readonly ConcreteAggregate _aggregate;
+        private int _current;
 
         public ConcreteIterator(ConcreteAggregate aggregate) {
             _aggregate = aggregate;
         }
 
-        public override object Current() {
-            return _aggregate[current];
+        public object CurrentItem() {
+            return _aggregate[_current];
         }
 
-        public override object First() {
-            return _aggregate[0];
+        public void First() {
+            _current = 0;
         }
 
-        public override object Last() {
-            return _aggregate[_aggregate.Count - 1];
+        public bool HasNext() {
+            return _current != _aggregate.Count;
         }
 
-        public override object Next() {
-            object result = null;
-            current++;
-            if (current < _aggregate.Count) {
-                result = _aggregate[current];
+        public void Next() {
+            if (HasNext()) {
+                _current++;
             }
-
-            return result;
+            else {
+                throw new IndexOutOfRangeException();
+            }
         }
     }
 }

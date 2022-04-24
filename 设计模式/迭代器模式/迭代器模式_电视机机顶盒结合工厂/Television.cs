@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒抽象;
+namespace 迭代器模式_电视机机顶盒结合工厂;
 
 public class Television {
     private readonly Channel[] _channels;
@@ -12,8 +12,8 @@ public class Television {
             new Channel { ChannelNumber = 31, ChannelName = "浙江卫视" }
         };
     }
-
-    public Channel[] GetAllChannels() {
-        return _channels;
+    
+    public TelevisionRemote CreateRemote() {
+        return new TelevisionRemote(_channels);
     }
 }

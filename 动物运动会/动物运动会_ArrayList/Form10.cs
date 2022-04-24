@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 #endregion
@@ -20,6 +21,11 @@ namespace 动物运动会_ArrayList {
             arrayListAnimal.Add(new Dog("旺财"));
             arrayListAnimal.Add(new Cat("加菲"));
             arrayListAnimal.Add(new Dog("古菲"));
+
+            var animalList = new List<Animal>();
+            animalList.Add(new Cat());
+            animalList.Add(new Dog());
+         
         }
 
         private void button1_Click(object sender, EventArgs e) {

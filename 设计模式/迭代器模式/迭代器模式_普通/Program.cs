@@ -1,30 +1,30 @@
 ﻿#region
 
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 #endregion
 
 namespace 迭代器模式_普通 {
-    internal class Program {
+    public static class Program {
         private static void Main(string[] args) {
-            var list = new ConcreteAggregate();
+            var list = new List<object> { "A", "B", "C", "D", "E", "F" };
+            var concreteAggregate = new ConcreteAggregate(list);
+            var iterator = concreteAggregate.CreateIterator();
 
-            list[0] = "张三";
-            list[1] = "李四";
-            list[2] = "王五";
-            list[3] = "赵六";
-            list[4] = "周七";
+            iterator.First();
 
-            var i = list.CreateIterator();
-            var item = i.First();
-            Console.WriteLine("First:" + item);
-            while (i.Current() != i.Last()) {
-                Console.WriteLine(i.Current());
-                i.Next();
+            while (iterator.HasNext()) {
+                Console.Write(iterator.CurrentItem() + " ");
+                iterator.Next();
             }
 
-            Console.WriteLine("Last:" + i.Last());
-
+            var list2 = new List<long>();
+            var x = list2.GetEnumerator();
+            
+            // x.MoveNext()
+            
             Console.ReadLine();
         }
     }

@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒抽象;
+namespace 迭代器模式_电视机机顶盒结合工厂;
 
 public class SetTopBox {
     private readonly Dictionary<int, Channel> _channels = new();
@@ -11,7 +11,7 @@ public class SetTopBox {
         _channels.Add(5, new Channel { ChannelNumber = 31, ChannelName = "浙江卫视" });
     }
 
-    public Dictionary<int, Channel> GetAllChannels() {
-        return _channels;
+    public SetTopBoxRemote CreateRemote() {
+        return new SetTopBoxRemote(_channels);
     }
 }

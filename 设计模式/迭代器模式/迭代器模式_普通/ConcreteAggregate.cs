@@ -5,18 +5,22 @@ using System.Collections.Generic;
 #endregion
 
 namespace 迭代器模式_普通 {
-    internal class ConcreteAggregate : Aggregate {
-        private readonly IList<object> _items = new List<object>();
+    public class ConcreteAggregate : IAggregate {
+        private readonly IList<object> _items;
 
-        public int Count => _items.Count;
-
-        public object this[int index] {
-            get => _items[index];
-
-            set => _items.Insert(index, value);
+        public ConcreteAggregate(IList<object> items) {
+            _items = items;
         }
 
-        public override Iterator CreateIterator() {
+        public int Count {
+            get { return _items.Count; }
+        }
+
+        public object this[int index] {
+            get { return _items[index]; }
+        }
+
+        public IIterator CreateIterator() {
             return new ConcreteIterator(this);
         }
     }

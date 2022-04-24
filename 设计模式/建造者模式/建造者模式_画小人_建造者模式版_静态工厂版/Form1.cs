@@ -19,9 +19,9 @@ namespace 建造者模式_画小人_静态工厂版 {
             var p = new Pen(Color.Magenta);
 
             var g = pictureBox1.CreateGraphics();
-            PersonBuilder.CreatePersonFat(g, p); //创建一个胖小人
+            // PersonBuilder.CreatePersonFat(g, p); //创建一个胖小人
 
-            //PersonBuilder.CreatePersonThin(g, p);//创建一个瘦小人
+            PersonBuilder.CreatePersonThin(g, p);//创建一个瘦小人
         }
     }
 }

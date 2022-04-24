@@ -60,7 +60,112 @@
       "ProjectGuid": "c73728ee-b4dd-4118-b5cc-84334244cf74",
       "DisplayName": "动物运动会_抽象类",
       "ColorIndex": 11
+    },
+    "8827ea26-f0b8-46f5-9518-06c51d044aef": {
+      "ProjectGuid": "8827ea26-f0b8-46f5-9518-06c51d044aef",
+      "DisplayName": "动物运动会_接口",
+      "ColorIndex": 12
+    },
+    "8d3b51c5-44cb-47a6-9a88-ff872bc20008": {
+      "ProjectGuid": "8d3b51c5-44cb-47a6-9a88-ff872bc20008",
+      "DisplayName": "动物运动会_泛型",
+      "ColorIndex": 13
+    },
+    "bbacb399-b857-413c-b128-1ba250f7837a": {
+      "ProjectGuid": "bbacb399-b857-413c-b128-1ba250f7837a",
+      "DisplayName": "动物运动会_ArrayList",
+      "ColorIndex": 14
+    },
+    "01f1eb68-e94a-4ec7-b1eb-d68f1922dbe2": {
+      "ProjectGuid": "01f1eb68-e94a-4ec7-b1eb-d68f1922dbe2",
+      "DisplayName": "简单工厂模式_两数计算_引入继承版",
+      "ColorIndex": 15
+    },
+    "144d94da-9713-491f-8c45-291bf3642aef": {
+      "ProjectGuid": "144d94da-9713-491f-8c45-291bf3642aef",
+      "DisplayName": "简单工厂模式_两数计算_简单工厂版",
+      "ColorIndex": 0
+    },
+    "e3163334-5ab2-4846-9b71-0e1275784ab6": {
+      "ProjectGuid": "e3163334-5ab2-4846-9b71-0e1275784ab6",
+      "DisplayName": "简单工厂模式_简易图表_简单工厂版",
+      "ColorIndex": 1
+    },
+    "ad117210-7df6-4eb8-beca-700f0260874e": {
+      "ProjectGuid": "ad117210-7df6-4eb8-beca-700f0260874e",
+      "DisplayName": "工厂方法模式_加密算法选择_应用实例",
+      "ColorIndex": 2
+    },
+    "892cfe08-6de6-4ab2-98b4-8e7cdc5b247a": {
+      "ProjectGuid": "892cfe08-6de6-4ab2-98b4-8e7cdc5b247a",
+      "DisplayName": "工厂方法模式_两数计算",
+      "ColorIndex": 3
+    },
+    "9b7e829d-12d6-4b66-b694-06400e186c0a": {
+      "ProjectGuid": "9b7e829d-12d6-4b66-b694-06400e186c0a",
+      "DisplayName": "建造者模式_画小人_静态工厂版",
+      "ColorIndex": 4
+    },
+    "299bd7d3-2540-468c-bee9-2f58698c89e7": {
+      "ProjectGuid": "299bd7d3-2540-468c-bee9-2f58698c89e7",
+      "DisplayName": "建造者模式_画小人_工厂版",
+      "ColorIndex": 5
+    },
+    "bfe17d91-e1a0-4475-8eef-6c6a800dfabf": {
+      "ProjectGuid": "bfe17d91-e1a0-4475-8eef-6c6a800dfabf",
+      "DisplayName": "建造者模式_画小人_面向过程传统版",
+      "ColorIndex": 6
+    },
+    "23a7f1ff-3cc4-4562-954c-a269783f099a": {
+      "ProjectGuid": "23a7f1ff-3cc4-4562-954c-a269783f099a",
+      "DisplayName": "建造者模式_画小人_建造者模式版",
+      "ColorIndex": 7
+    },
+    "b53eda74-4d1a-442d-86e4-a19e8d2d8deb": {
+      "ProjectGuid": "b53eda74-4d1a-442d-86e4-a19e8d2d8deb",
+      "DisplayName": "单例模式_无防多开机制",
+      "ColorIndex": 8
+    },
+    "438e7e9d-2e04-4142-b5b4-27f8e6196af7": {
+      "ProjectGuid": "438e7e9d-2e04-4142-b5b4-27f8e6196af7",
+      "DisplayName": "单例模式_基础单例模式",
+      "ColorIndex": 9
+    },
+    "635d7f45-42b8-4d60-a4a6-90e7f0dee868": {
+      "ProjectGuid": "635d7f45-42b8-4d60-a4a6-90e7f0dee868",
+      "DisplayName": "单例模式_菜单事件判断防多开",
+      "ColorIndex": 10
+    },
+    "a3ebd75f-22a5-4c5c-931a-4baa2643332d": {
+      "ProjectGuid": "a3ebd75f-22a5-4c5c-931a-4baa2643332d",
+      "DisplayName": "装饰模式_小人_画图版",
+      "ColorIndex": 11
+    },
+    "b64b189e-fb63-49a7-a27e-fba795fbd3e5": {
+      "ProjectGuid": "b64b189e-fb63-49a7-a27e-fba795fbd3e5",
+      "DisplayName": "装饰模式_小人_新画图版_装饰模式_双人版",
+      "ColorIndex": 12
+    },
+    "9137d5e8-c640-4ae5-84e3-966ba7a05d37": {
+      "ProjectGuid": "9137d5e8-c640-4ae5-84e3-966ba7a05d37",
+      "DisplayName": "策略模式_输出数组",
+      "ColorIndex": 13
+    },
+    "5b6f15bd-1908-4bbf-922c-4619c8f5da4c": {
+      "ProjectGuid": "5b6f15bd-1908-4bbf-922c-4619c8f5da4c",
+      "DisplayName": "策略模式_输出数组_反射",
+      "ColorIndex": 14
+    },
+    "eee4187c-7aec-4cee-ac3c-78fa4f72fd1b": {
+      "ProjectGuid": "eee4187c-7aec-4cee-ac3c-78fa4f72fd1b",
+      "DisplayName": "迭代器模式_普通",
+      "ColorIndex": 15
+    },
+    "041815a8-3b05-4a74-b229-2b1ece67085d": {
+      "ProjectGuid": "041815a8-3b05-4a74-b229-2b1ece67085d",
+      "DisplayName": "迭代器模式",
+      "ColorIndex": 0
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 1
 }

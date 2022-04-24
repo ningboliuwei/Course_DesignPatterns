@@ -13,9 +13,9 @@ namespace 建造者模式_画小人_工厂版 {
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) {
-            var ptb = new PersonThinBuilder(pictureBox1.CreateGraphics(), new Pen(Color.Magenta));
+            var builder = new PersonFatBuilder(pictureBox1.CreateGraphics(), new Pen(Color.Magenta));
             //创建一个瘦小人
-            ptb.Build();
+            builder.Build();
 
             //PersonFatBuilder ptb2 = new PersonFatBuilder(pictureBox1.CreateGraphics(), new Pen(Color.LightBlue));
             //ptb2.Build();//创建一个胖小人
