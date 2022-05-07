@@ -5,7 +5,7 @@ using System.Collections;
 
 #endregion
 
-namespace 迭代器模式_NET_IEnumerable {
+namespace 实验15_迭代器模式_IEnumerator接口 {
     internal class PersonEnumerator : IEnumerator {
         private readonly Person[] array;
 
