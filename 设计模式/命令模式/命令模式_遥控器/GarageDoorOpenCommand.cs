@@ -1,13 +1,17 @@
 namespace 命令模式_遥控器;
 
-public class LightOnCommand : ICommand {
-    private readonly Light _light;
+public class GarageDoorOpenCommand : ICommand {
+    private readonly GarageDoor _door;
 
-    public LightOnCommand(Light light) {
-        _light = light;
+    public GarageDoorOpenCommand(GarageDoor door) {
+        _door = door;
     }
 
     public void Execute() {
-        _light.On();
+        _door.Up();
+    }
+
+    public void Undo() {
+        _door.Down();
     }
 }

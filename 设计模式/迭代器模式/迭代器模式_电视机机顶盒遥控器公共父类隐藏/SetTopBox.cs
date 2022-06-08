@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒遥控器公共父类;
+namespace 迭代器模式_电视机机顶盒遥控器公共父类隐藏;
 
 public class SetTopBox {
     private readonly Dictionary<int, Channel> _channels = new();
@@ -11,7 +11,7 @@ public class SetTopBox {
         _channels.Add(5, new Channel { ChannelNumber = 62, ChannelName = "运动健身" });
     }
 
-    public Dictionary<int, Channel> GetAllChannels() {
-        return _channels;
+    public SetTopBoxRemote CreateRemote() {
+        return new SetTopBoxRemote(_channels);
     }
 }

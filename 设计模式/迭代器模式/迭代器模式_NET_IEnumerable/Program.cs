@@ -1,11 +1,12 @@
 ﻿#region
 
-using 迭代器模式_电视机;
+using System;
+using 迭代器模式_NET_IEnumerable;
 
 #endregion
 
-var television = new Television();
-var remote = new Remote(television);
-remote.ShowAllChannels();
+var spectrum = new Spectrum();
 
-Console.ReadKey();
+foreach (string color in spectrum) {
+    Console.WriteLine(color);
+}

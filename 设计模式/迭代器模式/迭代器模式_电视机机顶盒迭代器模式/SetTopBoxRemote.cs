@@ -1,10 +1,10 @@
-namespace 迭代器模式_电视机机顶盒有遥控器2;
+namespace 迭代器模式_电视机机顶盒迭代器模式;
 
-public class SetTopBoxRemote {
+public class SetTopBoxIterator : IIterator {
     private readonly SetTopBox _setTopBox;
     private int _currentIndex = -1;
 
-    public SetTopBoxRemote(SetTopBox setTopBox) {
+    public SetTopBoxIterator(SetTopBox setTopBox) {
         _setTopBox = setTopBox;
     }
 

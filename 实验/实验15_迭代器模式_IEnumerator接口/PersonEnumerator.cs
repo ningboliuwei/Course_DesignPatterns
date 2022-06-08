@@ -1,38 +1,36 @@
 ﻿#region
 
-using System;
 using System.Collections;
 
 #endregion
 
-namespace 实验15_迭代器模式_IEnumerator接口 {
-    internal class PersonEnumerator : IEnumerator {
-        private readonly Person[] array;
+namespace 实验15_迭代器模式_IEnumerator接口;
 
-        private int position;
+public class PersonEnumerator : IEnumerator {
+    private readonly Person[] _array;
+    private int _position;
 
-        public PersonEnumerator(Person[] array) {
-            this.array = array;
-            position = -1;
-        }
+    public PersonEnumerator(Person[] array) {
+        _array = array.OrderByDescending(t => t.Age).ToArray();
+        _position = -1;
+    }
 
-        public object Current {
-            get {
-                if (position > -1 && position < array.Length) {
-                    return array[position];
-                }
-
-                throw new IndexOutOfRangeException();
+    public object Current {
+        get {
+            if (_position > -1 && _position < _array.Length) {
+                return _array[_position];
             }
-        }
 
-        public bool MoveNext() {
-            position++;
-            return position < array.Length;
+            throw new IndexOutOfRangeException();
         }
+    }
 
-        public void Reset() {
-            position = -1;
-        }
+    public bool MoveNext() {
+        _position++;
+        return _position < _array.Length;
+    }
+
+    public void Reset() {
+        _position = -1;
     }
 }

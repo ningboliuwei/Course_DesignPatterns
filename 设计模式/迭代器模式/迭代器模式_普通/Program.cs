@@ -1,7 +1,6 @@
 ﻿#region
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 #endregion
@@ -22,9 +21,9 @@ namespace 迭代器模式_普通 {
 
             var list2 = new List<long>();
             var x = list2.GetEnumerator();
-            
+
             // x.MoveNext()
-            
+
             Console.ReadLine();
         }
     }

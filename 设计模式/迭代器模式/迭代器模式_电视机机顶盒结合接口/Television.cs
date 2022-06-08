@@ -1,6 +1,6 @@
-namespace 迭代器模式_电视机机顶盒结合工厂;
+namespace 迭代器模式_电视机机顶盒结合接口;
 
-public class Television {
+public class Television : IChannelAggregate {
     private readonly Channel[] _channels;
 
     public Television() {
@@ -12,8 +12,8 @@ public class Television {
             new Channel { ChannelNumber = 31, ChannelName = "浙江卫视" }
         };
     }
-    
-    public TelevisionRemote CreateRemote() {
+
+    public IRemote CreateRemote() {
         return new TelevisionRemote(_channels);
     }
 }

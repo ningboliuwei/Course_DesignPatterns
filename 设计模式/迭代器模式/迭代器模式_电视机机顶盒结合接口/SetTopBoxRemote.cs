@@ -1,6 +1,6 @@
-namespace 迭代器模式_电视机机顶盒结合工厂;
+namespace 迭代器模式_电视机机顶盒结合接口;
 
-public class SetTopBoxRemote {
+public class SetTopBoxRemote : IRemote {
     private readonly Dictionary<int, Channel> _channels;
     private int _currentIndex = -1;
 
@@ -21,12 +21,5 @@ public class SetTopBoxRemote {
         }
 
         throw new IndexOutOfRangeException();
-    }
-
-    public void ShowAllChannels() {
-        while (HasNext()) {
-            var currentChannel = Next();
-            Console.WriteLine($"[{currentChannel.ChannelNumber}]{currentChannel.ChannelName} ");
-        }
     }
 }

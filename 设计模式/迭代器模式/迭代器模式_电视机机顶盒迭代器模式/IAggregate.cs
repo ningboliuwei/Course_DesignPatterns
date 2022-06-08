@@ -1,5 +1,5 @@
-namespace 迭代器模式_电视机机顶盒结合接口; 
+namespace 迭代器模式_电视机机顶盒迭代器模式;
 
 public interface IAggregate {
-    public IRemote CreateRemote();
+    public IIterator CreateIterator();
 }

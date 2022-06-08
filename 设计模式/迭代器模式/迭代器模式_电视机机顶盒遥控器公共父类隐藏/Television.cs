@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒遥控器公共父类;
+namespace 迭代器模式_电视机机顶盒遥控器公共父类隐藏;
 
 public class Television {
     private readonly Channel[] _channels;
@@ -13,7 +13,7 @@ public class Television {
         };
     }
 
-    public Channel[] GetAllChannels() {
-        return _channels;
+    public TelevisionRemote CreateRemote() {
+        return new TelevisionRemote(_channels);
     }
 }

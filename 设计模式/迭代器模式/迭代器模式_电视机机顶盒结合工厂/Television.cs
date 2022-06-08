@@ -12,7 +12,7 @@ public class Television {
             new Channel { ChannelNumber = 31, ChannelName = "浙江卫视" }
         };
     }
-    
+
     public TelevisionRemote CreateRemote() {
         return new TelevisionRemote(_channels);
     }

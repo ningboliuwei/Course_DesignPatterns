@@ -165,7 +165,102 @@
       "ProjectGuid": "041815a8-3b05-4a74-b229-2b1ece67085d",
       "DisplayName": "迭代器模式",
       "ColorIndex": 0
+    },
+    "9926772c-093c-4fa2-9621-b96d7792b6bf": {
+      "ProjectGuid": "9926772c-093c-4fa2-9621-b96d7792b6bf",
+      "DisplayName": "外观模式_家庭影院_传统版",
+      "ColorIndex": 1
+    },
+    "69aed8ab-e546-4376-96ed-68927924cde5": {
+      "ProjectGuid": "69aed8ab-e546-4376-96ed-68927924cde5",
+      "DisplayName": "实验02_银行系统",
+      "ColorIndex": 2
+    },
+    "b1ad1dbd-e426-4ba7-adf3-d47f141b92eb": {
+      "ProjectGuid": "b1ad1dbd-e426-4ba7-adf3-d47f141b92eb",
+      "DisplayName": "实验02_BankDemo",
+      "ColorIndex": 3
+    },
+    "017150e1-1e7d-43b6-b2ee-45600fbc39f4": {
+      "ProjectGuid": "017150e1-1e7d-43b6-b2ee-45600fbc39f4",
+      "DisplayName": "观察者模式_股票_单股民版",
+      "ColorIndex": 4
+    },
+    "fa8e99cc-e48f-45fe-9725-12b7685a3078": {
+      "ProjectGuid": "fa8e99cc-e48f-45fe-9725-12b7685a3078",
+      "DisplayName": "观察者模式_股票_多股民版",
+      "ColorIndex": 5
+    },
+    "914b3ccf-48b2-4379-ab83-316ca897b32e": {
+      "ProjectGuid": "914b3ccf-48b2-4379-ab83-316ca897b32e",
+      "DisplayName": "观察者模式_股票_抽象观察对象版",
+      "ColorIndex": 6
+    },
+    "dda9fe6f-8d01-4a8f-b750-6e568d6aed9f": {
+      "ProjectGuid": "dda9fe6f-8d01-4a8f-b750-6e568d6aed9f",
+      "DisplayName": "观察者模式_游戏_遭到攻击",
+      "ColorIndex": 7
+    },
+    "2e59ce3a-6bc6-4381-960f-a5f784f2f31a": {
+      "ProjectGuid": "2e59ce3a-6bc6-4381-960f-a5f784f2f31a",
+      "DisplayName": "观察者模式_更改数据事件",
+      "ColorIndex": 8
+    },
+    "e211691d-b2e5-4001-88a6-a7ba3b832222": {
+      "ProjectGuid": "e211691d-b2e5-4001-88a6-a7ba3b832222",
+      "DisplayName": "观察者模式_游戏_遭到攻击_事件版",
+      "ColorIndex": 9
+    },
+    "6f6dec2d-8ee3-40fa-a672-c739bb9056af": {
+      "ProjectGuid": "6f6dec2d-8ee3-40fa-a672-c739bb9056af",
+      "DisplayName": "观察者模式_事件机制_系统控件",
+      "ColorIndex": 10
+    },
+    "8db248be-63f1-4fb7-9e4c-c5586b8b61a4": {
+      "ProjectGuid": "8db248be-63f1-4fb7-9e4c-c5586b8b61a4",
+      "DisplayName": "原型模式_简历_Clone版",
+      "ColorIndex": 11
+    },
+    "264cd625-cc29-4368-9ebf-98f0b228006e": {
+      "ProjectGuid": "264cd625-cc29-4368-9ebf-98f0b228006e",
+      "DisplayName": "原型模式_简历_MemberwiseClone版",
+      "ColorIndex": 12
+    },
+    "adb5d7f8-131d-4f4c-80c1-fc0b76fb1e48": {
+      "ProjectGuid": "adb5d7f8-131d-4f4c-80c1-fc0b76fb1e48",
+      "DisplayName": "原型模式_简历_内含对象MemberwiseClone版",
+      "ColorIndex": 13
+    },
+    "adbc5fb8-0968-4cde-877a-fbbd49f41603": {
+      "ProjectGuid": "adbc5fb8-0968-4cde-877a-fbbd49f41603",
+      "DisplayName": "原型模式_简历_序列化深复制版",
+      "ColorIndex": 14
+    },
+    "7cbfd111-1d0b-47e8-b9bf-b6afbbe5c1dd": {
+      "ProjectGuid": "7cbfd111-1d0b-47e8-b9bf-b6afbbe5c1dd",
+      "DisplayName": "原型模式_简历_内含对象深复制版",
+      "ColorIndex": 15
+    },
+    "0d619b15-2fff-462f-ad02-1c9ad2266cd8": {
+      "ProjectGuid": "0d619b15-2fff-462f-ad02-1c9ad2266cd8",
+      "DisplayName": "原型模式_简历_XML序列化深复制版",
+      "ColorIndex": 0
+    },
+    "8030fd45-424b-4c05-b992-0b9d88c601f5": {
+      "ProjectGuid": "8030fd45-424b-4c05-b992-0b9d88c601f5",
+      "DisplayName": "命令模式_遥控器",
+      "ColorIndex": 1
+    },
+    "071e363f-1290-4ff6-a784-e9fc92318362": {
+      "ProjectGuid": "071e363f-1290-4ff6-a784-e9fc92318362",
+      "DisplayName": "状态模式_加班_状态模式_环境类转换版",
+      "ColorIndex": 2
+    },
+    "500cb046-7af6-472d-ad3c-6cff83bbc770": {
+      "ProjectGuid": "500cb046-7af6-472d-ad3c-6cff83bbc770",
+      "DisplayName": "状态模式_加班_状态模式_状态类转换版",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

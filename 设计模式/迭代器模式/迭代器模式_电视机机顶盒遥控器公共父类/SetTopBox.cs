@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒遥控器;
+namespace 迭代器模式_电视机机顶盒遥控器公共父类;
 
 public class SetTopBox {
     private readonly Dictionary<int, Channel> _channels = new();

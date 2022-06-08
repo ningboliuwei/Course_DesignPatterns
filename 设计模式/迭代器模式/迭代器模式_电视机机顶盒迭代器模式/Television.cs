@@ -1,6 +1,6 @@
-namespace 迭代器模式_电视机机顶盒有遥控器2;
+namespace 迭代器模式_电视机机顶盒迭代器模式;
 
-public class Television {
+public class Television : IAggregate {
     private readonly Channel[] _channels;
 
     public Television() {
@@ -13,8 +13,8 @@ public class Television {
         };
     }
 
-    public TelevisionRemote CreateRemote() {
-        var remote = new TelevisionRemote(this);
+    public IIterator CreateIterator() {
+        var remote = new TelevisionIterator(this);
 
         return remote;
     }

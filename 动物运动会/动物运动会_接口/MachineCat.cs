@@ -25,5 +25,8 @@ namespace 动物运动会 {
         //{
         //	return "我正在用火箭飞";
         //}
+        public string ChangeThing(string thing) {
+            throw new System.NotImplementedException();
+        }
     }
 }

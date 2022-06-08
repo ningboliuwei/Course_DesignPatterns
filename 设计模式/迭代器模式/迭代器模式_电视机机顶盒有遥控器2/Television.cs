@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒遥控器;
+namespace 迭代器模式_电视机机顶盒有遥控器2;
 
 public class Television {
     private readonly Channel[] _channels;
@@ -11,6 +11,12 @@ public class Television {
             new Channel { ChannelNumber = 22, ChannelName = "湖南卫视" },
             new Channel { ChannelNumber = 31, ChannelName = "浙江卫视" }
         };
+    }
+
+    public TelevisionRemote CreateRemote() {
+        var remote = new TelevisionRemote(this);
+
+        return remote;
     }
 
     public Channel[] GetAllChannels() {

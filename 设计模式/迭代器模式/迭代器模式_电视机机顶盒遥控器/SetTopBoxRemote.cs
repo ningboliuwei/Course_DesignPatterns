@@ -1,20 +1,25 @@
-namespace 迭代器模式_电视机机顶盒;
+namespace 迭代器模式_电视机机顶盒遥控器;
 
 public class SetTopBoxRemote {
     private readonly SetTopBox _setTopBox;
+    private int _currentIndex = -1;
 
     public SetTopBoxRemote(SetTopBox setTopBox) {
         _setTopBox = setTopBox;
     }
 
-    public void ShowAllChannels() {
+    public bool HasNext() {
         var channels = _setTopBox.GetAllChannels();
+        return channels.Count != 0 && _currentIndex != channels.Count - 1;
+    }
 
-        for (var i = 0; i < channels.Count; i++) {
-            // 这里会出错，为什么？
-            var element = channels.ElementAt(i);
-            var channel = element.Value;
-            Console.WriteLine($"[{channel.ChannelNumber}]{channel.ChannelName} ");
+    public Channel Next() {
+        if (HasNext()) {
+            _currentIndex++;
+            var element = _setTopBox.GetAllChannels().ElementAt(_currentIndex);
+            return element.Value;
         }
+
+        throw new IndexOutOfRangeException();
     }
 }

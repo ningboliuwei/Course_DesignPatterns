@@ -1,4 +1,10 @@
-namespace 迭代器模式_电视机;
+#region
+
+using 迭代器模式_电视机;
+
+#endregion
+
+namespace 迭代器模式_电视机无遥控器;
 
 public class Television {
     private readonly Channel[] _channels;

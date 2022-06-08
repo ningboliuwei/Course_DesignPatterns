@@ -1,27 +1,21 @@
 namespace 命令模式_遥控器;
 
-public class ComplexRemoteControl {
-    private readonly ICommand[,] _slots = new ICommand[7, 2];
+public class RemoteControlWithCommandQueue {
+    private readonly List<ICommand> _commands = new();
 
-    // 记录前一个命令
-    private ICommand _undoCommand;
-
-    public void OffButtonPressed(int slotIndex) {
-        _undoCommand = _slots[slotIndex, 1];
-        _slots[slotIndex, 1].Execute();
+    public void AddCommand(ICommand command) {
+        _commands.Add(command);
     }
 
-    public void OnButtonPressed(int slotIndex) {
-        _undoCommand = _slots[slotIndex, 0];
-        _slots[slotIndex, 0].Execute();
-    }
-
-    public void SetCommand(int slotIndex, ICommand onCommand, ICommand offCommand) {
-        _slots[slotIndex, 0] = onCommand;
-        _slots[slotIndex, 1] = offCommand;
+    public void StartButtonPressed() {
+        foreach (var command in _commands) {
+            command.Execute();
+        }
     }
 
     public void UndoButtonPressed() {
-        _undoCommand.Undo();
+        foreach (var command in _commands) {
+            command.Undo();
+        }
     }
 }

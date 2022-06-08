@@ -1,13 +1,19 @@
 namespace 命令模式_遥控器;
 
-public class GarageDoorCloseCommand : ICommand {
-    private readonly GarageDoor _door;
+public class StereoOnWithCDCommand : ICommand {
+    private readonly Stereo _stereo;
 
-    public GarageDoorCloseCommand(GarageDoor door) {
-        _door = door;
+    public StereoOnWithCDCommand(Stereo stereo) {
+        _stereo = stereo;
     }
 
     public void Execute() {
-        _door.Down();
+        _stereo.On();
+        _stereo.SetCD();
+        _stereo.SetVolume(11);
+    }
+
+    public void Undo() {
+        throw new NotImplementedException();
     }
 }

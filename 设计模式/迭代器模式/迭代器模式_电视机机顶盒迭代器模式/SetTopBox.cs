@@ -1,6 +1,6 @@
-namespace 迭代器模式_电视机机顶盒有遥控器2;
+namespace 迭代器模式_电视机机顶盒迭代器模式;
 
-public class SetTopBox {
+public class SetTopBox : IAggregate {
     private readonly Dictionary<int, Channel> _channels = new();
 
     public SetTopBox() {
@@ -11,8 +11,8 @@ public class SetTopBox {
         _channels.Add(5, new Channel { ChannelNumber = 62, ChannelName = "运动健身" });
     }
 
-    public SetTopBoxRemote CreateRemote() {
-        var remote = new SetTopBoxRemote(this);
+    public IIterator CreateIterator() {
+        var remote = new SetTopBoxIterator(this);
 
         return remote;
     }

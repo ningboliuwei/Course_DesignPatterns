@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒遥控器公共父类;
+namespace 迭代器模式_电视机机顶盒遥控器公共父类隐藏;
 
 public class Helper {
     public static void ShowAllChannels(IRemote set) {

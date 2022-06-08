@@ -321,13 +321,39 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "装饰模式_小人_新画�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "装饰模式_小人_新画图版_装饰模式_双人版", "设计模式\装饰模式\装饰模式_小人_新画图版_装饰模式_双人版\装饰模式_小人_新画图版_装饰模式_双人版.csproj", "{B64B189E-FB63-49A7-A27E-FBA795FBD3E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "迭代器模式_电视机", "设计模式\迭代器模式\迭代器模式_电视机\迭代器模式_电视机.csproj", "{B1AF15A6-E4CF-4D0C-A9F9-209BFBBE6B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机", "设计模式\迭代器模式\迭代器模式_电视机\迭代器模式_电视机.csproj", "{B1AF15A6-E4CF-4D0C-A9F9-209BFBBE6B0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "迭代器模式_电视机机顶盒", "设计模式\迭代器模式\迭代器模式_电视机机顶盒\迭代器模式_电视机机顶盒.csproj", "{446B1739-13F8-4B51-A66F-32DB37DB74FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒", "设计模式\迭代器模式\迭代器模式_电视机机顶盒\迭代器模式_电视机机顶盒.csproj", "{446B1739-13F8-4B51-A66F-32DB37DB74FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "迭代器模式_电视机机顶盒抽象", "设计模式\迭代器模式\迭代器模式_电视机机顶盒抽象\迭代器模式_电视机机顶盒抽象.csproj", "{31E61CB5-3CC6-4649-AE9A-1A0358B0747D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒抽象", "设计模式\迭代器模式\迭代器模式_电视机机顶盒抽象\迭代器模式_电视机机顶盒抽象.csproj", "{31E61CB5-3CC6-4649-AE9A-1A0358B0747D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "迭代器模式_电视机机顶盒结合工厂", "设计模式\迭代器模式\迭代器模式_电视机机顶盒结合工厂\迭代器模式_电视机机顶盒结合工厂.csproj", "{97074BA4-12BB-47D8-BC98-352B9F9161E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒结合工厂", "设计模式\迭代器模式\迭代器模式_电视机机顶盒结合工厂\迭代器模式_电视机机顶盒结合工厂.csproj", "{97074BA4-12BB-47D8-BC98-352B9F9161E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒结合接口", "设计模式\迭代器模式\迭代器模式_电视机机顶盒结合接口\迭代器模式_电视机机顶盒结合接口.csproj", "{634586D4-0E2D-4ECA-8C68-21223B0A7CFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机无遥控器", "设计模式\迭代器模式\迭代器模式_电视机无遥控器\迭代器模式_电视机无遥控器.csproj", "{B19B473B-6C8F-431D-94F1-32C93A55ABB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒无遥控器", "设计模式\迭代器模式\迭代器模式_电视机机顶盒无遥控器\迭代器模式_电视机机顶盒无遥控器.csproj", "{1ACC5FA2-F8A1-4690-8BAF-9D30C5047BDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒遥控器", "设计模式\迭代器模式\迭代器模式_电视机机顶盒遥控器\迭代器模式_电视机机顶盒遥控器.csproj", "{C2129AC9-8552-4E44-8F40-8AE4CFF2ADB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒遥控器公共父类", "设计模式\迭代器模式\迭代器模式_电视机机顶盒遥控器公共父类\迭代器模式_电视机机顶盒遥控器公共父类.csproj", "{622E8A18-0A77-4938-A425-7173111B5A61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒遥控器公共父类隐藏", "设计模式\迭代器模式\迭代器模式_电视机机顶盒遥控器公共父类隐藏\迭代器模式_电视机机顶盒遥控器公共父类隐藏.csproj", "{4B0E412A-849F-4302-B52D-4D700CFE5770}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机有遥控器", "设计模式\迭代器模式\迭代器模式_电视机有遥控器\迭代器模式_电视机有遥控器.csproj", "{CD1B9CB3-928B-4EA0-94F2-C739358199AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒有遥控器", "设计模式\迭代器模式\迭代器模式_电视机机顶盒有遥控器\迭代器模式_电视机机顶盒有遥控器.csproj", "{ECAF316A-8088-4F53-87F3-3D67584D2461}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒有遥控器2", "设计模式\迭代器模式\迭代器模式_电视机机顶盒有遥控器2\迭代器模式_电视机机顶盒有遥控器2.csproj", "{8B403954-D357-425D-976F-B38DAD2DA561}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "迭代器模式_电视机机顶盒迭代器模式", "设计模式\迭代器模式\迭代器模式_电视机机顶盒迭代器模式\迭代器模式_电视机机顶盒迭代器模式.csproj", "{8FBE3565-9B7D-475D-BBE1-CC47DA53168C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "实验15_迭代器模式_IEnumerator接口", "实验\实验15_迭代器模式_IEnumerator接口\实验15_迭代器模式_IEnumerator接口.csproj", "{FDB07EB8-8FEA-427C-915A-9BC6CC79F722}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "命令模式_遥控器", "设计模式\命令模式\命令模式_遥控器\命令模式_遥控器.csproj", "{8030FD45-424B-4C05-B992-0B9D88C601F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "实验16_命令模式_自定义按键", "实验\实验16_命令模式_自定义按键\实验16_命令模式_自定义按键\实验16_命令模式_自定义按键.csproj", "{A65747CE-062D-4CF1-B6F2-BC45EC7B20A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -903,6 +929,58 @@ Global
 		{97074BA4-12BB-47D8-BC98-352B9F9161E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97074BA4-12BB-47D8-BC98-352B9F9161E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97074BA4-12BB-47D8-BC98-352B9F9161E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634586D4-0E2D-4ECA-8C68-21223B0A7CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634586D4-0E2D-4ECA-8C68-21223B0A7CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634586D4-0E2D-4ECA-8C68-21223B0A7CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634586D4-0E2D-4ECA-8C68-21223B0A7CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19B473B-6C8F-431D-94F1-32C93A55ABB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19B473B-6C8F-431D-94F1-32C93A55ABB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19B473B-6C8F-431D-94F1-32C93A55ABB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19B473B-6C8F-431D-94F1-32C93A55ABB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ACC5FA2-F8A1-4690-8BAF-9D30C5047BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACC5FA2-F8A1-4690-8BAF-9D30C5047BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACC5FA2-F8A1-4690-8BAF-9D30C5047BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACC5FA2-F8A1-4690-8BAF-9D30C5047BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2129AC9-8552-4E44-8F40-8AE4CFF2ADB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2129AC9-8552-4E44-8F40-8AE4CFF2ADB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2129AC9-8552-4E44-8F40-8AE4CFF2ADB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2129AC9-8552-4E44-8F40-8AE4CFF2ADB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622E8A18-0A77-4938-A425-7173111B5A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622E8A18-0A77-4938-A425-7173111B5A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622E8A18-0A77-4938-A425-7173111B5A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622E8A18-0A77-4938-A425-7173111B5A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0E412A-849F-4302-B52D-4D700CFE5770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0E412A-849F-4302-B52D-4D700CFE5770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0E412A-849F-4302-B52D-4D700CFE5770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0E412A-849F-4302-B52D-4D700CFE5770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1B9CB3-928B-4EA0-94F2-C739358199AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1B9CB3-928B-4EA0-94F2-C739358199AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1B9CB3-928B-4EA0-94F2-C739358199AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1B9CB3-928B-4EA0-94F2-C739358199AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAF316A-8088-4F53-87F3-3D67584D2461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAF316A-8088-4F53-87F3-3D67584D2461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAF316A-8088-4F53-87F3-3D67584D2461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAF316A-8088-4F53-87F3-3D67584D2461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B403954-D357-425D-976F-B38DAD2DA561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B403954-D357-425D-976F-B38DAD2DA561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B403954-D357-425D-976F-B38DAD2DA561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B403954-D357-425D-976F-B38DAD2DA561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBE3565-9B7D-475D-BBE1-CC47DA53168C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBE3565-9B7D-475D-BBE1-CC47DA53168C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBE3565-9B7D-475D-BBE1-CC47DA53168C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBE3565-9B7D-475D-BBE1-CC47DA53168C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB07EB8-8FEA-427C-915A-9BC6CC79F722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB07EB8-8FEA-427C-915A-9BC6CC79F722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB07EB8-8FEA-427C-915A-9BC6CC79F722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB07EB8-8FEA-427C-915A-9BC6CC79F722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8030FD45-424B-4C05-B992-0B9D88C601F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8030FD45-424B-4C05-B992-0B9D88C601F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8030FD45-424B-4C05-B992-0B9D88C601F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8030FD45-424B-4C05-B992-0B9D88C601F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65747CE-062D-4CF1-B6F2-BC45EC7B20A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65747CE-062D-4CF1-B6F2-BC45EC7B20A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65747CE-062D-4CF1-B6F2-BC45EC7B20A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65747CE-062D-4CF1-B6F2-BC45EC7B20A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1065,6 +1143,19 @@ Global
 		{446B1739-13F8-4B51-A66F-32DB37DB74FF} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
 		{31E61CB5-3CC6-4649-AE9A-1A0358B0747D} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
 		{97074BA4-12BB-47D8-BC98-352B9F9161E6} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{634586D4-0E2D-4ECA-8C68-21223B0A7CFC} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{B19B473B-6C8F-431D-94F1-32C93A55ABB6} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{1ACC5FA2-F8A1-4690-8BAF-9D30C5047BDC} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{C2129AC9-8552-4E44-8F40-8AE4CFF2ADB5} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{622E8A18-0A77-4938-A425-7173111B5A61} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{4B0E412A-849F-4302-B52D-4D700CFE5770} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{CD1B9CB3-928B-4EA0-94F2-C739358199AF} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{ECAF316A-8088-4F53-87F3-3D67584D2461} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{8B403954-D357-425D-976F-B38DAD2DA561} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{8FBE3565-9B7D-475D-BBE1-CC47DA53168C} = {041815A8-3B05-4A74-B229-2B1ECE67085D}
+		{FDB07EB8-8FEA-427C-915A-9BC6CC79F722} = {41E2FE92-B57D-43EC-BA70-03B10282107F}
+		{8030FD45-424B-4C05-B992-0B9D88C601F5} = {45754A3B-ADBA-412A-9039-8B06FB018D5A}
+		{A65747CE-062D-4CF1-B6F2-BC45EC7B20A0} = {41E2FE92-B57D-43EC-BA70-03B10282107F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0B70BD5-489B-42B9-A96A-BCD01B88FB00}

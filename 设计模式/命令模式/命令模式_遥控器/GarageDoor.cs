@@ -1,11 +1,11 @@
 namespace 命令模式_遥控器;
 
-public class Light {
-    public void Off() {
-        Console.WriteLine("电灯关闭了");
+public class GarageDoor {
+    public void Down() {
+        Console.WriteLine("车库门降下了");
     }
 
-    public void On() {
-        Console.WriteLine("电灯打开了");
+    public void Up() {
+        Console.WriteLine("车库门升起了");
     }
 }

@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒有遥控器2;
+namespace 迭代器模式_电视机机顶盒迭代器模式;
 
 public class Channel {
     public string ChannelName { get; set; }

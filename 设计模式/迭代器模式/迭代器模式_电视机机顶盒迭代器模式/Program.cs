@@ -1,11 +1,11 @@
 ﻿#region
 
-using 迭代器模式_电视机机顶盒有遥控器2;
+using 迭代器模式_电视机机顶盒迭代器模式;
 
 #endregion
 
 var television = new Television();
-var televisionRemote = television.CreateRemote();
+var televisionRemote = television.CreateIterator();
 
 while (televisionRemote.HasNext()) {
     televisionRemote.Next();
@@ -16,7 +16,7 @@ while (televisionRemote.HasNext()) {
 Console.WriteLine();
 
 var setTopBox = new SetTopBox();
-var setTopBoxRemote = setTopBox.CreateRemote();
+var setTopBoxRemote = setTopBox.CreateIterator();
 
 while (setTopBoxRemote.HasNext()) {
     setTopBoxRemote.Next();

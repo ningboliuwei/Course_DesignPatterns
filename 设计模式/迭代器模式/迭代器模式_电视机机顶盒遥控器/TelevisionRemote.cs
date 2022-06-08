@@ -1,18 +1,25 @@
-namespace 迭代器模式_电视机机顶盒;
+namespace 迭代器模式_电视机机顶盒遥控器;
 
 public class TelevisionRemote {
     private readonly Television _television;
+    private int _currentIndex = -1;
 
     public TelevisionRemote(Television television) {
         _television = television;
     }
 
-    public void ShowAllChannels() {
+    public bool HasNext() {
         var channels = _television.GetAllChannels();
+        return channels.Length != 0 && _currentIndex != channels.Length - 1;
+    }
 
-        for (var i = 0; i < channels.Length; i++) {
-            var channel = channels[i];
-            Console.WriteLine($"[{channel.ChannelNumber}]{channel.ChannelName} ");
+    public Channel Next() {
+        if (HasNext()) {
+            _currentIndex++;
+            var element = _television.GetAllChannels().ElementAt(_currentIndex);
+            return element;
         }
+
+        throw new IndexOutOfRangeException();
     }
 }

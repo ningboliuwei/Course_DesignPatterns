@@ -31,16 +31,16 @@ namespace 原型模式_简历_非原型模式版 {
 
             var resume3 = resume1;
             resume3.Post = "Google前端";
-            // resume1.Name = "奥观海";
+            resume1.Name = "奥观海";
             //          //方法2结束
             //
             resume1.Display();
             resume2.Display();
             resume3.Display();
 
-            var x = resume1.GetHashCode();
-            var y = resume2.GetHashCode();
-            var z = resume3.GetHashCode();
+            // var x = resume1.GetHashCode();
+            // var y = resume2.GetHashCode();
+            // var z = resume3.GetHashCode();
 
             Console.ReadLine();
         }

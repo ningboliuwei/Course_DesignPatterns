@@ -16,7 +16,7 @@ namespace 原型模式_简历_Clone版 {
             var resume3 = resume1.Clone();
             resume3.Post = "Google前端";
 
-            resume1.Name = "奥观海";
+            // resume1.Name = "奥观海";
 
             resume1.Display();
             resume2.Display();

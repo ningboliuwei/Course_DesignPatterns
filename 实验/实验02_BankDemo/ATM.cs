@@ -40,8 +40,8 @@ namespace 实验02_BankDemo {
             }
             else if (op == "2") {
                 Show("save money");
-                var smoney = GetInput();
-                var money = double.Parse(smoney);
+                var moneyString = GetInput();
+                var money = double.Parse(moneyString);
                 var ok = account.SaveMoney(money);
 
                 if (ok) {

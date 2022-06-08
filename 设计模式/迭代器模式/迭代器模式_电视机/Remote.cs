@@ -9,7 +9,7 @@ public class Remote {
 
     public void ShowAllChannels() {
         var channels = _television.GetAllChannels();
-        
+
         for (var i = 0; i < channels.Length; i++) {
             var channel = channels[i];
             Console.WriteLine($"[{channel.ChannelNumber}]{channel.ChannelName} ");

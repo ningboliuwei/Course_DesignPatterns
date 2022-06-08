@@ -1,4 +1,4 @@
-namespace 迭代器模式_电视机机顶盒;
+namespace 迭代器模式_电视机机顶盒遥控器;
 
 public class Television {
     private readonly Channel[] _channels;
