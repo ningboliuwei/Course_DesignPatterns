@@ -110,7 +110,7 @@
             this.rdoMinimize1.Name = "rdoMinimize1";
             this.rdoMinimize1.Size = new System.Drawing.Size(106, 25);
             this.rdoMinimize1.TabIndex = 5;
-            this.rdoMinimize1.Text = "最小化窗体";
+            this.rdoMinimize1.Text = "最大化窗体";
             this.rdoMinimize1.UseVisualStyleBackColor = true;
             this.rdoMinimize1.CheckedChanged += new System.EventHandler(this.rdoMinimize1_CheckedChanged);
             // 
@@ -162,7 +162,7 @@
             this.rdoMinimize2.Size = new System.Drawing.Size(106, 25);
             this.rdoMinimize2.TabIndex = 9;
             this.rdoMinimize2.TabStop = true;
-            this.rdoMinimize2.Text = "最小化窗体";
+            this.rdoMinimize2.Text = "最大化窗体";
             this.rdoMinimize2.UseVisualStyleBackColor = true;
             this.rdoMinimize2.CheckedChanged += new System.EventHandler(this.rdoMinimize2_CheckedChanged);
             // 
@@ -213,7 +213,7 @@
             this.rdoMinimize3.Name = "rdoMinimize3";
             this.rdoMinimize3.Size = new System.Drawing.Size(106, 25);
             this.rdoMinimize3.TabIndex = 13;
-            this.rdoMinimize3.Text = "最小化窗体";
+            this.rdoMinimize3.Text = "最大化窗体";
             this.rdoMinimize3.UseVisualStyleBackColor = true;
             this.rdoMinimize3.CheckedChanged += new System.EventHandler(this.rdoMinimize3_CheckedChanged);
             // 

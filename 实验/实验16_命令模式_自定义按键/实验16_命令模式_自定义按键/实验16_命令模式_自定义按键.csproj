@@ -2,18 +2,11 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net5.0-windows</TargetFramework>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
+		<StartupObject>实验16_命令模式_自定义按键.Program</StartupObject>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<None Remove="FunctionButton.cs.bak" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Compile Include="FunctionButton.cs.bak" />
-	</ItemGroup>
 
 	<ItemGroup>
 	  <None Update="help.chm">

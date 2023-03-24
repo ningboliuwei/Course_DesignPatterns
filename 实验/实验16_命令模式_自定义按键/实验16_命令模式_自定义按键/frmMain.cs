@@ -52,7 +52,7 @@ namespace 实验16_命令模式_自定义按键 {
                 btnFunction1.SetCommand(new HelperCommand());
             }
             else if (rdoMinimize1.Checked) {
-                btnFunction1.SetCommand(new MinimizeCommand(this));
+                btnFunction1.SetCommand(new MaximizemizeCommand(this));
             }
             else if (rdoScreenShot1.Checked) {
                 btnFunction1.SetCommand(new ScreenShotCommand());
@@ -62,7 +62,7 @@ namespace 实验16_命令模式_自定义按键 {
                 btnFunction2.SetCommand(new HelperCommand());
             }
             else if (rdoMinimize2.Checked) {
-                btnFunction2.SetCommand(new MinimizeCommand(this));
+                btnFunction2.SetCommand(new MaximizemizeCommand(this));
             }
             else if (rdoScreenShot2.Checked) {
                 btnFunction2.SetCommand(new ScreenShotCommand());
@@ -72,7 +72,7 @@ namespace 实验16_命令模式_自定义按键 {
                 btnFunction3.SetCommand(new HelperCommand());
             }
             else if (rdoMinimize3.Checked) {
-                btnFunction3.SetCommand(new MinimizeCommand(this));
+                btnFunction3.SetCommand(new MaximizemizeCommand(this));
             }
             else if (rdoScreenShot3.Checked) {
                 btnFunction3.SetCommand(new ScreenShotCommand());
